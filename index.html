@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel ETEC - Fernanda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #faf8fc; --surface: #f3f0f9; --tertiary: #ede8f7;
+            --fg: #2d1b4e; --fg2: #5a4175; --fg3: #8b7ba3;
+            --brand: #6d28d9; --accent: #d946a6; --good: #10b981;
+            --font: 'Archivo', sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root { --bg: #1a1425; --surface: #2a2239; --tertiary: #3a3250;
+                    --fg: #f3e8ff; --fg2: #d8bfd8; --brand: #c084fc; --accent: #ec4899; }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font); color: var(--fg); background: var(--bg); line-height: 1.6; }
+        .shell { display: grid; grid-template-columns: 254px minmax(0, 1fr); min-height: 100vh; }
+        .sidebar { background: var(--brand); color: #f3e8ff; padding: 1.5rem 1rem; position: sticky; top: 0; height: 100vh; overflow-y: auto; }
+        .sidebar h1 { font-size: 1.5rem; margin-bottom: 2rem; }
+        .disc { font-size: 0.875rem; padding: 0.5rem; margin: 0.3rem 0; background: rgba(255,255,255,0.1); border-radius: 0.5rem; }
+        .main { display: flex; flex-direction: column; min-width: 0; }
+        .topbar { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; padding: 1rem; background: var(--surface); border-bottom: 1px solid var(--tertiary); }
+        .kpi { font-size: 0.75rem; color: var(--fg3); text-transform: uppercase; } .kpi-val { font-size: 1.4rem; font-weight: 700; }
+        .tabs { display: flex; border-bottom: 1px solid var(--tertiary); padding: 0 1rem; overflow-x: auto; }
+        .tab { padding: 1rem; border: none; background: none; color: var(--fg2); cursor: pointer; font-weight: 600; border-bottom: 3px solid transparent; white-space: nowrap; }
+        .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+        .content { display: none; flex: 1; padding: 1.5rem; overflow-y: auto; }
+        .content.active { display: block; }
+        .card { background: var(--surface); border: 1px solid var(--tertiary); border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; }
+        .btn { padding: 0.75rem 1rem; background: var(--accent); color: white; border: none; border-radius: 0.5rem; cursor: pointer; font-weight: 600; margin: 0.5rem 0.5rem 0.5rem 0; }
+        .btn:hover { opacity: 0.9; }
+        .q-area { background: var(--surface); border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1rem; }
+        .alts { display: flex; flex-direction: column; gap: 0.75rem; margin: 1.5rem 0; }
+        .alt { padding: 1rem; border: 2px solid var(--tertiary); background: transparent; color: var(--fg); border-radius: 0.5rem; cursor: pointer; text-align: left; font-family: var(--font); }
+        .alt:hover { border-color: var(--accent); background: var(--tertiary); }
+        .alt.sel { border-color: var(--accent); background: var(--tertiary); font-weight: 600; }
+        .alt.ok { border-color: var(--good); background: #ecfdf5; }
+        .alt.bad { border-color: #ef4444; background: #fef2f2; }
+        .fb { padding: 1rem; border-radius: 0.5rem; margin-top: 1rem; font-weight: 600; }
+        .fb.ok { background: #ecfdf5; color: var(--good); }
+        .fb.bad { background: #fef2f2; color: #ef4444; }
+        .qwrap { background: #fff; border-radius: 0.6rem; padding: 0.5rem; margin: 1rem 0; overflow-x: auto; border: 1px solid var(--tertiary); }
+        .qwrap img { display: block; max-width: 100%; height: auto; cursor: zoom-in; }
+        .qwrap img.zoom { max-width: none; cursor: zoom-out; }
+        .qwrap summary { cursor: pointer; font-weight: 600; color: #5a4175; padding: 0.25rem; font-size: 0.9rem; }
+        .letras { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0; }
+        .letras .alt { flex: 1 1 3.5rem; text-align: center; font-weight: 700; font-size: 1.1rem; padding: 0.9rem 0.5rem; }
+        .semana { background: var(--surface); border-left: 4px solid var(--accent); padding: 1.5rem; margin-bottom: 1rem; border-radius: 0.5rem; }
+        .semana h4 { margin-bottom: 0.75rem; color: var(--accent); }
+        .video { background: var(--bg); padding: 0.75rem; margin: 0.5rem 0; border-radius: 0.5rem; font-size: 0.9rem; }
+        .video a { color: var(--accent); text-decoration: none; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+        th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--tertiary); }
+        th { font-weight: 600; background: var(--tertiary); }
+        @media (max-width: 768px) { .shell { grid-template-columns: minmax(0, 1fr); } .sidebar { height: auto; position: static; padding: 0.75rem 1rem; }
+            .sidebar h1 { margin-bottom: 0.5rem; font-size: 1.2rem; } #disc-list { display: flex; flex-wrap: wrap; gap: 0.3rem; } .disc { margin: 0; padding: 0.25rem 0.5rem; font-size: 0.75rem; }
+            .content { padding: 0.75rem; } .q-area, .card { padding: 0.9rem; } }
+    </style>
+</head>
+<body>
+    <div class="shell">
+        <aside class="sidebar">
+            <h1>📚 ETEC</h1>
+            <div id="disc-list"></div>
+            <div style="margin-top: 2rem; font-size: 0.75rem;">
+                <p><b id="total-q">0</b> questões carregadas</p>
+                <p id="sync-status" style="margin-top: 0.5rem;"></p>
+            </div>
+        </aside>
+
+        <div class="main">
+            <div class="topbar">
+                <div><div class="kpi">Aproveitamento</div><div class="kpi-val"><span id="apr">0</span>%</div></div>
+                <div><div class="kpi">Respondidas</div><div class="kpi-val"><span id="resp">0</span></div></div>
+                <div><div class="kpi">Acertos</div><div class="kpi-val"><span id="acrt">0</span></div></div>
+                <div><div class="kpi">Faltam para prova</div><div class="kpi-val" style="font-size: 1.2rem;" id="dias-prova">60</div></div>
+            </div>
+
+            <div class="tabs">
+                <button class="tab active" onclick="abrir('estudar')">📖 Estudar</button>
+                <button class="tab" onclick="abrir('simulado')">✏️ Simulado</button>
+                <button class="tab" onclick="abrir('cronograma')">📅 Cronograma</button>
+                <button class="tab" onclick="abrir('banco')">💾 Banco</button>
+            </div>
+
+            <div id="estudar" class="content active">
+                <h2>Estudar</h2>
+                <div class="card">
+                    <label>Disciplina: <select id="disc-f" onchange="filtrar()"><option>Todas</option></select></label>
+                    <button class="btn" onclick="prox()">Próxima</button>
+                    <button class="btn" onclick="shuffle()">🔀 Embaralhar</button>
+                </div>
+                <div id="q-area"></div>
+            </div>
+
+            <div id="simulado" class="content">
+                <h2>Simulado</h2>
+                <div class="card">
+                    <p id="sim-info" style="margin-bottom: 1rem; color: var(--fg2);"></p>
+                    <div id="provas-list"></div>
+                </div>
+                <div id="sim-area"></div>
+            </div>
+
+            <div id="cronograma" class="content">
+                <h2>Cronograma de Estudos</h2>
+                <div class="card">
+                    <p><b>Período:</b> 06/10 a 05/12/2026 (9 semanas)</p>
+                    <p><b>Rotina:</b> 2h40 min/dia (seg-sex) + simulado (sábado)</p>
+                    <p id="dias-area" style="margin-top: 1rem; font-size: 0.9rem; color: var(--fg2);"></p>
+                </div>
+                <div id="crono-area"></div>
+            </div>
+
+            <div id="banco" class="content">
+                <h2>Banco de Questões</h2>
+                <div id="banco-area"></div>
+                <div class="card" id="sync-card" style="margin-top: 1rem;"></div>
+                <button class="btn" onclick="exportar()">📥 Exportar Progresso</button>
+                <button class="btn" style="background: #ef4444;" onclick="zerar()">🗑️ Zerar progresso</button>
+                <div id="zerar-area"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dados/questoes.js"></script>
+    <script src="dados/migracao_ids.js"></script>
+    <script src="dados/cronograma.js"></script>
+
+    <script>
+        const APP = { questoes: window.SEED || [], disciplinas: window.DISCIPLINAS || {}, cronograma: window.CRONOGRAMA || {},
+                     estado: { respostas: {}, ts: Date.now() }, atual: 0, filtro: '', sim: null, simTimer: null };
+
+        function init() {
+            const s = localStorage.getItem('etec_v2');
+            if (s) try { APP.estado = JSON.parse(s); } catch (e) {}
+            try { SYNC.codigo = localStorage.getItem('etec_codigo') || null; } catch (e) {}
+            if (!APP.estado.respostas) APP.estado.respostas = {};
+            migrarIds();
+            atualizar();
+            renderSync();
+            sincronizar();
+            document.addEventListener('visibilitychange', () => { if (!document.hidden) sincronizar(); });
+            window.addEventListener('online', sincronizar);
+        }
+
+        // Troca os identificadores antigos pelos novos nas respostas já salvas (roda uma vez por aparelho)
+        function migrarIds() {
+            const mapa = window.IDS_ANTIGOS || {};
+            let mudou = false;
+            for (const antigo in APP.estado.respostas) {
+                const novo = mapa[antigo];
+                if (!novo) continue;
+                if (APP.estado.respostas[novo] === undefined) APP.estado.respostas[novo] = APP.estado.respostas[antigo];
+                delete APP.estado.respostas[antigo];
+                mudou = true;
+            }
+            if (mudou) salvar();
+        }
+
+        function atualizar() {
+            // Filtrar respostas de questões que ainda existem
+            const ids_validos = new Set(APP.questoes.map(q => q.id));
+            const resp = Object.entries(APP.estado.respostas)
+                .filter(([id, r]) => ids_validos.has(id))
+                .length;
+            const acrt = Object.entries(APP.estado.respostas).filter(([id, r]) => {
+                const q = APP.questoes.find(qq => qq.id === id);
+                return q && r === q.gab;
+            }).length;
+
+            document.getElementById('total-q').textContent = APP.questoes.length;
+            document.getElementById('resp').textContent = resp;
+            document.getElementById('acrt').textContent = acrt;
+            document.getElementById('apr').textContent = resp > 0 ? Math.round((acrt / resp) * 100) : 0;
+
+            // Calcula dias para prova
+            const hoje = new Date();
+            hoje.setHours(0, 0, 0, 0);
+            const prova = new Date(2026, 11, 6); // 06/12/2026 (mês 11 = dezembro)
+            prova.setHours(0, 0, 0, 0);
+            const dias = Math.ceil((prova - hoje) / (1000 * 60 * 60 * 24));
+            document.getElementById('dias-prova').textContent = Math.max(0, dias);
+
+            // Sidebar
+            const dl = document.getElementById('disc-list');
+            dl.innerHTML = '';
+            for (let d in APP.disciplinas) {
+                const dId = APP.disciplinas[d].id;
+                const c = APP.questoes.filter(q => q.d === dId).length;
+                dl.innerHTML += `<div class="disc"><b>${APP.disciplinas[d].nome}</b> (${c})</div>`;
+            }
+
+            // Select
+            const sel = document.getElementById('disc-f');
+            if (sel.options.length === 1) {
+                for (let d in APP.disciplinas) {
+                    const o = document.createElement('option');
+                    o.value = d;
+                    o.textContent = APP.disciplinas[d].nome;
+                    sel.appendChild(o);
+                }
+            }
+
+            mostrar();
+            banco();
+            crono();
+            renderizarSimulados();
+        }
+
+        function nomeProva(q) { const m = q.fonte.match(/(\d)º sem\/(\d{4})/); return m ? m[0] : null; }
+        function numQuestao(q) { const m = q.fonte.match(/Q(\d+)\s*$/); return m ? parseInt(m[1]) : 0; }
+        function questoesDaProva(p) {
+            return APP.questoes.filter(q => nomeProva(q) === p).sort((x, y) => numQuestao(x) - numQuestao(y));
+        }
+        function textoDuracao(ms) {
+            const m = Math.round(ms / 60000), h = Math.floor(m / 60), r = m % 60;
+            return (h ? h + (h === 1 ? ' hora' : ' horas') : '') + (h && r ? ' e ' : '') + (r ? r + ' min' : '');
+        }
+
+        function renderizarSimulados() {
+            // Provas que existem no banco, em ordem cronológica
+            const nomes = [...new Set(APP.questoes.map(nomeProva).filter(Boolean))]
+                .sort((x, y) => (x.slice(-4) + x[0]).localeCompare(y.slice(-4) + y[0]));
+            const info = document.getElementById('sim-info');
+            const el = document.getElementById('provas-list');
+            if (APP.sim) {
+                info.textContent = `${textoDuracao(APP.sim.dur)} • ${APP.sim.qs.length} questões • sem consulta`;
+                el.innerHTML = '';
+                return;
+            }
+            info.textContent = `${textoDuracao(SIM_DUR)} por prova • sem consulta • escolha a prova:`;
+            let h = '';
+            nomes.forEach(p => {
+                const n = questoesDaProva(p).length;
+                h += `<button class="btn" onclick="simular('${p}')">${p} (${n} questões)</button>`;
+            });
+            el.innerHTML = h;
+        }
+
+        // Questão como imagem recortada do caderno oficial (+ texto de apoio, quando houver)
+        const ESCALA_IMG = 0.7; // px de tela por px da imagem (150 dpi) — letra em tamanho confortável
+        function corpoQuestao(q) {
+            if (!q.img) return `<div style="margin: 1rem 0;">${q.enunciado || ''}</div>`;
+            const im = (src, w, alt) => `<img src="${src}" alt="${alt}" ${w ? `style="width: ${Math.round(w * ESCALA_IMG)}px;"` : ''} onclick="this.classList.toggle('zoom')" title="Clique para ampliar">`;
+            let h = '';
+            if (q.base) h += `<details class="qwrap" open><summary>Texto de apoio (vale para mais de uma questão)</summary>${im(q.base, q.bw, 'Texto de apoio')}</details>`;
+            return h + `<div class="qwrap">${im(q.img, q.w, q.fonte)}</div>`;
+        }
+        // Botões de alternativa: só a letra quando a questão é imagem
+        function botoesAlt(q, classe, onclick) {
+            const letra = n => String.fromCharCode(65 + n);
+            if (q.img) return '<div class="letras">' + [0, 1, 2, 3, 4].map(n => `<button class="${classe(n)}" onclick="${onclick(n)}">${letra(n)}</button>`).join('') + '</div>';
+            return '<div class="alts">' + (q.alt || []).map((a, n) => `<button class="${classe(n)}" onclick="${onclick(n)}">${letra(n)}) ${a}</button>`).join('') + '</div>';
+        }
+
+        function salvarLocal() { try { localStorage.setItem('etec_v2', JSON.stringify(APP.estado)); } catch (e) {} }
+        function salvar() {
+            APP.estado.ts = Date.now();
+            salvarLocal();
+            if (!SYNC.codigo) return;
+            clearTimeout(SYNC.timer);
+            SYNC.timer = setTimeout(sincronizar, 1500); // junta vários cliques num envio só
+        }
+
+        // ===== Sincronização entre aparelhos (Supabase) =====
+        // A chave abaixo é a "anon", pública por natureza: só permite chamar ler_progresso e salvar_progresso.
+        const SUPA = { url: 'https://fjcoifphqypphvnjmiwa.supabase.co',
+                       key: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZqY29pZnBocXlwcGh2bmptaXdhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEzNDMwMTUsImV4cCI6MjEwNjkxOTAxNX0.Yazti0F9kBlOO_1c1is6Gb2-vdyG2LtAwTyVIHYjxUw' };
+        const SYNC = { codigo: null, timer: null, ocupado: false, pendente: false, status: '' };
+
+        async function rpc(fn, args) {
+            const r = await fetch(`${SUPA.url}/rest/v1/rpc/${fn}`, {
+                method: 'POST',
+                headers: { apikey: SUPA.key, Authorization: 'Bearer ' + SUPA.key, 'Content-Type': 'application/json' },
+                body: JSON.stringify(args)
+            });
+            if (!r.ok) throw new Error(fn + ' ' + r.status);
+            return r.json();
+        }
+
+        // Resumo comparável do que importa sincronizar (respostas e simulados)
+        function canon(e) {
+            const o = {};
+            Object.keys(e.respostas || {}).sort().forEach(k => o[k] = e.respostas[k]);
+            return JSON.stringify([o, (e.simulados || []).map(s => s.data).sort(), e.zerado || 0]);
+        }
+
+        // Junta o progresso deste aparelho com o da nuvem sem perder nada:
+        // respostas de questões diferentes somam; na mesma questão vale a resposta mais recente.
+        function mesclar(local, remoto) {
+            const m = { respostas: {}, rts: {}, simulados: [], ts: Math.max(local.ts || 0, remoto.ts || 0) };
+            // "Zerar progresso" vale para todos os aparelhos: o que é anterior ao zeramento não volta
+            const z = Math.max(local.zerado || 0, remoto.zerado || 0);
+            if (z) m.zerado = z;
+            const lr = local.respostas || {}, rr = remoto.respostas || {}, lt = local.rts || {}, rt = remoto.rts || {};
+            new Set([...Object.keys(lr), ...Object.keys(rr)]).forEach(id => {
+                const usaRemoto = lr[id] === undefined || (rr[id] !== undefined && (rt[id] || 0) > (lt[id] || 0));
+                const t = usaRemoto ? rt[id] : lt[id];
+                if (z && (t || 0) <= z) return;
+                m.respostas[id] = usaRemoto ? rr[id] : lr[id];
+                if (t) m.rts[id] = t;
+            });
+            const vistos = new Set();
+            [...(local.simulados || []), ...(remoto.simulados || [])].forEach(s => {
+                if (z && Date.parse(s.data) <= z) return;
+                if (!vistos.has(s.data)) { vistos.add(s.data); m.simulados.push(s); }
+            });
+            m.simulados.sort((a, b) => a.data.localeCompare(b.data));
+            return m;
+        }
+
+        function statusSync(txt) {
+            SYNC.status = txt;
+            document.querySelectorAll('#sync-status, #sync-status2').forEach(e => e.textContent = txt);
+        }
+
+        async function sincronizar() {
+            if (!SYNC.codigo) return;
+            if (SYNC.ocupado) { SYNC.pendente = true; return; }
+            SYNC.ocupado = true;
+            statusSync('🔄 Sincronizando…');
+            try {
+                const rem = await rpc('ler_progresso', { cod: SYNC.codigo });
+                const remoto = rem && rem.estado ? rem.estado : null;
+                if (remoto) {
+                    const antes = canon(APP.estado);
+                    APP.estado = mesclar(APP.estado, remoto);
+                    if (canon(APP.estado) !== antes) { salvarLocal(); atualizar(); }
+                }
+                if (!remoto || canon(APP.estado) !== canon(remoto)) await rpc('salvar_progresso', { cod: SYNC.codigo, est: APP.estado });
+                const d = new Date();
+                statusSync(`☁️ Sincronizado às ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`);
+            } catch (e) {
+                statusSync('⚠️ Sem conexão — salvo só neste aparelho por enquanto');
+            }
+            SYNC.ocupado = false;
+            if (SYNC.pendente) { SYNC.pendente = false; sincronizar(); }
+        }
+
+        function novoCodigo() {
+            const abc = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789'; // sem 0/O, 1/I/L para não confundir ao digitar
+            const n = crypto.getRandomValues(new Uint32Array(12));
+            const c = [...n].map(x => abc[x % abc.length]).join('');
+            return c.slice(0, 4) + '-' + c.slice(4, 8) + '-' + c.slice(8);
+        }
+
+        function definirCodigo(c) {
+            SYNC.codigo = c;
+            try { c ? localStorage.setItem('etec_codigo', c) : localStorage.removeItem('etec_codigo'); } catch (e) {}
+            if (!c) statusSync('');
+            renderSync();
+        }
+
+        async function criarCodigo() { definirCodigo(novoCodigo()); await sincronizar(); }
+
+        async function usarCodigo() {
+            const c = document.getElementById('sync-in').value.trim().toUpperCase().replace(/\s+/g, '');
+            const msg = document.getElementById('sync-msg');
+            if (!/^[A-Z0-9-]{12,40}$/.test(c)) { msg.textContent = 'Código inválido. Confira e digite de novo (ex.: ABCD-EFGH-JKMN).'; return; }
+            msg.textContent = 'Procurando…';
+            try {
+                const rem = await rpc('ler_progresso', { cod: c });
+                if (!rem) { msg.textContent = 'Não achei esse código. Confira se digitou igual ao do outro aparelho.'; return; }
+            } catch (e) { msg.textContent = 'Sem conexão agora. Tente de novo com internet.'; return; }
+            definirCodigo(c);
+            await sincronizar();
+        }
+
+        function renderSync() {
+            const el = document.getElementById('sync-card');
+            if (!el) return;
+            if (SYNC.codigo) {
+                el.innerHTML = `<h3>☁️ Sincronização</h3>
+                    <p style="margin: 0.5rem 0;">Seu código: <b style="font-family: 'IBM Plex Mono', monospace; font-size: 1.2rem; user-select: all;">${SYNC.codigo}</b></p>
+                    <p style="color: var(--fg2); font-size: 0.9rem;">Digite este mesmo código no celular ou em outro computador para continuar de onde parou. Guarde-o: é ele que recupera seu progresso.</p>
+                    <p id="sync-status2" style="margin: 0.5rem 0; font-weight: 600;">${SYNC.status}</p>
+                    <button class="btn" onclick="sincronizar()">Sincronizar agora</button>
+                    <button class="btn" style="background: var(--brand);" onclick="definirCodigo(null)">Desconectar este aparelho</button>`;
+            } else {
+                el.innerHTML = `<h3>☁️ Sincronização</h3>
+                    <p style="color: var(--fg2); font-size: 0.9rem; margin: 0.5rem 0;">Sem código, o progresso fica só neste aparelho.</p>
+                    <button class="btn" onclick="criarCodigo()">Criar meu código</button>
+                    <div style="margin-top: 0.75rem;">Já tenho um código:
+                        <input id="sync-in" placeholder="ABCD-EFGH-JKMN" autocomplete="off" style="padding: 0.6rem; border: 2px solid var(--tertiary); border-radius: 0.5rem; font-family: 'IBM Plex Mono', monospace; text-transform: uppercase; width: 12rem; background: var(--bg); color: var(--fg);">
+                        <button class="btn" onclick="usarCodigo()">Conectar</button></div>
+                    <p id="sync-msg" style="font-size: 0.9rem; color: var(--accent);"></p>`;
+            }
+        }
+        // ===== fim da sincronização =====
+
+        function mostrar() {
+            if (APP.sim) return;
+            const qs = APP.questoes.filter(q => !APP.filtro || q.d === APP.filtro);
+            if (!qs.length) { document.getElementById('q-area').innerHTML = '<p>Sem questões.</p>'; return; }
+
+            const q = qs[APP.atual % qs.length];
+            const r = APP.estado.respostas[q.id];
+            const c = q.gab;
+
+            let h = `<div class="q-area"><b>${q.fonte}</b> • ${q.assunto}` + corpoQuestao(q);
+            h += botoesAlt(q, i => {
+                let cl = 'alt';
+                if (r !== undefined) { if (i === c) cl += ' ok'; else if (i === r) cl += ' bad'; }
+                if (r === i) cl += ' sel';
+                return cl;
+            }, i => `resp('${q.id}', ${i})`);
+            if (r !== undefined) {
+                h += r === c ? '<div class="fb ok">✅ Correto!</div>' : `<div class="fb bad">❌ Errado! Gabarito: ${String.fromCharCode(65+c)}</div>`;
+            }
+            h += `<button class="btn" onclick="prox()">Próxima →</button></div>`;
+            document.getElementById('q-area').innerHTML = h;
+        }
+
+        function resp(id, a) {
+            APP.estado.respostas[id] = a;
+            if (!APP.estado.rts) APP.estado.rts = {};
+            APP.estado.rts[id] = Date.now(); // quando respondeu: desempata entre aparelhos
+            salvar(); atualizar();
+        }
+        function prox() { APP.atual++; mostrar(); }
+        function filtrar() {
+            let sel = document.getElementById('disc-f').value;
+            APP.filtro = sel === 'Todas' ? '' : APP.disciplinas[sel]?.id || '';
+            APP.atual = 0;
+            mostrar();
+        }
+        function shuffle() { APP.questoes.sort(() => Math.random() - 0.5); APP.atual = 0; mostrar(); }
+
+        const SIM_DUR = 4 * 60 * 60 * 1000; // duração da prova real
+
+        function simular(prova) {
+            const qs = questoesDaProva(prova);
+            if (!qs.length) return;
+            APP.sim = { prova, qs, resp: {}, i: 0, inicio: Date.now(), dur: SIM_DUR, fim: false, confirmar: false };
+            renderizarSimulados();
+            simshow();
+            iniciarTimerSimulado();
+        }
+
+        function simRelogio() {
+            const rest = Math.max(0, APP.sim.dur - (Date.now() - APP.sim.inicio));
+            const t = Math.floor(rest / 1000);
+            const p = n => String(n).padStart(2, '0');
+            return { rest, txt: p(Math.floor(t / 3600)) + ':' + p(Math.floor(t / 60) % 60) + ':' + p(t % 60) };
+        }
+
+        function simshow() {
+            if (!APP.sim) return;
+            if (APP.sim.fim) return simResultado();
+
+            const { qs, resp, i } = APP.sim;
+            const q = qs[i];
+            const r = resp[q.id];
+            const feitas = Object.keys(resp).length;
+            const letra = n => String.fromCharCode(65 + n);
+
+            let h = `<div class="card" style="display: flex; justify-content: space-between;"><b>${APP.sim.prova}</b> <span id="sim-clock" style="color: var(--accent); font-weight: 700; font-size: 1.1rem;">${simRelogio().txt}</span></div>
+            <div class="q-area"><b>Questão ${i + 1}/${qs.length}</b> • ${q.fonte}` + corpoQuestao(q);
+            h += botoesAlt(q, n => 'alt' + (r === n ? ' sel' : ''), n => `respsim('${q.id}', ${n})`);
+
+            h += `<div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <button class="btn" onclick="proxsim(-1)" ${i === 0 ? 'disabled style="opacity: 0.4; cursor: default;"' : ''}>← Anterior</button>
+                <button class="btn" onclick="proxsim(1)" ${i === qs.length - 1 ? 'disabled style="opacity: 0.4; cursor: default;"' : ''}>Próxima →</button>
+                <button class="btn" style="background: var(--brand);" onclick="proxsim(0)" title="Deixa esta em branco e vai para a próxima sem resposta">Pular</button>
+                <button class="btn" style="background: var(--good); margin-left: auto;" onclick="finalizarsim()">Finalizar</button></div>`;
+
+            if (APP.sim.confirmar) {
+                h += `<div class="fb bad">Ainda há ${qs.length - feitas} em branco. <button class="btn" onclick="finalizarsim(true)">Finalizar mesmo assim</button><button class="btn" style="background: var(--brand);" onclick="APP.sim.confirmar = false; simshow()">Continuar a prova</button></div>`;
+            }
+
+            h += `<div style="margin-top: 0.75rem; font-size: 0.9rem; color: var(--fg2);">${feitas}/${qs.length} respondidas</div>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.5rem;">`;
+            qs.forEach((qq, n) => {
+                const feita = resp[qq.id] !== undefined;
+                const st = n === i ? 'border: 2px solid var(--accent); font-weight: 700;' : 'border: 2px solid var(--tertiary);';
+                h += `<button onclick="irsim(${n})" style="${st} width: 2.2rem; height: 2.2rem; border-radius: 0.4rem; cursor: pointer; font-family: var(--font); color: ${feita ? 'white' : 'var(--fg)'}; background: ${feita ? 'var(--brand)' : 'transparent'};">${n + 1}</button>`;
+            });
+            h += '</div></div>';
+            document.getElementById('sim-area').innerHTML = h;
+        }
+
+        // O relógio só atualiza o próprio texto: redesenhar a questão a cada segundo atrapalhava os cliques
+        function iniciarTimerSimulado() {
+            if (APP.simTimer) clearInterval(APP.simTimer);
+            APP.simTimer = setInterval(() => {
+                if (!APP.sim || APP.sim.fim) { clearInterval(APP.simTimer); return; }
+                const rel = simRelogio();
+                if (rel.rest <= 0) { APP.sim.esgotou = true; finalizarsim(true); return; }
+                const el = document.getElementById('sim-clock');
+                if (el) el.textContent = rel.txt;
+            }, 1000);
+        }
+
+        function respsim(id, a) {
+            if (!APP.sim || APP.sim.fim) return;
+            if (APP.sim.resp[id] === a) delete APP.sim.resp[id]; // clicar de novo desmarca
+            else APP.sim.resp[id] = a;
+            APP.sim.confirmar = false;
+            simshow();
+        }
+
+        function irsim(n) {
+            if (!APP.sim || APP.sim.fim) return;
+            APP.sim.i = Math.max(0, Math.min(n, APP.sim.qs.length - 1));
+            APP.sim.confirmar = false;
+            simshow();
+        }
+
+        // dir: 1 = próxima, -1 = anterior, 0 = pular (deixa em branco e vai para a próxima sem resposta)
+        function proxsim(dir) {
+            if (!APP.sim || APP.sim.fim) return;
+            const { qs, resp, i } = APP.sim;
+            if (dir !== 0) return irsim(i + dir);
+            delete resp[qs[i].id];
+            for (let k = 1; k <= qs.length; k++) {
+                const n = (i + k) % qs.length;
+                if (n !== i && resp[qs[n].id] === undefined) return irsim(n);
+            }
+            simshow(); // só esta está em branco
+        }
+
+        function finalizarsim(forcar) {
+            if (!APP.sim || APP.sim.fim) return;
+            const { qs, resp } = APP.sim;
+            const feitas = Object.keys(resp).length;
+            if (!forcar && feitas < qs.length) { APP.sim.confirmar = true; return simshow(); }
+            if (APP.simTimer) clearInterval(APP.simTimer);
+            APP.sim.fim = true;
+            const ac = qs.filter(q => resp[q.id] === q.gab).length;
+            if (!APP.estado.simulados) APP.estado.simulados = [];
+            APP.estado.simulados.push({ prova: APP.sim.prova, data: new Date().toISOString(), acertos: ac, respondidas: feitas, total: qs.length,
+                                        minutos: Math.round(Math.min(APP.sim.dur, Date.now() - APP.sim.inicio) / 60000) });
+            salvar();
+            simResultado();
+        }
+
+        function simResultado() {
+            const { qs, resp } = APP.sim;
+            const letra = n => String.fromCharCode(65 + n);
+            const feitas = Object.keys(resp).length;
+            const ac = qs.filter(q => resp[q.id] === q.gab).length;
+            let h = `<div class="card"><h3>${APP.sim.esgotou ? '⏰ Tempo esgotado!' : '✅ Simulado finalizado'} — ${APP.sim.prova}</h3>
+                <p><b>Acertos:</b> ${ac}/${qs.length} (${Math.round((ac / qs.length) * 100)}%)</p>
+                <p><b>Respondidas:</b> ${feitas}/${qs.length} • <b>Em branco:</b> ${qs.length - feitas}</p>
+                <button class="btn" onclick="finalsim()">Voltar</button></div>
+                <div class="card"><table><tr><th>Questão</th><th>Sua resposta</th><th>Gabarito</th><th></th></tr>`;
+            qs.forEach((q, n) => {
+                const r = resp[q.id];
+                h += `<tr><td>${n + 1}</td><td>${r === undefined ? '—' : letra(r)}</td><td>${letra(q.gab)}</td><td>${r === undefined ? '⚪' : r === q.gab ? '✅' : '❌'}</td></tr>`;
+            });
+            h += '</table></div>';
+            document.getElementById('sim-area').innerHTML = h;
+        }
+
+        function finalsim() {
+            if (APP.simTimer) clearInterval(APP.simTimer);
+            APP.sim = null;
+            document.getElementById('sim-area').innerHTML = '';
+            renderizarSimulados();
+            mostrar();
+        }
+
+        function crono() {
+            if (!APP.cronograma.semanas) return;
+            const hoje = new Date();
+            hoje.setHours(0, 0, 0, 0);
+            const diasSemana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+
+            let h = '';
+            APP.cronograma.semanas.forEach(s => {
+                h += `<div class="semana"><h4>${s.titulo}</h4>`;
+
+                if (s.dias && s.dias.length > 0) {
+                    h += '<h5 style="margin: 1rem 0 0.5rem;">📺 Estudar por dia:</h5>';
+                    s.dias.forEach(dia => {
+                        const dataStr = dia.data;
+                        const [ano, mes, d] = dataStr.split('-');
+                        const dataDia = new Date(parseInt(ano), parseInt(mes) - 1, parseInt(d));
+                        dataDia.setHours(0, 0, 0, 0);
+                        const ehHoje = dataDia.getTime() === hoje.getTime();
+                        const bgClass = ehHoje ? 'background: var(--tertiary); border-left: 4px solid var(--accent);' : '';
+
+                        // Formata data com dia da semana calculado
+                        const nomeDia = diasSemana[dataDia.getDay()];
+                        const dataFormatada = `${nomeDia} ${d}/${mes}`;
+
+                        h += `<div style="margin: 0.75rem 0; ${bgClass} padding: 0.75rem; border-radius: 0.5rem;">`;
+                        h += `<b>${dataFormatada}</b> • ${dia.disciplina} – ${dia.tema}`;
+                        if (ehHoje) h += ' <span style="color: var(--accent); font-weight: 700;">← HOJE</span>';
+
+                        if (dia.videos && dia.videos.length > 0) {
+                            dia.videos.forEach(v => {
+                                h += `<div class="video">• <a href="${v.url}" target="_blank">${v.titulo}</a> (${dia.tempo})</div>`;
+                            });
+                        }
+                        h += '</div>';
+                    });
+                }
+
+                // Mostra sábado (simulado ou revisão)
+                if (s.sabado) {
+                    const dataStr = s.sabado.data;
+                    // Data local (new Date('AAAA-MM-DD') é UTC e caía no dia anterior no Brasil)
+                    const [ano, mes, d] = dataStr.split('-');
+                    const dataDia = new Date(parseInt(ano), parseInt(mes) - 1, parseInt(d));
+                    const ehHoje = dataDia.getTime() === hoje.getTime();
+                    const bgClass = ehHoje ? 'background: var(--accent); color: white;' : 'background: var(--tertiary);';
+
+                    const dataFormatada = `${diasSemana[dataDia.getDay()]} ${d}/${mes}`;
+
+                    h += `<div style="margin: 1rem 0 0.75rem; ${bgClass} padding: 0.75rem; border-radius: 0.5rem; font-weight: 700;">`;
+                    h += `📝 ${dataFormatada} – ${s.sabado.tipo}`;
+                    if (s.sabado.simulado) h += ` (${s.sabado.simulado})`;
+                    if (ehHoje) h += ' ← HOJE';
+                    h += '</div>';
+                }
+
+                h += '</div>';
+            });
+
+            // Mostra em qual dia estamos
+            if (APP.cronograma.datainicio) {
+                const [ano, mes, dia] = APP.cronograma.datainicio.split('-');
+                const dataInicio = new Date(parseInt(ano), parseInt(mes) - 1, parseInt(dia));
+                dataInicio.setHours(0, 0, 0, 0);
+                const diasDecorridos = Math.floor((hoje - dataInicio) / (1000 * 60 * 60 * 24));
+                const diaAtual = diasDecorridos + 1;
+                document.getElementById('dias-area').textContent = `Dia ${Math.max(1, diaAtual)} de estudos`;
+            }
+
+            document.getElementById('crono-area').innerHTML = h;
+        }
+
+        function banco() {
+            let h = `<table><tr><th>Disciplina</th><th>Total</th><th>Respondidas</th><th>Acertos</th></tr>`;
+            for (let d in APP.disciplinas) {
+                const d_id = APP.disciplinas[d].id;
+                const tot = APP.questoes.filter(q => q.d === d_id).length;
+                const resp = APP.questoes.filter(q => q.d === d_id && APP.estado.respostas[q.id] !== undefined).length;
+                const ac = APP.questoes.filter(q => q.d === d_id && APP.estado.respostas[q.id] === q.gab).length;
+                if (tot > 0) {
+                    h += `<tr><td><b>${APP.disciplinas[d].nome}</b></td><td>${tot}</td><td>${resp}</td><td>${ac}</td></tr>`;
+                }
+            }
+            h += '</table>';
+            document.getElementById('banco-area').innerHTML = h;
+        }
+
+        function abrir(id) {
+            document.querySelectorAll('.content').forEach(e => e.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(e => e.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Apaga respostas e simulados, neste aparelho e (via sincronização) nos outros. Pede confirmação antes.
+        function zerar(confirmado) {
+            const el = document.getElementById('zerar-area');
+            if (confirmado === false) { el.innerHTML = ''; return; }
+            if (!confirmado) {
+                const n = Object.keys(APP.estado.respostas || {}).length, s = (APP.estado.simulados || []).length;
+                el.innerHTML = `<div class="fb bad">Isto apaga ${n} resposta(s) e ${s} simulado(s)${SYNC.codigo ? ', em todos os aparelhos com o seu código' : ''}. Não dá para desfazer.
+                    <div><button class="btn" style="background: #ef4444;" onclick="zerar(true)">Sim, zerar tudo</button><button class="btn" style="background: var(--brand);" onclick="zerar(false)">Cancelar</button></div></div>`;
+                return;
+            }
+            APP.estado = { respostas: {}, rts: {}, simulados: [], zerado: Date.now() };
+            APP.atual = 0;
+            salvar();
+            atualizar();
+            el.innerHTML = '<div class="fb ok">Progresso zerado.</div>';
+        }
+
+        function exportar() {
+            const j = JSON.stringify(APP.estado, null, 2);
+            const b = new Blob([j], {type: 'application/json'});
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(b);
+            a.download = 'etec_progresso.json';
+            a.click();
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
