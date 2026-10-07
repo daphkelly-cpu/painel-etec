@@ -149,9 +149,16 @@
         </div>
     </div>
 
-    <script src="dados/questoes.js"></script>
-    <script src="dados/migracao_ids.js"></script>
-    <script src="dados/cronograma.js"></script>
+    <script>
+        // Carrega os dados sempre na versão mais nova: com internet, o endereço muda a cada abertura
+        // e o navegador não reaproveita uma cópia antiga; sem internet, usa a cópia que tiver guardada.
+        (function () {
+            var v = navigator.onLine ? '?v=' + Date.now() : '';
+            ['dados/questoes.js', 'dados/migracao_ids.js', 'dados/cronograma.js'].forEach(function (f) {
+                document.write('<script src="' + f + v + '"><\/script>');
+            });
+        })();
+    </script>
 
     <script>
         const APP = { questoes: window.SEED || [], disciplinas: window.DISCIPLINAS || {}, cronograma: window.CRONOGRAMA || {},
