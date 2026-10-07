@@ -196,7 +196,7 @@
 
     <script>
         const APP = { questoes: window.SEED || [], disciplinas: window.DISCIPLINAS || {}, cronograma: window.CRONOGRAMA || {},
-                     estado: { respostas: {}, ts: Date.now() }, atual: 0, lista: null, sessao: {}, fimLista: false, fracos: [], sim: null, simTimer: null };
+                     estado: { respostas: {}, ts: Date.now() }, atual: 0, lista: null, sessao: {}, fimLista: false, fracos: [], sim: null, simTimer: null, rev: null };
 
         function init() {
             const s = localStorage.getItem('etec_v2');
@@ -734,16 +734,19 @@
             const sims = (APP.estado.simulados || []).slice().sort((a, b) => String(b.data).localeCompare(String(a.data)));
             let h = '<h3>🗂️ Histórico dos simulados</h3>';
             if (!sims.length) return h + '<p class="sub">Nenhum simulado feito ainda. Quando você finalizar um, ele aparece aqui com data, acertos e tempo.</p>';
-            h += '<div class="tscroll"><table><tr><th>Data</th><th>Prova</th><th class="num">Acertos</th><th class="num">%</th><th class="num so-lg">Em branco</th><th class="num">Tempo</th></tr>';
+            h += '<div class="tscroll"><table><tr><th>Data</th><th>Prova</th><th class="num">Acertos</th><th class="num">%</th><th class="num so-lg">Em branco</th><th class="num">Tempo</th><th></th></tr>';
             for (const s of sims) {
                 const total = s.total || 0, ac = s.acertos || 0;
                 const branco = s.respondidas === undefined ? '—' : total - s.respondidas;
                 const tempo = s.minutos === undefined ? '—' : (s.minutos < 1 ? 'menos de 1 min' : textoDuracao(s.minutos * 60000));
                 const tempoCurto = s.minutos === undefined ? '—' : Math.floor(s.minutos / 60) + 'h' + String(s.minutos % 60).padStart(2, '0');
                 h += `<tr><td><span class="lg">${dataHora(s.data)}</span><span class="sm">${dataHora(s.data).slice(0, 5)}</span></td><td><b>${esc(s.prova || '')}</b></td><td class="num">${ac} de ${total}</td>
-                      <td class="num">${pctTxt(ac, total)}</td><td class="num so-lg">${branco}</td><td class="num"><span class="lg">${tempo}</span><span class="sm">${tempoCurto}</span></td></tr>`;
+                      <td class="num">${pctTxt(ac, total)}</td><td class="num so-lg">${branco}</td><td class="num"><span class="lg">${tempo}</span><span class="sm">${tempoCurto}</span></td>
+                      <td>${s.resp ? `<button class="btn sec" onclick="reverSimulado('${s.data}')">Rever</button>` : ''}</td></tr>`;
             }
             h += '</table></div>';
+            h += sims.some(s => s.resp) ? '<p class="sub" style="margin-top: 0.75rem;">“Rever” abre a prova questão a questão, com o que você marcou, o gabarito e o comentário.</p>' : '';
+            if (sims.some(s => !s.resp)) h += '<p class="sub">Simulado sem o botão “Rever” foi feito antes de o painel guardar as respostas de cada questão.</p>';
             if (sims.length > 1) {
                 const melhor = sims.reduce((m, s) => (s.total && s.acertos / s.total > m.acertos / m.total) ? s : m, sims.find(s => s.total) || sims[0]);
                 h += `<p class="sub" style="margin-top: 0.75rem;">${sims.length} simulados feitos. Melhor resultado: <b>${melhor.acertos} de ${melhor.total}</b> (${esc(melhor.prova || '')}, ${dataHora(melhor.data).slice(0, 10)}).</p>`;
@@ -805,6 +808,7 @@
         function simular(prova) {
             const qs = questoesDaProva(prova);
             if (!qs.length) return;
+            APP.rev = null;
             APP.sim = { prova, qs, resp: {}, i: 0, inicio: Date.now(), dur: SIM_DUR, fim: false, confirmar: false };
             renderizarSimulados();
             simshow();
@@ -902,8 +906,10 @@
             APP.sim.fim = true;
             const ac = qs.filter(q => resp[q.id] === q.gab).length;
             if (!APP.estado.simulados) APP.estado.simulados = [];
-            APP.estado.simulados.push({ prova: APP.sim.prova, data: new Date().toISOString(), acertos: ac, respondidas: feitas, total: qs.length,
-                                        minutos: Math.round(Math.min(APP.sim.dur, Date.now() - APP.sim.inicio) / 60000) });
+            // "resp" guarda o que foi marcado em cada questão, para o simulado poder ser revisto depois
+            APP.sim.data = new Date().toISOString();
+            APP.estado.simulados.push({ prova: APP.sim.prova, data: APP.sim.data, acertos: ac, respondidas: feitas, total: qs.length,
+                                        minutos: Math.round(Math.min(APP.sim.dur, Date.now() - APP.sim.inicio) / 60000), resp: Object.assign({}, resp) });
             // As respostas do simulado entram no progresso geral: contam nos pontos fracos e em "Que eu errei".
             // Questão deixada em branco não é registrada.
             if (!APP.estado.rts) APP.estado.rts = {};
@@ -929,6 +935,7 @@
                 <button class="btn" onclick="finalsim()">Voltar</button>`;
             const erradas = qs.filter(q => resp[q.id] !== undefined && resp[q.id] !== q.gab).length;
             if (erradas) h += `<button class="btn sec" onclick="revisarSimulado()">Refazer as ${erradas} que errei neste simulado</button>`;
+            if (APP.sim.data) h += `<button class="btn sec" onclick="reverSimulado('${APP.sim.data}')">Rever questão a questão</button>`;
             h += `</div><div class="card"><h3>Por disciplina</h3><table><tr><th>Disciplina</th><th>Acertos</th><th>Erros</th><th>Em branco</th></tr>`;
             for (const d of Object.values(APP.disciplinas)) {
                 const da = qs.filter(q => q.d === d.id);
@@ -967,6 +974,85 @@
             document.getElementById('sim-area').innerHTML = '';
             renderizarSimulados();
             mostrar();
+        }
+
+        // ===== Rever um simulado já feito: questão a questão, com a resposta dada, o gabarito e o comentário =====
+        // Só leitura: não muda o progresso. Usa a área do simulado (aba Simulado).
+        function reverSimulado(data) {
+            if (APP.sim && !APP.sim.fim) { abrir('simulado'); return; } // há uma prova em andamento
+            if (APP.sim) finalsim();
+            const s = (APP.estado.simulados || []).find(x => x.data === data);
+            if (!s || !s.resp) return;
+            const qs = questoesDaProva(s.prova);
+            if (!qs.length) return;
+            APP.rev = { s, qs, i: 0, so: 'todas' };
+            abrir('simulado');
+            revshow();
+            document.getElementById('sim-area').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        // Posições das questões que entram na revisão, conforme o filtro
+        function revIndices() {
+            const { s, qs, so } = APP.rev;
+            return qs.map((q, n) => n).filter(n => so === 'todas' || s.resp[qs[n].id] !== qs[n].gab);
+        }
+        function revshow() {
+            if (!APP.rev || APP.sim) return;
+            const { s, qs } = APP.rev;
+            const letra = n => String.fromCharCode(65 + n);
+            const idx = revIndices();
+            if (idx.length && !idx.includes(APP.rev.i)) APP.rev.i = idx[0];
+            const i = APP.rev.i, pos = idx.indexOf(i);
+            const erradas = qs.filter(q => s.resp[q.id] !== undefined && s.resp[q.id] !== q.gab).length;
+            const branco = qs.filter(q => s.resp[q.id] === undefined).length;
+
+            let h = `<div class="card"><h3>🔎 Revisão do simulado — ${esc(s.prova)}</h3>
+                <p class="sub">Feito em ${dataHora(s.data)} • acertou ${s.acertos} de ${s.total} • ${erradas} ${erradas === 1 ? 'errada' : 'erradas'} • ${branco} em branco</p>
+                <div class="filtros" style="margin-top: 0.75rem;"><label>Mostrar <select onchange="revfiltro(this.value)">
+                    <option value="todas"${APP.rev.so === 'todas' ? ' selected' : ''}>Todas as questões</option>
+                    <option value="erros"${APP.rev.so === 'erros' ? ' selected' : ''}>Só as que errei ou deixei em branco</option></select></label></div>
+                <button class="btn sec" onclick="fecharRev()">✕ Fechar a revisão</button></div>`;
+
+            if (!idx.length) {
+                h += '<div class="q-area"><p>Você acertou todas as questões deste simulado. 🎉</p></div>';
+                document.getElementById('sim-area').innerHTML = h;
+                return;
+            }
+            const q = qs[i], r = s.resp[q.id];
+            h += `<div class="q-area"><b>Questão ${i + 1}/${qs.length}</b> • ${q.fonte} • ${nomeDisc(q.d)} • ${esc(q.assunto)}` + corpoQuestao(q);
+            h += '<div class="letras">' + [0, 1, 2, 3, 4].map(n =>
+                `<button disabled class="alt${n === q.gab ? ' ok' : n === r ? ' bad' : ''}${n === r ? ' sel' : ''}" style="cursor: default; opacity: 1;">${letra(n)}</button>`).join('') + '</div>';
+            h += r === undefined ? `<div class="fb" style="background: var(--tertiary);">⚪ Você deixou em branco. Gabarito: ${letra(q.gab)}</div>`
+               : r === q.gab ? `<div class="fb ok">✅ Você marcou ${letra(r)} e acertou.</div>`
+               : `<div class="fb bad">❌ Você marcou ${letra(r)}. Gabarito: ${letra(q.gab)}</div>`;
+            if (q.coment) h += `<div class="coment"><b>Comentário</b>${esc(q.coment)}</div>`;
+            h += `<div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem;">
+                <button class="btn" onclick="revir(${idx[pos - 1]})" ${pos === 0 ? 'disabled' : ''}>← Anterior</button>
+                <button class="btn" onclick="revir(${idx[pos + 1]})" ${pos === idx.length - 1 ? 'disabled' : ''}>Próxima →</button></div>`;
+            // Grade: verde = acertou, vermelho = errou, sem cor = em branco
+            h += `<div style="margin-top: 0.75rem; font-size: 0.9rem; color: var(--fg2);">Verde: acertou • vermelho: errou • sem cor: em branco</div>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.5rem;">`;
+            idx.forEach(n => {
+                const rr = s.resp[qs[n].id];
+                const cor = rr === undefined ? 'transparent' : rr === qs[n].gab ? 'var(--good)' : '#ef4444';
+                const st = n === i ? 'border: 3px solid var(--accent); font-weight: 700;' : 'border: 2px solid var(--tertiary);';
+                h += `<button onclick="revir(${n})" style="${st} width: 2.2rem; height: 2.2rem; border-radius: 0.4rem; cursor: pointer; font-family: var(--font); color: ${rr === undefined ? 'var(--fg)' : 'white'}; background: ${cor};">${n + 1}</button>`;
+            });
+            h += '</div></div>';
+            document.getElementById('sim-area').innerHTML = h;
+        }
+        function revir(n) {
+            if (!APP.rev || n === undefined || isNaN(n)) return;
+            APP.rev.i = n;
+            revshow();
+        }
+        function revfiltro(v) {
+            if (!APP.rev) return;
+            APP.rev.so = v;
+            revshow();
+        }
+        function fecharRev() {
+            APP.rev = null;
+            if (!APP.sim) document.getElementById('sim-area').innerHTML = '';
         }
 
         function crono() {
@@ -1075,6 +1161,7 @@
             }
             APP.estado = { respostas: {}, rts: {}, simulados: [], zerado: Date.now() };
             APP.atual = 0;
+            if (APP.rev) fecharRev();
             salvar();
             atualizar();
             el.innerHTML = '<div class="fb ok">Progresso zerado.</div>';
