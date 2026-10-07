@@ -195,20 +195,39 @@
     </script>
 
     <script>
-        const APP = { questoes: window.SEED || [], disciplinas: window.DISCIPLINAS || {}, cronograma: window.CRONOGRAMA || {},
+        // Versão de demonstração (endereço com ?demo): uma prova só, sem cronograma nem sincronização,
+        // e com o progresso guardado à parte, para não se misturar com o de quem usa o painel completo.
+        const DEMO = /[?&]demo\b/.test(location.search);
+        const DEMO_PROVA = '1º sem/2023';
+        const CHAVE_ESTADO = DEMO ? 'etec_demo' : 'etec_v2';
+
+        const APP = { questoes: (window.SEED || []).filter(q => !DEMO || q.fonte.includes(DEMO_PROVA)), disciplinas: window.DISCIPLINAS || {}, cronograma: DEMO ? {} : (window.CRONOGRAMA || {}),
                      estado: { respostas: {}, ts: Date.now() }, atual: 0, lista: null, sessao: {}, fimLista: false, fracos: [], sim: null, simTimer: null, rev: null };
 
         function init() {
-            const s = localStorage.getItem('etec_v2');
+            let s = null;
+            try { s = localStorage.getItem(CHAVE_ESTADO); } catch (e) {}
             if (s) try { APP.estado = JSON.parse(s); } catch (e) {}
-            try { SYNC.codigo = localStorage.getItem('etec_codigo') || null; } catch (e) {}
+            try { SYNC.codigo = DEMO ? null : (localStorage.getItem('etec_codigo') || null); } catch (e) {}
             if (!APP.estado.respostas) APP.estado.respostas = {};
             migrarIds();
             atualizar();
             renderSync();
+            if (DEMO) iniciarDemo();
             sincronizar();
             document.addEventListener('visibilitychange', () => { if (!document.hidden) sincronizar(); });
             window.addEventListener('online', sincronizar);
+        }
+
+        // Demonstração: avisa o que é, esconde o que não vale nela e abre direto no Simulado
+        function iniciarDemo() {
+            const n = APP.questoes.length;
+            document.querySelector('.topbar').insertAdjacentHTML('afterend',
+                `<div class="card" style="margin: 1rem 1rem 0; border-left: 4px solid var(--accent);"><b>Versão de demonstração.</b> Uma prova completa do Vestibulinho ETEC (${DEMO_PROVA}, ${n} questões), com gabarito oficial e comentário em cada questão. O que você fizer aqui fica guardado só neste aparelho.</div>`);
+            const aba = document.querySelector(`.tab[onclick="abrir('cronograma')"]`);
+            if (aba) aba.style.display = 'none';
+            document.getElementById('sync-card').style.display = 'none';
+            abrir('simulado');
         }
 
         // Troca os identificadores antigos pelos novos nas respostas já salvas (roda uma vez por aparelho)
@@ -329,7 +348,7 @@
             return '<div class="alts">' + (q.alt || []).map((a, n) => `<button class="${classe(n)}" onclick="${onclick(n)}">${letra(n)}) ${a}</button>`).join('') + '</div>';
         }
 
-        function salvarLocal() { try { localStorage.setItem('etec_v2', JSON.stringify(APP.estado)); } catch (e) {} }
+        function salvarLocal() { try { localStorage.setItem(CHAVE_ESTADO, JSON.stringify(APP.estado)); } catch (e) {} }
         function salvar() {
             APP.estado.ts = Date.now();
             salvarLocal();
