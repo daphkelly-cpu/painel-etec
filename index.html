@@ -420,7 +420,7 @@
 
         // ===== Aba Estudar: listas, filtros, exercícios do dia e pontos fracos =====
         const META_DIA = 10;     // questões nos exercícios de um dia
-        const MIN_FRACO = 3;     // respostas mínimas num assunto para ele entrar no ranking
+        const MIN_FRACO = 2;     // respostas mínimas num assunto para ele entrar no ranking
         const CORTE_FRACO = 70;  // abaixo deste % de acerto o assunto é ponto fraco
 
         const respDe = id => APP.estado.respostas[id];
@@ -774,7 +774,17 @@
             if (!APP.estado.simulados) APP.estado.simulados = [];
             APP.estado.simulados.push({ prova: APP.sim.prova, data: new Date().toISOString(), acertos: ac, respondidas: feitas, total: qs.length,
                                         minutos: Math.round(Math.min(APP.sim.dur, Date.now() - APP.sim.inicio) / 60000) });
+            // As respostas do simulado entram no progresso geral: contam nos pontos fracos e em "Que eu errei".
+            // Questão deixada em branco não é registrada.
+            if (!APP.estado.rts) APP.estado.rts = {};
+            const agora = Date.now();
+            for (const q of qs) {
+                if (resp[q.id] === undefined) continue;
+                APP.estado.respostas[q.id] = resp[q.id];
+                APP.estado.rts[q.id] = agora;
+            }
             salvar();
+            atualizar();
             simResultado();
         }
 
@@ -786,7 +796,17 @@
             let h = `<div class="card"><h3>${APP.sim.esgotou ? '⏰ Tempo esgotado!' : '✅ Simulado finalizado'} — ${APP.sim.prova}</h3>
                 <p><b>Acertos:</b> ${ac}/${qs.length} (${Math.round((ac / qs.length) * 100)}%)</p>
                 <p><b>Respondidas:</b> ${feitas}/${qs.length} • <b>Em branco:</b> ${qs.length - feitas}</p>
-                <button class="btn" onclick="finalsim()">Voltar</button></div>
+                <button class="btn" onclick="finalsim()">Voltar</button>`;
+            const erradas = qs.filter(q => resp[q.id] !== undefined && resp[q.id] !== q.gab).length;
+            if (erradas) h += `<button class="btn sec" onclick="revisarSimulado()">Refazer as ${erradas} que errei neste simulado</button>`;
+            h += `</div><div class="card"><h3>Por disciplina</h3><table><tr><th>Disciplina</th><th>Acertos</th><th>Erros</th><th>Em branco</th></tr>`;
+            for (const d of Object.values(APP.disciplinas)) {
+                const da = qs.filter(q => q.d === d.id);
+                if (!da.length) continue;
+                const a = da.filter(q => resp[q.id] === q.gab).length, b = da.filter(q => resp[q.id] === undefined).length;
+                h += `<tr><td><b>${d.nome}</b></td><td>${a} de ${da.length}</td><td>${da.length - a - b}</td><td>${b}</td></tr>`;
+            }
+            h += `</table></div>
                 <div class="card"><table><tr><th>Questão</th><th>Sua resposta</th><th>Gabarito</th><th></th></tr>`;
             qs.forEach((q, n) => {
                 const r = resp[q.id];
@@ -794,6 +814,14 @@
             });
             h += '</table></div>';
             document.getElementById('sim-area').innerHTML = h;
+        }
+
+        function revisarSimulado() {
+            const { qs, resp, prova } = APP.sim;
+            const ids = qs.filter(q => resp[q.id] !== undefined && resp[q.id] !== q.gab).map(q => q.id);
+            finalsim();
+            abrir('estudar');
+            montarLista(ids, `Revisão do simulado ${prova}`, true);
         }
 
         function finalsim() {
@@ -894,7 +922,8 @@
             document.querySelectorAll('.content').forEach(e => e.classList.remove('active'));
             document.querySelectorAll('.tab').forEach(e => e.classList.remove('active'));
             document.getElementById(id).classList.add('active');
-            event.target.classList.add('active');
+            const aba = document.querySelector(`.tab[onclick="abrir('${id}')"]`);
+            if (aba) aba.classList.add('active');
         }
 
         // Apaga respostas e simulados, neste aparelho e (via sincronização) nos outros. Pede confirmação antes.
