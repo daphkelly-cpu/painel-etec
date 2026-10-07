@@ -274,6 +274,7 @@
             const im = (src, w, alt) => `<img src="${src}" alt="${alt}" ${w ? `style="width: ${Math.round(w * ESCALA_IMG)}px;"` : ''} onclick="this.classList.toggle('zoom')" title="Clique para ampliar">`;
             let h = '';
             if (q.base) h += `<details class="qwrap" open><summary>Texto de apoio (vale para mais de uma questão)</summary>${im(q.base, q.bw, 'Texto de apoio')}</details>`;
+            if (q.extra) h += `<details class="qwrap" open><summary>${q.et || 'Figura de outra questão'}</summary>${im(q.extra, q.ew, q.et || 'Figura')}</details>`;
             return h + `<div class="qwrap">${im(q.img, q.w, q.fonte)}</div>`;
         }
         // Botões de alternativa: só a letra quando a questão é imagem

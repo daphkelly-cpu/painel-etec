@@ -97,7 +97,9 @@ window.SEED = [
   "w": 1107,
   "h": 387,
   "gab": 1,
-  "coment": ""
+  "coment": "",
+  "base": "img/2023-1/base_05-06.webp",
+  "bw": 1086
  },
  {
   "id": "2023-1-q08",
@@ -571,7 +573,9 @@ window.SEED = [
   "w": 1108,
   "h": 393,
   "gab": 1,
-  "coment": ""
+  "coment": "",
+  "base": "img/2023-2/base_01-03.webp",
+  "bw": 1080
  },
  {
   "id": "2023-2-q05",
@@ -1023,7 +1027,10 @@ window.SEED = [
   "gab": 2,
   "coment": "",
   "base": "img/2023-2/base_37-39.webp",
-  "bw": 1095
+  "bw": 1095,
+  "extra": "img/2023-2/extra_q39.webp",
+  "ew": 774,
+  "et": "Mapa da questão 38"
  },
  {
   "id": "2023-2-q40",
