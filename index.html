@@ -66,7 +66,13 @@
         table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
         th, td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--tertiary); }
         th { font-weight: 600; background: var(--tertiary); }
-        @media (max-width: 768px) { .shell { grid-template-columns: minmax(0, 1fr); } .sidebar { height: auto; position: static; padding: 0.75rem 1rem; }
+        .tscroll { overflow-x: auto; }
+        td.num, th.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+        tr.grupo td { background: var(--tertiary); font-weight: 700; }
+        tr.total td { font-weight: 700; border-top: 2px solid var(--fg3); }
+        .pct-ok { color: var(--good); font-weight: 700; } .pct-bad { color: #ef4444; font-weight: 700; }
+        .sm { display: none; }
+        @media (max-width: 768px) { th, td { padding: 0.5rem 0.3rem; font-size: 0.82rem; } .lg, .so-lg { display: none; } .sm { display: inline; } .shell { grid-template-columns: minmax(0, 1fr); } .sidebar { height: auto; position: static; padding: 0.75rem 1rem; }
             .sidebar h1 { margin-bottom: 0.5rem; font-size: 1.2rem; } #disc-list { display: flex; flex-wrap: wrap; gap: 0.3rem; } .disc { margin: 0; padding: 0.25rem 0.5rem; font-size: 0.75rem; }
             .content { padding: 0.75rem; } .q-area, .card { padding: 0.9rem; } }
     </style>
@@ -93,6 +99,7 @@
             <div class="tabs">
                 <button class="tab active" onclick="abrir('estudar')">📖 Estudar</button>
                 <button class="tab" onclick="abrir('simulado')">✏️ Simulado</button>
+                <button class="tab" onclick="abrir('desempenho')">📊 Desempenho</button>
                 <button class="tab" onclick="abrir('cronograma')">📅 Cronograma</button>
                 <button class="tab" onclick="abrir('banco')">💾 Banco</button>
             </div>
@@ -126,6 +133,28 @@
                     <div id="provas-list"></div>
                 </div>
                 <div id="sim-area"></div>
+                <div class="card" id="sim-hist"></div>
+            </div>
+
+            <div id="desempenho" class="content">
+                <h2>Desempenho</h2>
+                <div class="card" id="des-hist"></div>
+                <div class="card">
+                    <h3>Por disciplina</h3>
+                    <div class="tscroll" id="des-disc"></div>
+                </div>
+                <div class="card">
+                    <h3>Por assunto</h3>
+                    <div class="filtros">
+                        <label>Disciplina <select id="des-disc-f" onchange="renderDesAssuntos()"><option value="">Todas</option></select></label>
+                        <label>Ordem <select id="des-ordem-f" onchange="renderDesAssuntos()">
+                            <option value="alfa">Alfabética</option>
+                            <option value="pior">Menor acerto primeiro</option>
+                            <option value="resp">Mais respondidas primeiro</option>
+                        </select></label>
+                    </div>
+                    <div class="tscroll" id="des-ass"></div>
+                </div>
             </div>
 
             <div id="cronograma" class="content">
@@ -242,6 +271,7 @@
             banco();
             crono();
             renderizarSimulados();
+            renderDesempenho();
         }
 
         function nomeProva(q) { const m = q.fonte.match(/(\d)º sem\/(\d{4})/); return m ? m[0] : null; }
@@ -260,11 +290,14 @@
                 .sort((x, y) => (x.slice(-4) + x[0]).localeCompare(y.slice(-4) + y[0]));
             const info = document.getElementById('sim-info');
             const el = document.getElementById('provas-list');
+            const hist = document.getElementById('sim-hist');
+            hist.style.display = APP.sim ? 'none' : '';
             if (APP.sim) {
                 info.textContent = `${textoDuracao(APP.sim.dur)} • ${APP.sim.qs.length} questões • sem consulta`;
                 el.innerHTML = '';
                 return;
             }
+            hist.innerHTML = htmlHistorico();
             info.textContent = `${textoDuracao(SIM_DUR)} por prova • sem consulta • escolha a prova:`;
             let h = '';
             nomes.forEach(p => {
@@ -675,6 +708,88 @@
         }
         function revisarErradas() {
             montarLista(APP.questoes.filter(errou).map(q => q.id), 'Refazer as que errei', true);
+        }
+
+        // ===== Aba Desempenho: histórico dos simulados e acerto por disciplina e por assunto =====
+        function pctTxt(ac, resp) { return resp ? Math.round(ac / resp * 100) + '%' : '—'; }
+        // Verde/vermelho só quando há respostas suficientes para o número dizer alguma coisa
+        function pctCel(ac, resp) {
+            const cl = resp >= MIN_FRACO ? ((ac / resp) * 100 < CORTE_FRACO ? 'pct-bad' : 'pct-ok') : '';
+            return `<td class="num ${cl}">${pctTxt(ac, resp)}</td>`;
+        }
+        function dataHora(iso) {
+            const d = new Date(iso), p = n => String(n).padStart(2, '0');
+            if (isNaN(d)) return '—';
+            return `${p(d.getDate())}/${p(d.getMonth() + 1)}/${d.getFullYear()} ${p(d.getHours())}:${p(d.getMinutes())}`;
+        }
+        // Histórico dos simulados, do mais recente para o mais antigo (usado nas abas Simulado e Desempenho)
+        function htmlHistorico() {
+            const sims = (APP.estado.simulados || []).slice().sort((a, b) => String(b.data).localeCompare(String(a.data)));
+            let h = '<h3>🗂️ Histórico dos simulados</h3>';
+            if (!sims.length) return h + '<p class="sub">Nenhum simulado feito ainda. Quando você finalizar um, ele aparece aqui com data, acertos e tempo.</p>';
+            h += '<div class="tscroll"><table><tr><th>Data</th><th>Prova</th><th class="num">Acertos</th><th class="num">%</th><th class="num so-lg">Em branco</th><th class="num">Tempo</th></tr>';
+            for (const s of sims) {
+                const total = s.total || 0, ac = s.acertos || 0;
+                const branco = s.respondidas === undefined ? '—' : total - s.respondidas;
+                const tempo = s.minutos === undefined ? '—' : (s.minutos < 1 ? 'menos de 1 min' : textoDuracao(s.minutos * 60000));
+                const tempoCurto = s.minutos === undefined ? '—' : Math.floor(s.minutos / 60) + 'h' + String(s.minutos % 60).padStart(2, '0');
+                h += `<tr><td><span class="lg">${dataHora(s.data)}</span><span class="sm">${dataHora(s.data).slice(0, 5)}</span></td><td><b>${esc(s.prova || '')}</b></td><td class="num">${ac} de ${total}</td>
+                      <td class="num">${pctTxt(ac, total)}</td><td class="num so-lg">${branco}</td><td class="num"><span class="lg">${tempo}</span><span class="sm">${tempoCurto}</span></td></tr>`;
+            }
+            h += '</table></div>';
+            if (sims.length > 1) {
+                const melhor = sims.reduce((m, s) => (s.total && s.acertos / s.total > m.acertos / m.total) ? s : m, sims.find(s => s.total) || sims[0]);
+                h += `<p class="sub" style="margin-top: 0.75rem;">${sims.length} simulados feitos. Melhor resultado: <b>${melhor.acertos} de ${melhor.total}</b> (${esc(melhor.prova || '')}, ${dataHora(melhor.data).slice(0, 10)}).</p>`;
+            }
+            return h;
+        }
+        function renderDesempenho() {
+            document.getElementById('des-hist').innerHTML = htmlHistorico();
+
+            const est = estatAssuntos();
+            const discs = Object.values(APP.disciplinas).filter(d => est.some(e => e.d === d.id));
+            let h = '<table><tr><th>Disciplina</th><th class="num">Total</th><th class="num"><span class="lg">Respondidas</span><span class="sm">Resp.</span></th><th class="num"><span class="lg">Acertos</span><span class="sm">Cert.</span></th><th class="num">%<span class="lg"> de acerto</span></th></tr>';
+            const g = { total: 0, resp: 0, ac: 0 };
+            for (const d of discs) {
+                const t = { total: 0, resp: 0, ac: 0 };
+                est.filter(e => e.d === d.id).forEach(e => { t.total += e.total; t.resp += e.resp; t.ac += e.ac; });
+                g.total += t.total; g.resp += t.resp; g.ac += t.ac;
+                h += `<tr><td><b>${esc(d.nome)}</b></td><td class="num">${t.total}</td><td class="num">${t.resp}</td><td class="num">${t.ac}</td>${pctCel(t.ac, t.resp)}</tr>`;
+            }
+            h += `<tr class="total"><td>Total</td><td class="num">${g.total}</td><td class="num">${g.resp}</td><td class="num">${g.ac}</td>${pctCel(g.ac, g.resp)}</tr></table>`;
+            document.getElementById('des-disc').innerHTML = h;
+
+            const sel = document.getElementById('des-disc-f');
+            if (sel.options.length === 1) {
+                for (const d of discs) { const o = document.createElement('option'); o.value = d.id; o.textContent = d.nome; sel.appendChild(o); }
+            }
+            renderDesAssuntos();
+        }
+        function renderDesAssuntos() {
+            const filtro = document.getElementById('des-disc-f').value;
+            const ordem = document.getElementById('des-ordem-f').value;
+            const est = estatAssuntos().filter(e => !filtro || e.d === filtro);
+            const alfa = (x, y) => x.assunto.localeCompare(y.assunto, 'pt');
+            const taxa = e => e.resp ? e.ac / e.resp : 2; // sem resposta vai para o fim
+            const cmp = ordem === 'pior' ? (x, y) => taxa(x) - taxa(y) || y.resp - x.resp || alfa(x, y)
+                      : ordem === 'resp' ? (x, y) => y.resp - x.resp || alfa(x, y) : alfa;
+            const linha = (e, comDisc) => `<tr><td>${comDisc ? `<b>${esc(nomeDisc(e.d))}</b> • ` : ''}${esc(e.assunto)}</td><td class="num">${e.total}</td><td class="num">${e.resp}</td><td class="num">${e.ac}</td>${pctCel(e.ac, e.resp)}</tr>`;
+            let h = '<table><tr><th>Assunto</th><th class="num">Total</th><th class="num"><span class="lg">Respondidas</span><span class="sm">Resp.</span></th><th class="num"><span class="lg">Acertos</span><span class="sm">Cert.</span></th><th class="num">%<span class="lg"> de acerto</span></th></tr>';
+            if (ordem === 'alfa') {
+                // agrupado por disciplina, na ordem das disciplinas do banco
+                for (const d of Object.values(APP.disciplinas)) {
+                    const da = est.filter(e => e.d === d.id).sort(alfa);
+                    if (!da.length) continue;
+                    if (!filtro) h += `<tr class="grupo"><td colspan="5">${esc(d.nome)}</td></tr>`;
+                    da.forEach(e => { h += linha(e, false); });
+                }
+            } else {
+                est.sort(cmp).forEach(e => { h += linha(e, !filtro); });
+            }
+            h += '</table>';
+            const semResp = est.filter(e => !e.resp).length;
+            h += `<p class="sub" style="margin-top: 0.75rem;">${est.length} assuntos${semResp ? `, ${semResp} ainda sem nenhuma resposta` : ''}. O percentual fica colorido a partir de ${MIN_FRACO} respostas: vermelho abaixo de ${CORTE_FRACO}%, verde a partir daí.</p>`;
+            document.getElementById('des-ass').innerHTML = h;
         }
 
 
