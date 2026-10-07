@@ -50,7 +50,7 @@ window.CRONOGRAMA = {
           tema: "Mapas e Coordenadas Geográficas",
           assuntos: ["Cartografia e orientação", "Território brasileiro e regiões"],
           videos: [
-            { titulo: "Mapas e Coordenadas", url: "https://www.youtube.com/watch?v=_tRJjhkV-0I" }
+            { titulo: "Coordenadas Geográficas (Geobrasil)", url: "https://www.youtube.com/watch?v=oDouTDx2-dY" }
           ],
           tempo: "40 min",
           resumo: "Latitude, longitude, escala, projeções cartográficas"
@@ -101,7 +101,8 @@ window.CRONOGRAMA = {
           tema: "Movimento e Força",
           assuntos: ["Movimento e velocidade", "Forças e máquinas simples"],
           videos: [
-            { titulo: "Movimento e Força", url: "https://www.youtube.com/watch?v=Z8oHvBf8oQg" }
+            { titulo: "Velocidade Média (Professor Boaro)", url: "https://www.youtube.com/watch?v=wlTa_yTElGM" },
+            { titulo: "Leis de Newton (Hexag)", url: "https://www.youtube.com/watch?v=dU14qCv5AuI" }
           ],
           tempo: "40 min",
           resumo: "Velocidade, aceleração, leis de Newton, trabalho"
@@ -113,7 +114,7 @@ window.CRONOGRAMA = {
           tema: "Estrutura Atômica",
           assuntos: ["Átomo e tabela periódica"],
           videos: [
-            { titulo: "Estrutura Atômica", url: "https://www.youtube.com/watch?v=X0jNKx0BkMg" }
+            { titulo: "Átomos e moléculas - 9º ano (Canal Futura)", url: "https://www.youtube.com/watch?v=YMyyg1hzNfw" }
           ],
           tempo: "40 min",
           resumo: "Próton, nêutron, elétron, números atômicos, massas"
@@ -125,7 +126,7 @@ window.CRONOGRAMA = {
           tema: "Tipos de Texto e Gêneros",
           assuntos: ["Gêneros e tipos textuais", "Charge, tirinha e imagem"],
           videos: [
-            { titulo: "Tipos de Texto", url: "https://www.youtube.com/watch?v=XwPIcvHHE5A" }
+            { titulo: "Tipos e Gêneros Textuais (Português com Letícia)", url: "https://www.youtube.com/watch?v=keri15mSleA" }
           ],
           tempo: "40 min",
           resumo: "Narrativo, descritivo, dissertativo, carta, artigo, resenha"
@@ -164,7 +165,7 @@ window.CRONOGRAMA = {
           tema: "Biomas Brasileiros",
           assuntos: ["Vegetação e biomas", "Meio ambiente e sustentabilidade"],
           videos: [
-            { titulo: "Biomas Brasileiros", url: "https://www.youtube.com/watch?v=E0Yt3d3kIFk" }
+            { titulo: "Biomas Brasileiros (Toda Matéria)", url: "https://www.youtube.com/watch?v=eEPabXAVzNA" }
           ],
           tempo: "40 min",
           resumo: "Amazônia, Cerrado, Caatinga, Pantanal, Mata Atlântica"
@@ -188,7 +189,7 @@ window.CRONOGRAMA = {
           tema: "Fotossíntese",
           assuntos: ["Fotossíntese e respiração", "Ecologia"],
           videos: [
-            { titulo: "Fotossíntese", url: "https://www.youtube.com/watch?v=8Z0MdYoZzeM" }
+            { titulo: "Resumo sobre Fotossíntese (Samuel Cunha)", url: "https://www.youtube.com/watch?v=fHC6M7xncds" }
           ],
           tempo: "40 min",
           resumo: "Fotossíntese clara e escura, cloroplasto, produção de glicose"
@@ -200,7 +201,7 @@ window.CRONOGRAMA = {
           tema: "Energia e Potência",
           assuntos: ["Energia e potência"],
           videos: [
-            { titulo: "Energia e Potência", url: "https://www.youtube.com/watch?v=7DjOud20prk" }
+            { titulo: "Trabalho, Potência e Energia (Ítalo Feitosa)", url: "https://www.youtube.com/watch?v=Ml_NyaV6oNk" }
           ],
           tempo: "40 min",
           resumo: "Energia cinética, potencial, conservação, trabalho, potência"
@@ -212,7 +213,7 @@ window.CRONOGRAMA = {
           tema: "Ligações Químicas",
           assuntos: ["Fórmulas e ligações químicas", "Substâncias e misturas"],
           videos: [
-            { titulo: "Ligações Químicas", url: "https://www.youtube.com/watch?v=b5_cSgplUWg" }
+            { titulo: "Ligações Químicas (Professor Igor Química)", url: "https://www.youtube.com/watch?v=UjXlHX3EEi0" }
           ],
           tempo: "40 min",
           resumo: "Iônica, covalente, metálica, diferença de eletronegatividade"
@@ -240,7 +241,7 @@ window.CRONOGRAMA = {
           tema: "Figura de Linguagem",
           assuntos: ["Figuras de linguagem", "Vocabulário e sentido das palavras"],
           videos: [
-            { titulo: "Figuras de Linguagem", url: "https://www.youtube.com/watch?v=MQj-MFd-K5k" }
+            { titulo: "Figuras de Linguagem (Professor Noslen)", url: "https://www.youtube.com/watch?v=n0e75nRstcU" }
           ],
           tempo: "40 min",
           resumo: "Metáfora, metonímia, antítese, hipérbole, ironia"
@@ -252,7 +253,7 @@ window.CRONOGRAMA = {
           tema: "Geometria Plana",
           assuntos: ["Geometria plana", "Geometria espacial e volume"],
           videos: [
-            { titulo: "Geometria Plana", url: "https://www.youtube.com/watch?v=8sddg0gXeEg" }
+            { titulo: "Área das Figuras Planas (Sandro Curió)", url: "https://www.youtube.com/watch?v=th5k6bzSDTA" }
           ],
           tempo: "40 min",
           resumo: "Triângulos, quadriláteros, círculos, áreas, perímetros"
@@ -264,7 +265,8 @@ window.CRONOGRAMA = {
           tema: "Clima e Mudanças Climáticas",
           assuntos: ["Clima", "Meio ambiente e sustentabilidade"],
           videos: [
-            { titulo: "Clima e Mudanças Climáticas", url: "https://www.youtube.com/watch?v=OaLCe5L5Foc" }
+            { titulo: "Clima: Elementos e Fatores (Descomplica)", url: "https://www.youtube.com/watch?v=D3YQ6zl3-2M" },
+            { titulo: "O que é o Efeito Estufa? (Toda Matéria)", url: "https://www.youtube.com/watch?v=nTmWFWWbzkQ" }
           ],
           tempo: "40 min",
           resumo: "Tipos de clima, fatores climáticos, aquecimento global, efeito estufa"
@@ -276,7 +278,7 @@ window.CRONOGRAMA = {
           tema: "República Velha (1889-1930)",
           assuntos: ["Brasil República"],
           videos: [
-            { titulo: "República Velha", url: "https://www.youtube.com/watch?v=f2kP0f-nq5s" }
+            { titulo: "República Velha (Descomplica)", url: "https://www.youtube.com/watch?v=Vw4HGHDWMjs" }
           ],
           tempo: "40 min",
           resumo: "Coronelismo, voto de cabresto, política do café-com-leite"
@@ -288,7 +290,7 @@ window.CRONOGRAMA = {
           tema: "Respiração Celular",
           assuntos: ["Fotossíntese e respiração", "Corpo humano e saúde"],
           videos: [
-            { titulo: "Respiração Celular", url: "https://www.youtube.com/watch?v=8Z0MdYoZzeM" }
+            { titulo: "Resumo sobre Respiração Celular (Samuel Cunha)", url: "https://www.youtube.com/watch?v=exX6EtKL6PU" }
           ],
           tempo: "40 min",
           resumo: "Glicólise, Ciclo de Krebs, cadeia respiratória, ATP"
@@ -316,7 +318,8 @@ window.CRONOGRAMA = {
           tema: "Ondas e Som",
           assuntos: ["Ondas e som"],
           videos: [
-            { titulo: "Ondas e Som", url: "https://www.youtube.com/watch?v=1vvFnAH0j1c" }
+            { titulo: "Ondulatória: Características das Ondas (Curso Enem Gratuito)", url: "https://www.youtube.com/watch?v=Rmgqv8ETn6o" },
+            { titulo: "Ondas Sonoras (Brasil Escola)", url: "https://www.youtube.com/watch?v=kR5FSlOPrhI" }
           ],
           tempo: "40 min",
           resumo: "Frequência, comprimento de onda, velocidade do som, eco"
@@ -328,7 +331,7 @@ window.CRONOGRAMA = {
           tema: "Reações Químicas",
           assuntos: ["Transformações e reações químicas", "Ácidos, bases, sais e óxidos"],
           videos: [
-            { titulo: "Reações Químicas", url: "https://www.youtube.com/watch?v=dOm65kWO-O8" }
+            { titulo: "Reações Químicas (Brasil Escola)", url: "https://www.youtube.com/watch?v=VrUvy1N66U0" }
           ],
           tempo: "40 min",
           resumo: "Balanceamento, oxidação-redução, ácido-base, combustão"
@@ -340,7 +343,8 @@ window.CRONOGRAMA = {
           tema: "Análise Sintática",
           assuntos: ["Gramática e conectivos", "Coesão e pronomes"],
           videos: [
-            { titulo: "Análise Sintática", url: "https://www.youtube.com/watch?v=XwPIcvHHE5A" }
+            { titulo: "Análise Sintática (Professor Noslen)", url: "https://www.youtube.com/watch?v=ZR_Ou01WsK0" },
+            { titulo: "Exercícios de Sujeito (Professor Noslen)", url: "https://www.youtube.com/watch?v=XwPIcvHHE5A" }
           ],
           tempo: "40 min",
           resumo: "Sujeito, predicado, complementos, adjuntos, orações"
@@ -352,7 +356,7 @@ window.CRONOGRAMA = {
           tema: "Sistemas de Equações",
           assuntos: ["Equações e sistemas", "Funções e expressões algébricas"],
           videos: [
-            { titulo: "Sistemas de Equações", url: "https://www.youtube.com/watch?v=4tYzMFbvm70" }
+            { titulo: "Sistemas de Equações do 1º Grau (Professor Ferretto)", url: "https://www.youtube.com/watch?v=oT4k6bhB4Dk" }
           ],
           tempo: "40 min",
           resumo: "Método da substituição, adição, 1º e 2º grau"
@@ -364,7 +368,7 @@ window.CRONOGRAMA = {
           tema: "Recursos Naturais e Economia",
           assuntos: ["Energia e recursos naturais", "Economia, agropecuária e transportes"],
           videos: [
-            { titulo: "Recursos Naturais", url: "https://www.youtube.com/watch?v=J-d_cVfYPDo" }
+            { titulo: "Fontes de Energia (Brasil Escola)", url: "https://www.youtube.com/watch?v=BRaJVqRwU38" }
           ],
           tempo: "40 min",
           resumo: "Petróleo, minérios, água, fontes de energia, sustentabilidade"
@@ -392,7 +396,7 @@ window.CRONOGRAMA = {
           tema: "Era Vargas e Populismo",
           assuntos: ["Brasil República"],
           videos: [
-            { titulo: "Era Vargas", url: "https://www.youtube.com/watch?v=DfgZGLZGi-g" }
+            { titulo: "Resumo: Era Vargas (Débora Aladim)", url: "https://www.youtube.com/watch?v=ZcTDWBqUju8" }
           ],
           tempo: "40 min",
           resumo: "Governo provisório, Constituição, Estado Novo, consolidação de leis"
@@ -416,7 +420,7 @@ window.CRONOGRAMA = {
           tema: "Eletricidade",
           assuntos: ["Eletricidade e magnetismo"],
           videos: [
-            { titulo: "Eletricidade", url: "https://www.youtube.com/watch?v=Ixk9gqU_S0A" }
+            { titulo: "Circuitos Elétricos no Cotidiano (Canal Futura)", url: "https://www.youtube.com/watch?v=N0DnSlhijOU" }
           ],
           tempo: "40 min",
           resumo: "Carga elétrica, corrente, voltagem, resistência, Lei de Ohm"
@@ -428,7 +432,7 @@ window.CRONOGRAMA = {
           tema: "Tempos e Modos Verbais",
           assuntos: ["Verbos e reescrita de frases", "Gramática e conectivos"],
           videos: [
-            { titulo: "Tempos Verbais", url: "https://www.youtube.com/watch?v=T8MB4vzTAv4" }
+            { titulo: "Tempos e Modos Verbais (Português com Letícia)", url: "https://www.youtube.com/watch?v=WK6WqY3iRU8" }
           ],
           tempo: "40 min",
           resumo: "Presente, passado, futuro, indicativo, subjuntivo, imperativo"
@@ -440,7 +444,7 @@ window.CRONOGRAMA = {
           tema: "Tabela Periódica",
           assuntos: ["Átomo e tabela periódica"],
           videos: [
-            { titulo: "Tabela Periódica", url: "https://www.youtube.com/watch?v=q48uaLyHyAc" }
+            { titulo: "Tabela Periódica em 10 minutos (Toda Matéria)", url: "https://www.youtube.com/watch?v=Vsnq2hJ2UZc" }
           ],
           tempo: "40 min",
           resumo: "Grupos, períodos, propriedades periódicas, eletronegatividade"
@@ -468,7 +472,7 @@ window.CRONOGRAMA = {
           tema: "Trigonometria Básica",
           assuntos: ["Triângulo retângulo (Pitágoras e trigonometria)", "Geometria plana"],
           videos: [
-            { titulo: "Trigonometria", url: "https://www.youtube.com/watch?v=49vYVzWN8HY" }
+            { titulo: "Trigonometria no Triângulo Retângulo (Sandro Curió)", url: "https://www.youtube.com/watch?v=C7NrVLmEYcs" }
           ],
           tempo: "40 min",
           resumo: "Seno, cosseno, tangente, ciclo trigonométrico, ângulos"
@@ -480,7 +484,7 @@ window.CRONOGRAMA = {
           tema: "Urbanização e Cidades",
           assuntos: ["Urbanização e população"],
           videos: [
-            { titulo: "Urbanização", url: "https://www.youtube.com/watch?v=KpNnlq_JQ48" }
+            { titulo: "Urbanização (Brasil Escola)", url: "https://www.youtube.com/watch?v=4ayDPXtQR5w" }
           ],
           tempo: "40 min",
           resumo: "Êxodo rural, favelas, segregação urbana, metrópoles"
@@ -492,7 +496,7 @@ window.CRONOGRAMA = {
           tema: "Golpe de 1964 e Ditadura Militar",
           assuntos: ["Brasil República", "Século XX"],
           videos: [
-            { titulo: "Ditadura Militar", url: "https://www.youtube.com/watch?v=3pRV8AyknFQ" }
+            { titulo: "Ditadura Militar no Brasil (Toda Matéria)", url: "https://www.youtube.com/watch?v=phR8Lys4g8E" }
           ],
           tempo: "40 min",
           resumo: "Contexto do golpe, regime militar, repressão, anistia"
@@ -504,7 +508,7 @@ window.CRONOGRAMA = {
           tema: "Reprodução e Desenvolvimento",
           assuntos: ["Seres vivos (animais e plantas)", "Evolução e genética"],
           videos: [
-            { titulo: "Reprodução", url: "https://www.youtube.com/watch?v=8Z0MdYoZzeM" }
+            { titulo: "Tipos de Reprodução: Sexuada e Assexuada (Samuel Cunha)", url: "https://www.youtube.com/watch?v=eAaJ4H7OKDA" }
           ],
           tempo: "40 min",
           resumo: "Mitose, meiose, gametogênese, fecundação, desenvolvimento embrionário"
@@ -516,7 +520,7 @@ window.CRONOGRAMA = {
           tema: "Magnetismo",
           assuntos: ["Eletricidade e magnetismo"],
           videos: [
-            { titulo: "Magnetismo", url: "https://www.youtube.com/watch?v=IZvxzNqVt84" }
+            { titulo: "Magnetismo: Ímãs e Campo Magnético (Pura Física)", url: "https://www.youtube.com/watch?v=h0dYRTYiKDY" }
           ],
           tempo: "40 min",
           resumo: "Campo magnético, polos, força magnética, indução"
@@ -556,7 +560,8 @@ window.CRONOGRAMA = {
           tema: "Estatística e Probabilidade",
           assuntos: ["Média e estatística", "Contagem e probabilidade", "Gráficos e tabelas"],
           videos: [
-            { titulo: "Estatística e Probabilidade", url: "https://www.youtube.com/watch?v=L9e9B9lIqJE" }
+            { titulo: "Média, Moda e Mediana (Gis com Giz)", url: "https://www.youtube.com/watch?v=GIzwKJL33_g" },
+            { titulo: "Probabilidade (Sandro Curió)", url: "https://www.youtube.com/watch?v=iNCkGogNtKI" }
           ],
           tempo: "40 min",
           resumo: "Média, mediana, moda, probabilidade, combinatória"
@@ -568,7 +573,7 @@ window.CRONOGRAMA = {
           tema: "Soluções e Concentração",
           assuntos: ["Densidade e propriedades da matéria", "Separação de misturas", "Substâncias e misturas"],
           videos: [
-            { titulo: "Soluções", url: "https://www.youtube.com/watch?v=ib5aCcpWUf4" }
+            { titulo: "Concentração das Soluções (Curso Enem Gratuito)", url: "https://www.youtube.com/watch?v=ZwT6epapk-A" }
           ],
           tempo: "40 min",
           resumo: "Soluto, solvente, concentração, molalidade, diluição, titulação"
@@ -580,7 +585,7 @@ window.CRONOGRAMA = {
           tema: "Geopolítica e Blocos Econômicos",
           assuntos: ["Economia, agropecuária e transportes", "Território brasileiro e regiões"],
           videos: [
-            { titulo: "Geopolítica", url: "https://www.youtube.com/watch?v=IZvxz7KYkFM" }
+            { titulo: "Blocos Econômicos (Descomplica)", url: "https://www.youtube.com/watch?v=tFGlxXZSTqY" }
           ],
           tempo: "40 min",
           resumo: "ONU, OTAN, MERCOSUL, BRICS, conflitos geopolíticos"
@@ -592,7 +597,8 @@ window.CRONOGRAMA = {
           tema: "Redemocratização e Constituinte",
           assuntos: ["Brasil República", "Século XX"],
           videos: [
-            { titulo: "Redemocratização", url: "https://www.youtube.com/watch?v=c-kvWtGN7UE" }
+            { titulo: "Redemocratização do Brasil (Toda Matéria)", url: "https://www.youtube.com/watch?v=DAxqtxYnqU0" },
+            { titulo: "Nova República (Parabólica)", url: "https://www.youtube.com/watch?v=Sy29kcGqqjI" }
           ],
           tempo: "40 min",
           resumo: "Anistia, eleições diretas, Constituição de 1988"
@@ -643,7 +649,7 @@ window.CRONOGRAMA = {
           disciplina: "Revisão Geral",
           tema: "Questões Comentadas de Provas Anteriores",
           videos: [
-            { titulo: "Questões Comentadas", url: "https://www.youtube.com/watch?v=PLACEHOLDER_QUEST_COM" }
+            { titulo: "ETEC 2026 1º semestre - Correção, parte 1 (Vestibulinho Digital)", url: "https://www.youtube.com/watch?v=MGaEFqJko0c" }
           ],
           tempo: "60 min",
           resumo: "Análise de questões difíceis de simulados anteriores"
@@ -654,7 +660,7 @@ window.CRONOGRAMA = {
           disciplina: "Relaxamento",
           tema: "Revisão Leve e Dicas de Prova",
           videos: [
-            { titulo: "Dicas de Prova", url: "https://www.youtube.com/watch?v=PLACEHOLDER_DICAS" }
+            { titulo: "3 Dicas de Ouro para a Prova da ETEC (Oficina da Aprovação)", url: "https://www.youtube.com/watch?v=3aC6amAVx1o" }
           ],
           tempo: "30 min",
           resumo: "Estratégia de prova, gestão de tempo, ansiedade"
