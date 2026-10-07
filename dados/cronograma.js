@@ -227,7 +227,7 @@ window.CRONOGRAMA = {
           dia_semana: "Sábado",
         tipo: "Simulado",
         simulado: "1º sem/2023",
-        descricao: "Simulado com 52 questões de todas as disciplinas"
+        descricao: "Simulado com 40 questões de todas as disciplinas"
       }
     },
 
@@ -392,7 +392,7 @@ window.CRONOGRAMA = {
           dia_semana: "Sábado",
         tipo: "Simulado",
         simulado: "1º sem/2024",
-        descricao: "Simulado com 49 questões"
+        descricao: "Simulado com 50 questões"
       }
     },
 

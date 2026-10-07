@@ -4158,7 +4158,7 @@ window.SEED = [
   "tipo": "q",
   "img": "img/2026-2/q33.webp",
   "w": 1083,
-  "h": 1001,
+  "h": 299,
   "gab": 0,
   "coment": "“Apesar de” indica concessão: uma dificuldade que não impede o fato. O mesmo sentido aparece com “embora”: embora haja barreiras, os países se encontrarão. “Portanto” indica conclusão, “como” indica causa e “se” indica condição. A alternativa E muda quem pratica a ação (“nos encontraremos”).",
   "base": "img/2026-2/base_32-33.webp",
