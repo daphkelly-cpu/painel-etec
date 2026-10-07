@@ -43,6 +43,11 @@
         .fb { padding: 1rem; border-radius: 0.5rem; margin-top: 1rem; font-weight: 600; }
         .fb.ok { background: #ecfdf5; color: var(--good); }
         .fb.bad { background: #fef2f2; color: #ef4444; }
+        .coment { background: var(--bg); border-left: 4px solid var(--brand); border-radius: 0.5rem; padding: 0.9rem 1rem; margin-top: 0.75rem; font-size: 0.95rem; line-height: 1.55; }
+        .coment b { display: block; color: var(--brand); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.25rem; }
+        .comsim { border-bottom: 1px solid var(--tertiary); padding: 0.5rem 0; }
+        .comsim:last-of-type { border-bottom: none; }
+        .comsim summary { cursor: pointer; font-weight: 600; font-size: 0.95rem; }
         .qwrap { background: #fff; border-radius: 0.6rem; padding: 0.5rem; margin: 1rem 0; overflow-x: auto; border: 1px solid var(--tertiary); }
         .qwrap img { display: block; max-width: 100%; height: auto; cursor: zoom-in; }
         .qwrap img.zoom { max-width: none; cursor: zoom-out; }
@@ -543,6 +548,8 @@
             }, i => `resp('${q.id}', ${i})`);
             if (r !== undefined) {
                 h += r === c ? '<div class="fb ok">✅ Correto!</div>' : `<div class="fb bad">❌ Errado! Gabarito: ${String.fromCharCode(65+c)}</div>`;
+                // Comentário da questão: só aparece depois de responder
+                if (q.coment) h += `<div class="coment"><b>Comentário</b>${esc(q.coment)}</div>`;
             }
             const ultima = APP.atual === L.ids.length - 1;
             h += `<button class="btn" onclick="prox(1)">${ultima ? 'Concluir lista' : 'Próxima →'}</button></div>`;
@@ -936,6 +943,13 @@
                 h += `<tr><td>${n + 1}</td><td>${r === undefined ? '—' : letra(r)}</td><td>${letra(q.gab)}</td><td>${r === undefined ? '⚪' : r === q.gab ? '✅' : '❌'}</td></tr>`;
             });
             h += '</table></div>';
+            // Comentários das questões erradas ou em branco (fechados; abre quem quiser ler)
+            const rever = qs.map((q, n) => ({ q, n })).filter(o => o.q.coment && resp[o.q.id] !== o.q.gab);
+            if (rever.length) {
+                h += `<div class="card"><h3>Comentários das questões que errei ou deixei em branco</h3><p class="sub">Toque na questão para ler a explicação.</p>`;
+                rever.forEach(o => { h += `<details class="comsim"><summary>Questão ${o.n + 1} • gabarito ${letra(o.q.gab)}</summary><div class="coment">${esc(o.q.coment)}</div></details>`; });
+                h += '</div>';
+            }
             document.getElementById('sim-area').innerHTML = h;
         }
 

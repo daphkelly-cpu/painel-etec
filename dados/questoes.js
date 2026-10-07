@@ -15,7 +15,7 @@ window.SEED = [
   "w": 1108,
   "h": 338,
   "gab": 0,
-  "coment": "",
+  "coment": "Para achar a quem o pronome se refere, volte ao trecho e pergunte “quem?”. “Você” é o leitor, com quem o texto conversa. “Nos” (os oceanos nos alimentam) inclui quem lê e quem escreve: leitores e autor. “Que” retoma a palavra logo antes dele, oxigênio. “Sua” importância é a importância dos oceanos.",
   "base": "img/2023-1/base_01-03.webp",
   "bw": 1201
  },
@@ -29,7 +29,7 @@ window.SEED = [
   "w": 1108,
   "h": 482,
   "gab": 2,
-  "coment": "",
+  "coment": "O texto fala direto com quem lê (“Você sabia...?”, “Conte pra gente!”) e usa linguagem do dia a dia. Isso serve para chamar a atenção e fazer o leitor pensar no assunto. Não é narração nem texto para especialistas, e hashtag combina com o lugar onde ele circula: uma rede social.",
   "base": "img/2023-1/base_01-03.webp",
   "bw": 1201
  },
@@ -43,7 +43,7 @@ window.SEED = [
   "w": 1107,
   "h": 420,
   "gab": 4,
-  "coment": "",
+  "coment": "O texto dá informações sobre os oceanos e termina pedindo uma atitude (“Cuidar dos oceanos é cuidar do clima e da vida”, #HoraDeAgir). Informar para mobilizar as pessoas em torno de uma causa é o que faz uma campanha social. Não vende produto (anúncio), não conta um fato novo (notícia) nem traz opinião pessoal (crônica).",
   "base": "img/2023-1/base_01-03.webp",
   "bw": 1201
  },
@@ -57,7 +57,7 @@ window.SEED = [
   "w": 1107,
   "h": 894,
   "gab": 4,
-  "coment": ""
+  "coment": "A resposta está escrita no texto: “A diferença entre os mares e os oceanos está na sua extensão territorial. Os primeiros [mares] são menores”. Logo, os oceanos são maiores. Atenção à troca na alternativa A: os três tipos (abertos, continentais e fechados) são de mares, não de oceanos."
  },
  {
   "id": "2023-1-q05",
@@ -69,7 +69,7 @@ window.SEED = [
   "w": 1108,
   "h": 601,
   "gab": 4,
-  "coment": "",
+  "coment": "O texto diz que Aquaman promove a convivência entre povos diferentes e a preservação do meio ambiente. A única biografia que junta as duas coisas é a de Bruno Pereira, que defendia os povos indígenas e a Floresta Amazônica. As outras falam de esporte, direitos trabalhistas ou abolição, mas não de meio ambiente.",
   "base": "img/2023-1/base_05-06.webp",
   "bw": 1086
  },
@@ -83,7 +83,7 @@ window.SEED = [
   "w": 1108,
   "h": 491,
   "gab": 0,
-  "coment": "",
+  "coment": "Primeiro, deixe as velocidades na mesma unidade: 129 km/h ÷ 3,6 ≈ 35,8 m/s. Depois, regra de três: a 3 000 m/s o gasto é 240 milhões de kcal; a 35,8 m/s é x. Então x = 240 × 35,8 ÷ 3 000 ≈ 2,9 milhões de kcal por segundo. Quem esquece de converter km/h em m/s chega a 10,3, que é a pegadinha.",
   "base": "img/2023-1/base_05-06.webp",
   "bw": 1086
  },
@@ -97,7 +97,7 @@ window.SEED = [
   "w": 1107,
   "h": 387,
   "gab": 1,
-  "coment": "",
+  "coment": "O enunciado dá duas informações: o arrasto é maior quanto maior a densidade da água, e a densidade aumenta com a profundidade. Então, quanto mais perto da superfície, menos densa é a água, menor o arrasto e menor o gasto de energia. As alternativas sobre bater pés e braços não têm relação com a densidade.",
   "base": "img/2023-1/base_05-06.webp",
   "bw": 1086
  },
@@ -111,7 +111,7 @@ window.SEED = [
   "w": 1107,
   "h": 478,
   "gab": 2,
-  "coment": "",
+  "coment": "Na teia, a seta vai de quem é comido para quem come. As focas recebem setas do krill e dos peixes pequenos. O krill come fitoplâncton (produtor), então a foca que come krill é consumidora secundária; os peixes pequenos comem zooplâncton, então a foca que come peixe é consumidora terciária. Um mesmo animal em dois níveis tróficos. O primeiro nível é sempre o produtor, aqui o fitoplâncton, e não o zooplâncton.",
   "base": "img/2023-1/base_08-09.webp",
   "bw": 1090
  },
@@ -125,7 +125,7 @@ window.SEED = [
   "w": 1108,
   "h": 404,
   "gab": 2,
-  "coment": "",
+  "coment": "A baleia-azul não tem dentes: tem barbatanas, que funcionam como uma peneira para filtrar a água e reter o krill (a seta do krill aponta para ela). As outras erram em fatos básicos: zooplâncton não faz fotossíntese, fitoplâncton precisa de luz, e no diagrama os pinguins comem lulas.",
   "base": "img/2023-1/base_08-09.webp",
   "bw": 1090
  },
@@ -139,7 +139,7 @@ window.SEED = [
   "w": 1108,
   "h": 914,
   "gab": 2,
-  "coment": ""
+  "coment": "Armandinho sente vergonha do próprio tênis quando vê crianças que não têm nenhum calçado. Perceber a situação do outro e se incomodar com ela é empatia. Ele não doa o tênis na tirinha (por isso “autonomia” não serve), e a vergonha não é de ter um tênis velho, e sim de ter o que outros não têm."
  },
  {
   "id": "2023-1-q11",
@@ -151,7 +151,7 @@ window.SEED = [
   "w": 1107,
   "h": 1391,
   "gab": 3,
-  "coment": ""
+  "coment": "Na charge, um cano despeja esgoto, há lixo no fundo e peixes mortos boiando; o mergulhador do Greenpeace distribui máscaras de gás aos peixes. A crítica é à poluição das águas, que ameaça a vida e obriga alguém a agir para protegê-la. Não há nada de nuclear na cena, e a sociedade retratada é o contrário de sustentável."
  },
  {
   "id": "2023-1-q12",
@@ -163,7 +163,7 @@ window.SEED = [
   "w": 1108,
   "h": 697,
   "gab": 3,
-  "coment": ""
+  "coment": "Tsunâmi é causado por um deslocamento brusco de grande volume de água, quase sempre por terremoto no fundo do mar (maremoto) ou por erupção vulcânica. Rotação e translação da Terra, correntes marítimas e aquecimento da água não produzem ondas gigantes."
  },
  {
   "id": "2023-1-q13",
@@ -175,7 +175,7 @@ window.SEED = [
   "w": 1107,
   "h": 419,
   "gab": 3,
-  "coment": "",
+  "coment": "Volte ao item “física” do texto: a circulação acontece por causa da diferença de densidade da água, que muda com aquecimento/resfriamento (temperatura) e com a salinidade, e “é predominante no oceano profundo”. A alternativa B também fala em águas profundas, mas aponta o motivo errado (transporte de nutrientes), e a E fala em temperatura constante, o contrário do texto.",
   "base": "img/2023-1/base_13-14.webp",
   "bw": 1086
  },
@@ -189,7 +189,7 @@ window.SEED = [
   "w": 1107,
   "h": 319,
   "gab": 0,
-  "coment": "",
+  "coment": "O texto diz que o fitoplâncton retira CO₂ da água para fazer fotossíntese. Na fotossíntese, gás carbônico e água, com a luz, viram glicose e oxigênio. Cuidado com as trocas: os animais convertem bicarbonato em carbonato de cálcio (e não o contrário), e quem faz fotossíntese é o fitoplâncton, não o zooplâncton.",
   "base": "img/2023-1/base_13-14.webp",
   "bw": 1086
  },
@@ -203,7 +203,7 @@ window.SEED = [
   "w": 1109,
   "h": 1114,
   "gab": 2,
-  "coment": ""
+  "coment": "É questão de conferir cada alternativa com o texto. Ele diz que o sargaço atrapalha hélices, motores e cascos dos navios e que, ao apodrecer nas praias, solta um gás com cheiro de ovo podre. As outras acrescentam coisas que o texto não diz: antibióticos, vinho, maré vermelha, caules e raízes (algas não têm)."
  },
  {
   "id": "2023-1-q16",
@@ -215,7 +215,7 @@ window.SEED = [
   "w": 1108,
   "h": 897,
   "gab": 3,
-  "coment": ""
+  "coment": "Pesca predatória é retirar peixes mais depressa do que eles conseguem se reproduzir; por isso o estoque diminui, que é a primeira preocupação citada. As outras afirmam absurdos: metais pesados fazem mal aos animais, poluição não é benéfica e o plástico fica séculos no ambiente."
  },
  {
   "id": "2023-1-q17",
@@ -227,7 +227,7 @@ window.SEED = [
   "w": 1107,
   "h": 522,
   "gab": 4,
-  "coment": ""
+  "coment": "Quatro alternativas só mudam o lugar onde o esgoto sem tratamento é jogado (rios, lençol freático, lagoas, represas), e todos esses lugares acabam contaminados. A única que resolve o problema na origem é tratar o esgoto antes de devolver a água ao ambiente."
  },
  {
   "id": "2023-1-q18",
@@ -239,7 +239,7 @@ window.SEED = [
   "w": 1107,
   "h": 665,
   "gab": 2,
-  "coment": ""
+  "coment": "Para poluir menos o mar é preciso gerar menos lixo plástico: trocar descartáveis por reutilizáveis. As outras propõem o contrário (mais descartáveis, mais sacolinhas, mais microplásticos, descarte em local inadequado) com justificativas falsas, como dizer que plástico serve de alimento aos animais."
  },
  {
   "id": "2023-1-q19",
@@ -251,7 +251,7 @@ window.SEED = [
   "w": 1108,
   "h": 579,
   "gab": 4,
-  "coment": ""
+  "coment": "Com as Grandes Navegações, Portugal e Espanha dividiram as terras “descobertas” pelo Tratado de Tordesilhas (1494), e os portugueses chegaram ao Brasil em 1500. O Tratado de Madri é de 1750, muito depois, e a Guerra dos Cem Anos terminou antes das navegações."
  },
  {
   "id": "2023-1-q20",
@@ -263,7 +263,7 @@ window.SEED = [
   "w": 1117,
   "h": 825,
   "gab": 0,
-  "coment": ""
+  "coment": "Teste cada alternativa com os números do gráfico. Em 2010: aéreo + outros = 10,3 + 22,2 = 32,5%; o dobro é 65%; o marítimo teve 67,5%, que é maior. Confere. As demais falham: o triplo de 22,2 é 66,6 (não 67,5); de 2010 para 2019 o marítimo caiu; o quíntuplo de 11,9 é 59,5, maior que 57."
  },
  {
   "id": "2023-1-q21",
@@ -275,7 +275,7 @@ window.SEED = [
   "w": 1107,
   "h": 450,
   "gab": 4,
-  "coment": "",
+  "coment": "O texto termina dizendo que, em crianças, a falta de iodo causa “deficiência intelectual, desenvolvimento físico prejudicado e surdez”. As outras alternativas invertem o texto: a tireoide usa iodo, os hormônios ajudam no crescimento e o sal iodado previne o problema (não causa).",
   "base": "img/2023-1/base_21-22.webp",
   "bw": 803
  },
@@ -289,7 +289,7 @@ window.SEED = [
   "w": 1108,
   "h": 321,
   "gab": 0,
-  "coment": "",
+  "coment": "Na salina, a água do mar passa do estado líquido para o gasoso e o sal fica. Mudança de estado físico não cria substância nova, então é processo físico. A passagem de líquido para gás chama-se vaporização (a evaporação é um tipo de vaporização). Filtração e decantação separam sólidos sem mudar o estado da água.",
   "base": "img/2023-1/base_21-22.webp",
   "bw": 803
  },
@@ -303,7 +303,7 @@ window.SEED = [
   "w": 1108,
   "h": 547,
   "gab": 1,
-  "coment": ""
+  "coment": "A quantidade mínima é 15 mg de iodo para cada quilograma de sal, e 1 kg = 1 000 g. Regra de três: 1 000 g — 15 mg; 1,5 g — x. Então x = 15 × 1,5 ÷ 1 000 = 0,0225 mg, aproximadamente 0,02 mg."
  },
  {
   "id": "2023-1-q24",
@@ -315,7 +315,7 @@ window.SEED = [
   "w": 1108,
   "h": 434,
   "gab": 0,
-  "coment": ""
+  "coment": "O número atômico (o de baixo, 53) é a quantidade de prótons. O número de massa (o de cima, 127) é prótons + nêutrons, então os nêutrons são 127 − 53 = 74. No átomo neutro, os elétrons são iguais aos prótons: 53."
  },
  {
   "id": "2023-1-q25",
@@ -327,7 +327,7 @@ window.SEED = [
   "w": 1107,
   "h": 1442,
   "gab": 3,
-  "coment": ""
+  "coment": "Sentido denotativo é o literal: a pressão da água no fundo do mar. Sentido conotativo é o figurado: “viver sob pressão” é ser cobrado. O balão do último quadrinho completa: pressão “para conseguir se adequar a seus padrões de beleza”. As outras alternativas falam de aparência física do peixe, que é sentido literal."
  },
  {
   "id": "2023-1-q26",
@@ -339,7 +339,7 @@ window.SEED = [
   "w": 1108,
   "h": 739,
   "gab": 3,
-  "coment": ""
+  "coment": "A última frase do texto dá a resposta: o conhecimento sobre o oceano “deve ser amplamente disseminado para que a sociedade entenda sua importância”. O texto não fala em ONU, empresas privadas ou universidades, e diz que os benefícios devem ser compartilhados com a sociedade."
  },
  {
   "id": "2023-1-q27",
@@ -351,7 +351,7 @@ window.SEED = [
   "w": 1108,
   "h": 676,
   "gab": 3,
-  "coment": ""
+  "coment": "O texto diz que os povos antigos se deslocavam mais pelo Mediterrâneo do que por terra e que, por causa desse contato, as culturas “não são puras”, mas resultado de misturas. “Cimento líquido” quer dizer que o mar unia os povos, e não que os separava."
  },
  {
   "id": "2023-1-q28",
@@ -363,7 +363,7 @@ window.SEED = [
   "w": 1107,
   "h": 735,
   "gab": 2,
-  "coment": ""
+  "coment": "A cada 10 m de profundidade a pressão sobe 1 atm. A 40 m são 4 atm da água. Falta somar 1 atm da atmosfera, que já existia na superfície: 4 + 1 = 5 atm. Quem esquece essa soma marca 4."
  },
  {
   "id": "2023-1-q29",
@@ -375,7 +375,7 @@ window.SEED = [
   "w": 1107,
   "h": 618,
   "gab": 4,
-  "coment": ""
+  "coment": "O problema, segundo o texto, é a pressão diminuir depressa demais na subida, formando bolhas no sangue. A solução é subir devagar, para a pressão variar aos poucos e os gases saírem do corpo sem formar bolhas. Subir rápido é exatamente o que causa a doença."
  },
  {
   "id": "2023-1-q30",
@@ -387,7 +387,7 @@ window.SEED = [
   "w": 1108,
   "h": 665,
   "gab": 1,
-  "coment": ""
+  "coment": "O navio a vapor era mais rápido e regular que o barco a vela e carregava mais. Resultado: transporte mais rápido e barato de matérias-primas e mercadorias, e mercados ligados no mundo todo. A industrialização trouxe urbanização (e não ruralização), e a indústria ficava concentrada na Europa, não na África."
  },
  {
   "id": "2023-1-q31",
@@ -399,7 +399,7 @@ window.SEED = [
   "w": 1108,
   "h": 319,
   "gab": 0,
-  "coment": "",
+  "coment": "O golfinho percebe objetos a partir do tamanho do comprimento de onda. Use a fórmula do texto, v = λ·f, isolando λ: λ = v ÷ f = 1 400 ÷ 100 000 = 0,014 m. É a mesma conta do exemplo do texto, só trocando a frequência.",
   "base": "img/2023-1/base_31-32.webp",
   "bw": 1086
  },
@@ -413,7 +413,7 @@ window.SEED = [
   "w": 1107,
   "h": 762,
   "gab": 1,
-  "coment": "",
+  "coment": "O som vai até o peixe e volta: percorre 140 + 140 = 280 m. Tempo = distância ÷ velocidade = 280 ÷ 1 400 = 0,2 s. Quem esquece a volta do eco encontra 0,1 s, que é a pegadinha.",
   "base": "img/2023-1/base_31-32.webp",
   "bw": 1086
  },
@@ -427,7 +427,7 @@ window.SEED = [
   "w": 1107,
   "h": 681,
   "gab": 4,
-  "coment": ""
+  "coment": "As religiões e os costumes de origem africana chegaram ao Brasil com os milhões de africanos trazidos à força pelo tráfico de escravizados, entre os séculos XVI e XIX. Eles mantiveram suas crenças aqui, e por isso existe o culto a Iemanjá. As outras alternativas inventam fatos, como brasileiros migrando para a África no século XVI."
  },
  {
   "id": "2023-1-q34",
@@ -439,7 +439,7 @@ window.SEED = [
   "w": 1108,
   "h": 342,
   "gab": 1,
-  "coment": "",
+  "coment": "As imagens dos dois trechos são de miséria: lama, bairro sujo, urubus, “quanto mais miséria tem, mais urubu ameaça”. O cenário é de pobreza. Nenhum verso fala de prosperidade, desenvolvimento ou oportunidades.",
   "base": "img/2023-1/base_34-35.webp",
   "bw": 1086
  },
@@ -453,7 +453,7 @@ window.SEED = [
   "w": 1108,
   "h": 356,
   "gab": 2,
-  "coment": "",
+  "coment": "Em “da lama ao caos”, “da” (de + a) mostra de onde se parte e “ao” (a + o) mostra aonde se chega: origem e destino. As outras erram: o Texto I está em primeira pessoa (“tô”, “eu não tenho asas”); as asas dos urubus são liberdade, quem está preso é o eu lírico; “quanto mais... mais” indica proporção, não concessão; e gerúndio indica ação em andamento.",
   "base": "img/2023-1/base_34-35.webp",
   "bw": 1086
  },
@@ -467,7 +467,7 @@ window.SEED = [
   "w": 1107,
   "h": 378,
   "gab": 1,
-  "coment": "",
+  "coment": "Resolva a equação com calma, cuidando do sinal de menos antes do parêntese: 4(n + 6) = 5n − (28 − 3n) vira 4n + 24 = 5n − 28 + 3n, ou seja, 4n + 24 = 8n − 28. Passando os termos: 24 + 28 = 8n − 4n, 52 = 4n, n = 13. O erro mais comum é escrever −3n em vez de +3n ao tirar o parêntese.",
   "base": "img/2023-1/base_36-37.webp",
   "bw": 1082
  },
@@ -481,7 +481,7 @@ window.SEED = [
   "w": 1107,
   "h": 300,
   "gab": 1,
-  "coment": "",
+  "coment": "Comprimento médio = total ÷ quantidade de cabos = 1 300 000 km ÷ 436 ≈ 2 980 km, cerca de 3 000 km. Em notação científica, 3 000 = 3,0 × 10³ (o expoente 3 corresponde às três casas depois do 3).",
   "base": "img/2023-1/base_36-37.webp",
   "bw": 1082
  },
@@ -495,7 +495,7 @@ window.SEED = [
   "w": 1107,
   "h": 1243,
   "gab": 3,
-  "coment": ""
+  "coment": "O texto afirma que os manguezais são áreas de preservação permanente desde 1965 e que servem de berçário para a reprodução de muitas espécies marinhas. As outras trocam informações: o mangue mais conhecido é o vermelho, o mangue reduz a erosão (não facilita), vai do Amapá até Santa Catarina (e não só nesses dois estados), e Tocantins e Goiás nem têm litoral."
  },
  {
   "id": "2023-1-q39",
@@ -507,7 +507,7 @@ window.SEED = [
   "w": 1108,
   "h": 1004,
   "gab": 3,
-  "coment": ""
+  "coment": "As pistas do mapa: Canal da Mancha, litoral da França, tropas americanas, inglesas e canadenses, praias chamadas Utah, Omaha, Gold, Juno e Sword, datas de junho e “Dia D”. É o desembarque dos Aliados na Normandia, em 6 de junho de 1944, na Segunda Guerra Mundial."
  },
  {
   "id": "2023-1-q40",
@@ -519,7 +519,7 @@ window.SEED = [
   "w": 1151,
   "h": 996,
   "gab": 1,
-  "coment": ""
+  "coment": "Princípio multiplicativo: quando se faz uma escolha depois da outra, multiplicam-se as possibilidades. No aquário há 8 peixes (conte no último quadro), 2 plantas e 2 conchas: 8 × 2 × 2 = 32 maneiras. Somar (8 + 2 + 2 = 12) é o erro mais comum."
  },
  {
   "id": "2023-2-q01",
@@ -531,7 +531,7 @@ window.SEED = [
   "w": 605,
   "h": 314,
   "gab": 2,
-  "coment": "",
+  "coment": "Troque cada palavra destacada e veja se a frase continua com o mesmo sentido. “Meio indígenas” = um pouco indígenas (aqui “meio” é advérbio, não é “metade”). “Gênese” = origem. “Ritmos distintos” = ritmos diferentes. “Identidade própria” = particular, só dela. “Genérica” seria o contrário de própria.",
   "base": "img/2023-2/base_01-03.webp",
   "bw": 1080
  },
@@ -545,7 +545,7 @@ window.SEED = [
   "w": 601,
   "h": 424,
   "gab": 4,
-  "coment": "",
+  "coment": "No texto, “essa crônica” retoma o que acabou de ser contado: a história de como a viola chegou e foi sendo adotada no Brasil. Aqui, “crônica” tem o sentido de relato de fatos históricos, e não o de texto de jornal. Quando aparecer “esse/essa + substantivo”, procure o que foi dito logo antes.",
   "base": "img/2023-2/base_01-03.webp",
   "bw": 1080
  },
@@ -559,7 +559,7 @@ window.SEED = [
   "w": 498,
   "h": 723,
   "gab": 3,
-  "coment": "",
+  "coment": "O último parágrafo diz que a cultura caipira foi “depreciada” na industrialização, por parecer contrária à modernização, mas acabou servindo de “âncora de representação identitária” de São Paulo. Ou seja: menosprezada como atrasada, virou símbolo paulista. A alternativa E erra porque o texto diz que o ritmo é “muito sofisticado”.",
   "base": "img/2023-2/base_01-03.webp",
   "bw": 1080
  },
@@ -573,7 +573,7 @@ window.SEED = [
   "w": 1108,
   "h": 393,
   "gab": 1,
-  "coment": "",
+  "coment": "O encontro entre portugueses e indígenas aconteceu nas bandeiras: expedições que saíam de São Paulo para o interior, no período colonial, para capturar indígenas e procurar ouro e pedras preciosas. As outras alternativas mudam a época (século XX, década de 1960) ou os personagens.",
   "base": "img/2023-2/base_01-03.webp",
   "bw": 1080
  },
@@ -587,7 +587,7 @@ window.SEED = [
   "w": 1107,
   "h": 481,
   "gab": 0,
-  "coment": ""
+  "coment": "Som agudo = frequência alta. O texto diz que, quanto maior a corda vibrando, menor a frequência; então, para o som mais agudo, a parte que vibra deve ser a mais curta possível. A corda vibra entre o ponto apertado e o corpo da viola, e o ponto A é o mais próximo do corpo: sobra o menor pedaço de corda."
  },
  {
   "id": "2023-2-q06",
@@ -599,7 +599,7 @@ window.SEED = [
   "w": 1108,
   "h": 388,
   "gab": 2,
-  "coment": "",
+  "coment": "O texto apresenta três versões para a origem (“rodeada de histórias e lendas”), diz que a receita francesa “foi modificada no Brasil” e mostra o salgado ligado a São Paulo. Logo: origem incerta, receita que mudou e alimento popular. A alternativa A erra a data (o livro é de 1780, século XVIII) e diz que a receita não mudou.",
   "base": "img/2023-2/base_06-09.webp",
   "bw": 1094
  },
@@ -613,7 +613,7 @@ window.SEED = [
   "w": 1108,
   "h": 292,
   "gab": 1,
-  "coment": "",
+  "coment": "O trecho final é uma receita cheia de ordens: “tomem”, “desossem”, “recheiem”, “fechem”, “fritem”. Texto que dá instruções, com verbos no imperativo, é injuntivo. A palavra “prescritivo” até lembra isso, mas a justificativa da alternativa E (criatividade dos cozinheiros) não tem relação.",
   "base": "img/2023-2/base_06-09.webp",
   "bw": 1094
  },
@@ -627,7 +627,7 @@ window.SEED = [
   "w": 1108,
   "h": 374,
   "gab": 2,
-  "coment": "",
+  "coment": "A receita pede 12 coxas, e o aluno tem 5 a menos: 12 − 5 = 7. Regra de três: 12 coxas — 840 g; 7 coxas — x. Cada coxa leva 840 ÷ 12 = 70 g, então x = 7 × 70 = 490 g. Quem calcula para 5 coxas (em vez de 7) chega a 350 g, que é a pegadinha.",
   "base": "img/2023-2/base_06-09.webp",
   "bw": 1094
  },
@@ -641,7 +641,7 @@ window.SEED = [
   "w": 1108,
   "h": 425,
   "gab": 4,
-  "coment": "",
+  "coment": "No segundo parágrafo, a cozinheira tinha um problema (faltavam coxas) e inventou uma solução nova, que virou um produto. Agir diante do problema é iniciativa; criar algo novo testando uma ideia é empreendedorismo. O texto fala que ela agiu “por medo de represálias”, e não por empatia ou zelo pelo menino.",
   "base": "img/2023-2/base_06-09.webp",
   "bw": 1094
  },
@@ -655,7 +655,7 @@ window.SEED = [
   "w": 1108,
   "h": 523,
   "gab": 4,
-  "coment": ""
+  "coment": "Acompanhe as datas: 1717 (Brasil colônia), segunda metade do século XIX com a princesa Isabel (Império), 1930 e 1980 (República). A devoção atravessou os três períodos. Ela nasceu entre pescadores, então não foi trazida pela princesa nem imposta de cima."
  },
  {
   "id": "2023-2-q11",
@@ -667,7 +667,7 @@ window.SEED = [
   "w": 1109,
   "h": 425,
   "gab": 2,
-  "coment": ""
+  "coment": "A questão pede ações de impacto positivo, e nas duas partes da alternativa. Produtos biodegradáveis e reciclagem são as únicas duas ações boas juntas. As alternativas A e B misturam uma coisa boa (recuperar áreas degradadas, energia eólica) com uma ruim, por isso é preciso ler até o fim."
  },
  {
   "id": "2023-2-q12",
@@ -679,7 +679,7 @@ window.SEED = [
   "w": 1124,
   "h": 570,
   "gab": 1,
-  "coment": ""
+  "coment": "No cartum, a ignorância é uma almofada confortável (“tá tão bom aqui”) e o intelecto é uma torre com uma longa escada. Para aprender é preciso levantar e subir, isto é, sair da zona de conforto. Ficar deitado é justamente o que mantém o personagem na ignorância."
  },
  {
   "id": "2023-2-q13",
@@ -691,7 +691,7 @@ window.SEED = [
   "w": 592,
   "h": 763,
   "gab": 1,
-  "coment": ""
+  "coment": "Na fórmula, cada letra maiúscula é um elemento e o número pequeno indica quantos átomos. O₃: um só elemento (oxigênio), 3 átomos. SO₂ e NO₂ têm 2 elementos cada (não 3). NO e NO₂ têm os mesmos elementos e diferem em um átomo de oxigênio. CO e CO₂ são formados pelos mesmos 2 elementos."
  },
  {
   "id": "2023-2-q14",
@@ -703,7 +703,7 @@ window.SEED = [
   "w": 587,
   "h": 1389,
   "gab": 4,
-  "coment": ""
+  "coment": "O fim do texto explica: o soro é feito “a partir da imunização de cavalos com antígenos”. O cavalo recebe o antígeno (o veneno enfraquecido), produz anticorpos e depois se retira parte do sangue dele para obter esses anticorpos. Lembre a diferença: a vacina previne e faz o corpo criar defesas; o soro trata e já traz os anticorpos prontos."
  },
  {
   "id": "2023-2-q15",
@@ -715,7 +715,7 @@ window.SEED = [
   "w": 581,
   "h": 1311,
   "gab": 2,
-  "coment": ""
+  "coment": "O texto diz que a ponte foi sugerida “com o propósito de servir de suporte à instalação de uma tubulação” para levar o esgoto de Santos e São Vicente até o mar. Atenção aos detalhes trocados nas erradas: Saturnino de Brito era engenheiro (não médico), a peste é causada por bactéria, e Japuí e Barbosas são morros, não municípios."
  },
  {
   "id": "2023-2-q16",
@@ -727,7 +727,7 @@ window.SEED = [
   "w": 576,
   "h": 2223,
   "gab": 2,
-  "coment": ""
+  "coment": "O texto se passa nas décadas de 1940 a 1960, com fábricas e operários na Grande São Paulo. Nessa época a cidade se firmou como metrópole industrial, com a chegada das montadoras de automóveis ao ABC na década de 1950. São Paulo nunca foi capital do Brasil, e as demais alternativas tratam do período colonial ou do café."
  },
  {
   "id": "2023-2-q17",
@@ -739,7 +739,7 @@ window.SEED = [
   "w": 552,
   "h": 700,
   "gab": 3,
-  "coment": ""
+  "coment": "Da fórmula d = m ÷ V, tiramos V = m ÷ d. Primeiro iguale as unidades: 1 kg = 1 000 g. Então V = 1 000 ÷ 1,03 ≈ 970,9 cm³. Quem multiplica em vez de dividir chega a 1 030, que é a pegadinha. Faz sentido dar menos de 1 000: a água do mar é mais densa que a água pura."
  },
  {
   "id": "2023-2-q18",
@@ -751,7 +751,7 @@ window.SEED = [
   "w": 556,
   "h": 690,
   "gab": 1,
-  "coment": ""
+  "coment": "Na fórmula do sal, as cargas positivas e negativas têm que se anular, e o cátion vem escrito primeiro. Na⁺ e K⁺ têm carga +1, e o Cl⁻ tem −1: basta um de cada (NaCl, KCl). O Mg²⁺ tem carga +2, então precisa de dois Cl⁻: MgCl₂."
  },
  {
   "id": "2023-2-q19",
@@ -763,7 +763,7 @@ window.SEED = [
   "w": 567,
   "h": 466,
   "gab": 2,
-  "coment": "",
+  "coment": "Mudar de cor para ficar parecido com o ambiente e não ser visto é camuflagem. As outras opções são relações entre dois seres vivos: predatismo (um come o outro), comensalismo e inquilinismo (um se beneficia sem prejudicar o outro) e protocooperação (os dois se beneficiam).",
   "base": "img/2023-2/base_19-20.webp",
   "bw": 567
  },
@@ -777,7 +777,7 @@ window.SEED = [
   "w": 621,
   "h": 1444,
   "gab": 4,
-  "coment": "",
+  "coment": "A Lua atrai a água do mar. Como a Terra gira, cada região passa, ao longo do dia, pela posição mais próxima da Lua, e ali a maré fica alta. A Lua não sai da órbita (isso é só a piada dos quadrinhos), e a maré não depende de ser dia ou noite.",
   "base": "img/2023-2/base_19-20.webp",
   "bw": 567
  },
@@ -791,7 +791,7 @@ window.SEED = [
   "w": 549,
   "h": 571,
   "gab": 2,
-  "coment": "",
+  "coment": "O primeiro texto liga o crescimento da Sabesp à queda da mortalidade infantil e fala de distribuição de água e coleta de esgotos. Os erros das outras: as seis empresas eram privadas; a adesão era de cidades, não de estados; o Cantareira abastece parte da Região Metropolitana, não o estado todo; e a água produzida é potável, não destilada.",
   "base": "img/2023-2/base_21-23.webp",
   "bw": 542
  },
@@ -805,7 +805,7 @@ window.SEED = [
   "w": 1108,
   "h": 358,
   "gab": 4,
-  "coment": "",
+  "coment": "Metade de 375 é 187,5; para ultrapassar, são necessários pelo menos 188 municípios. Com 8 cidades por mês: 188 ÷ 8 = 23,5 meses. Em anos: 1,75 ano = 21 meses (168 cidades, ainda não passou) e 2 anos = 24 meses (192 cidades, passou). O truque é transformar anos em meses antes de comparar.",
   "base": "img/2023-2/base_21-23.webp",
   "bw": 542
  },
@@ -819,7 +819,7 @@ window.SEED = [
   "w": 1108,
   "h": 568,
   "gab": 3,
-  "coment": "",
+  "coment": "Um dia tem 24 × 60 × 60 = 86 400 segundos. Volume = vazão × tempo = 1,2 × 10⁵ × 86 400 ≈ 1,04 × 10¹⁰ litros, aproximadamente 1,0 × 10¹⁰. Outro caminho: o enunciado já dá 7,2 × 10⁶ L por minuto; multiplique por 1 440 minutos (24 × 60).",
   "base": "img/2023-2/base_21-23.webp",
   "bw": 542
  },
@@ -833,7 +833,7 @@ window.SEED = [
   "w": 1135,
   "h": 538,
   "gab": 4,
-  "coment": ""
+  "coment": "Decantar é deixar a mistura parada para que a parte mais densa afunde. Os flocos de sujeira são mais densos que a água e vão para o fundo do tanque. A propriedade usada é a densidade. Não há fusão nem dissolução dos flocos, e eles não sobem para a superfície."
  },
  {
   "id": "2023-2-q25",
@@ -845,7 +845,7 @@ window.SEED = [
   "w": 563,
   "h": 1148,
   "gab": 4,
-  "coment": ""
+  "coment": "O texto explica as duas partes: as bactérias produzem ácidos que desmineralizam o esmalte (cárie), e o flúor se junta ao cálcio e ao fosfato do dente, “criando um material resistente”. As erradas invertem as ideias: a acidez prejudica o dente, e a fluoretação diminui (não aumenta) a desmineralização."
  },
  {
   "id": "2023-2-q26",
@@ -857,7 +857,7 @@ window.SEED = [
   "w": 564,
   "h": 922,
   "gab": 3,
-  "coment": ""
+  "coment": "É uma conta com os dados do texto: o trecho morto passou de 122 km para 163 km, e 163 − 122 = 41 km de aumento entre 2018 e 2019. O texto não informa o comprimento total do rio nem quando começaram as promessas; só diz que a degradação começou na década de 1940."
  },
  {
   "id": "2023-2-q27",
@@ -869,7 +869,7 @@ window.SEED = [
   "w": 555,
   "h": 837,
   "gab": 4,
-  "coment": ""
+  "coment": "O Museu do Ipiranga fica no lugar onde D. Pedro I proclamou a Independência, às margens do riacho Ipiranga, em 7 de setembro de 1822. A pista do texto é a data da inauguração, 7 de setembro. O edifício foi construído como monumento à Independência."
  },
  {
   "id": "2023-2-q28",
@@ -881,7 +881,7 @@ window.SEED = [
   "w": 1235,
   "h": 1398,
   "gab": 3,
-  "coment": ""
+  "coment": "No infográfico, a pergunta “Como posso ser um cidadão mais participativo?” está ligada à atividade “Trabalho voluntário”. A única alternativa de trabalho voluntário é visitar pacientes em hospitais. As outras são trabalho pago (carteira assinada, estágio remunerado, vender lanches, atuar profissionalmente)."
  },
  {
   "id": "2023-2-q29",
@@ -893,7 +893,7 @@ window.SEED = [
   "w": 620,
   "h": 498,
   "gab": 0,
-  "coment": "",
+  "coment": "O desenho mostra carros presos dentro de uma garrafa: é a imagem ao pé da letra de “engarrafamento”, expressão figurada para trânsito parado (imobilidade). Do lado de fora, o ciclista passa livre (mobilidade). A charge defende a bicicleta, não a critica, e não há intervenção divina na cena.",
   "base": "img/2023-2/base_29-30.webp",
   "bw": 872
  },
@@ -907,7 +907,7 @@ window.SEED = [
   "w": 491,
   "h": 498,
   "gab": 3,
-  "coment": "",
+  "coment": "Em “Nada melhor que uma bike”, o “que” introduz o segundo termo de uma comparação e depende de “melhor” (melhor [do] que). Sobre as outras: “enquanto” indica tempo simultâneo, “isso” é pronome demonstrativo, as reticências marcam a frase interrompida, e “para desestressar” indica finalidade, não lugar de destino.",
   "base": "img/2023-2/base_29-30.webp",
   "bw": 872
  },
@@ -921,7 +921,7 @@ window.SEED = [
   "w": 1108,
   "h": 356,
   "gab": 4,
-  "coment": "",
+  "coment": "No século XIX o café era o principal produto de exportação do Brasil, vendido sobretudo para os Estados Unidos e a Europa. Por isso a ferrovia ligava as fazendas do interior ao porto de Santos: o café saía do país por ali, não entrava.",
   "base": "img/2023-2/base_31-32.webp",
   "bw": 1094
  },
@@ -935,7 +935,7 @@ window.SEED = [
   "w": 1108,
   "h": 316,
   "gab": 2,
-  "coment": "",
+  "coment": "Velocidade média = distância ÷ tempo. A estação Valongo é o marco zero e a da Luz fica no quilômetro 79, então a distância é 79 km. Em 2 horas: 79 ÷ 2 = 39,5 km/h. Quem usa os 139 km (até Jundiaí) chega a 69,5 km/h, que é a pegadinha.",
   "base": "img/2023-2/base_31-32.webp",
   "bw": 1094
  },
@@ -949,7 +949,7 @@ window.SEED = [
   "w": 1108,
   "h": 337,
   "gab": 4,
-  "coment": ""
+  "coment": "O porto de Santos é o maior do Brasil, e hoje um dos principais produtos exportados por ele é a soja, produzida principalmente no Centro-Oeste e no interior paulista. Fertilizantes e trigo são produtos que o Brasil mais importa do que exporta."
  },
  {
   "id": "2023-2-q34",
@@ -961,7 +961,7 @@ window.SEED = [
   "w": 1135,
   "h": 818,
   "gab": 3,
-  "coment": ""
+  "coment": "O texto diz que cada nome “recordaria vários acontecimentos históricos que marcaram o estado de São Paulo” e que há referências à localização geográfica (América Latina) e às correntes imigratórias (Itália e Japão). A alternativa D junta os três. A alternativa E é desmentida pela frase “muitos desses nomes foram posteriormente mudados”."
  },
  {
   "id": "2023-2-q35",
@@ -973,7 +973,7 @@ window.SEED = [
   "w": 1110,
   "h": 1013,
   "gab": 1,
-  "coment": ""
+  "coment": "Os dois textos concordam em um ponto: cada pessoa tem a sua caminhada (“faça o melhor que puder”) e a vida ganha sentido quando se caminha na direção do próprio projeto. Ou seja, traçar o próprio caminho e se esforçar. As outras alternativas distorcem trechos soltos, como “império”, “barco sem bússola” e “retrocesso”."
  },
  {
   "id": "2023-2-q36",
@@ -985,7 +985,7 @@ window.SEED = [
   "w": 1108,
   "h": 521,
   "gab": 3,
-  "coment": ""
+  "coment": "O enunciado diz que alguns fatores de risco podem ser mudados com o estilo de vida e com remédios. A única alternativa com hábitos saudáveis é controlar o peso e tomar a medicação indicada. Todas as outras recomendam o que faz mal ao coração: pressão alta, sedentarismo, sal, álcool e gordura."
  },
  {
   "id": "2023-2-q37",
@@ -997,7 +997,7 @@ window.SEED = [
   "w": 1108,
   "h": 502,
   "gab": 2,
-  "coment": "",
+  "coment": "O texto diz que se procurou “eliminar os estigmas que ligavam São Paulo ao passado colonial” e dá como exemplo a demolição da Igreja do Rosário dos Homens Pretos. A demolição fazia parte desse plano de apagar o que era visto como atrasado. O cargo de prefeito foi criado em 1899, e Prado ficou até 1911.",
   "base": "img/2023-2/base_37-39.webp",
   "bw": 1095
  },
@@ -1011,7 +1011,7 @@ window.SEED = [
   "w": 1108,
   "h": 902,
   "gab": 3,
-  "coment": "",
+  "coment": "O nome do polígono vem do número de lados. Siga a linha preta do mapa contando cada trecho reto (ou cada “quina”): são 11 lados. Polígono de 11 lados é undecágono. Para comparar: heptágono tem 7 e dodecágono tem 12.",
   "base": "img/2023-2/base_37-39.webp",
   "bw": 1095
  },
@@ -1025,7 +1025,7 @@ window.SEED = [
   "w": 1108,
   "h": 510,
   "gab": 2,
-  "coment": "",
+  "coment": "Dois lados iguais (500 m e 500 m): triângulo isósceles. Para o tipo de ângulo, compare o quadrado do maior lado com a soma dos quadrados dos outros dois: 800² = 640 000 e 500² + 500² = 500 000. Como 640 000 é maior, o ângulo oposto ao lado maior é maior que 90°: obtusângulo. Se fosse igual, seria retângulo; se fosse menor, acutângulo.",
   "base": "img/2023-2/base_37-39.webp",
   "bw": 1095,
   "extra": "img/2023-2/extra_q39.webp",
@@ -1042,7 +1042,7 @@ window.SEED = [
   "w": 1108,
   "h": 792,
   "gab": 1,
-  "coment": ""
+  "coment": "Ciprestes e pinheiros são gimnospermas: têm sementes (os pinhões, por exemplo), mas não têm frutos envolvendo a semente. As outras erram em pontos básicos: animais consomem oxigênio e liberam gás carbônico; plantas têm clorofila; pau-brasil e imbuia são árvores altas com vasos condutores; preguiça e bugio comem folhas."
  },
  {
   "id": "2023-2-q41",
@@ -1054,7 +1054,7 @@ window.SEED = [
   "w": 1150,
   "h": 853,
   "gab": 4,
-  "coment": ""
+  "coment": "O texto diz que a Estrada das Lágrimas foi “batizada em homenagem à árvore” e que a figueira foi declarada patrimônio ambiental e “imune de corte”. Cuidado com as trocas: quem quis derrubá-la em 1909 foi o dono do terreno; o prefeito Firmiano Pinto, em 1920, mandou protegê-la."
  },
  {
   "id": "2023-2-q42",
@@ -1066,7 +1066,7 @@ window.SEED = [
   "w": 1150,
   "h": 634,
   "gab": 3,
-  "coment": ""
+  "coment": "Fósseis são restos ou marcas de seres vivos antigos preservados nas rochas. Com um fêmur, uma vértebra e um dente, os cientistas descobriram o tamanho, a alimentação e a época em que o animal viveu. As partes duras são as que mais se fossilizam; as moles se decompõem depressa."
  },
  {
   "id": "2023-2-q43",
@@ -1078,7 +1078,7 @@ window.SEED = [
   "w": 1108,
   "h": 827,
   "gab": 1,
-  "coment": ""
+  "coment": "A primeira parada já está decidida (Museu do Café). Sobram 6 destinos para as outras duas paradas, e a ordem importa: 6 opções para a segunda e 5 para a terceira. 6 × 5 = 30 roteiros. Quem não considera a ordem chega a 15, e quem esquece que o Museu já foi usado faz 7 × 6 = 42."
  },
  {
   "id": "2023-2-q44",
@@ -1090,7 +1090,7 @@ window.SEED = [
   "w": 1108,
   "h": 1044,
   "gab": 3,
-  "coment": ""
+  "coment": "No mapa, o norte fica para cima (veja a rosa dos ventos no canto). Jundiaí está abaixo e à direita de Araraquara. Para baixo é sul e para a direita é leste: o avião voa no sentido sudeste."
  },
  {
   "id": "2023-2-q45",
@@ -1102,7 +1102,7 @@ window.SEED = [
   "w": 1108,
   "h": 668,
   "gab": 0,
-  "coment": ""
+  "coment": "Dá para resolver sem fazer conta: Aparecida tem a maior nota no Google (4,76) e também a maior no TripAdvisor (4,50); logo, tem a maior média. Se quiser conferir: (4,76 + 4,50) ÷ 2 = 4,63, contra 4,55 de Ilhabela, a segunda colocada."
  },
  {
   "id": "2023-2-q46",
@@ -1114,7 +1114,7 @@ window.SEED = [
   "w": 1150,
   "h": 510,
   "gab": 4,
-  "coment": ""
+  "coment": "Água mineral não é só H₂O: tem sais minerais dissolvidos (veja o rótulo de qualquer garrafa). Mais de uma substância junta é mistura, no caso, homogênea. Substância pura seria a água destilada, que só tem H₂O."
  },
  {
   "id": "2023-2-q47",
@@ -1126,7 +1126,7 @@ window.SEED = [
   "w": 1108,
   "h": 634,
   "gab": 0,
-  "coment": ""
+  "coment": "De Paranapiacaba (alto da serra) para Santos (nível do mar) a pessoa desce: a altitude diminui. Quanto menor a altitude, maior a pressão atmosférica, porque há mais ar acima. A pressão da orelha média precisa aumentar para se igualar à de fora."
  },
  {
   "id": "2023-2-q48",
@@ -1138,7 +1138,7 @@ window.SEED = [
   "w": 1102,
   "h": 790,
   "gab": 2,
-  "coment": ""
+  "coment": "Cristiane conta as duas dificuldades: jogava “somente com meninos — não tinha menina” e a família “não tinha condições financeiras”. Ela só conseguiu ir para uma escolinha com a ajuda de um vizinho, então não bastou acreditar em si mesma nem foi fácil."
  },
  {
   "id": "2023-2-q49",
@@ -1150,7 +1150,7 @@ window.SEED = [
   "w": 1108,
   "h": 596,
   "gab": 0,
-  "coment": ""
+  "coment": "Para o balão subir, sua densidade precisa ficar menor que a do ar de fora. O balonista aquece o ar de dentro; ar quente se expande (ocupa mais espaço), parte dele sai do balão e a densidade média diminui. Guarde: ar quente é menos denso e sobe; ar frio é mais denso e desce."
  },
  {
   "id": "2023-2-q50",
@@ -1162,7 +1162,7 @@ window.SEED = [
   "w": 1108,
   "h": 1462,
   "gab": 4,
-  "coment": ""
+  "coment": "Os quadrinhos comparam a formiga controlada pelo fungo com o menino “controlado” pelo celular, que sai andando atrás de sinal de wi-fi. Para não perder a autonomia, a saída é se conhecer e pensar com senso crítico sobre o próprio uso da tecnologia. Trocar o celular pelo computador ou usar ainda mais o aparelho não resolve nada."
  },
  {
   "id": "2024-1-q01",
@@ -1174,7 +1174,7 @@ window.SEED = [
   "w": 1108,
   "h": 287,
   "gab": 1,
-  "coment": "",
+  "coment": "O texto lista os estados da Amazônia Legal: Acre, Amapá, Amazonas, Mato Grosso, Pará, Rondônia, Roraima e Tocantins inteiros, mais parte do Maranhão. Os sete estados da Região Norte (AC, AP, AM, PA, RO, RR, TO) estão todos nessa lista. O Maranhão faz parte da Amazônia Legal, mas pertence à Região Nordeste, e é aí que a alternativa C erra.",
   "base": "img/2024-1/base_01-02.webp",
   "bw": 1079
  },
@@ -1188,7 +1188,7 @@ window.SEED = [
   "w": 1108,
   "h": 286,
   "gab": 2,
-  "coment": "",
+  "coment": "A Amazônia Legal foi criada para cobrir a região amazônica brasileira; por isso contém a maior parte do Bioma Amazônia (e ainda um pouco de cerrado e pantanal). Do Centro-Oeste só entra o Mato Grosso; Roraima e Amapá têm terras acima da linha do Equador, no hemisfério norte; e o polígono das secas fica no sertão nordestino.",
   "base": "img/2024-1/base_01-02.webp",
   "bw": 1079
  },
@@ -1202,7 +1202,7 @@ window.SEED = [
   "w": 1108,
   "h": 350,
   "gab": 1,
-  "coment": ""
+  "coment": "A Floresta Amazônica se divide conforme a relação com os rios: mata de igapó (sempre alagada), mata de várzea (alagada só nas cheias) e mata de terra firme (nunca alaga, com as árvores mais altas). As outras alternativas misturam vegetações de outros lugares do Brasil, como caatinga, cerrado, araucária e restinga."
  },
  {
   "id": "2024-1-q04",
@@ -1214,7 +1214,7 @@ window.SEED = [
   "w": 1108,
   "h": 431,
   "gab": 3,
-  "coment": ""
+  "coment": "Floresta tropical úmida: árvores médias e grandes, folhas largas e sempre verdes (não caem na seca), muitos cipós, trepadeiras e epífitas (plantas que vivem sobre outras, como orquídeas e bromélias). As demais descrevem outros biomas: espinhos e caules que guardam água (caatinga), solo lamacento e salgado (mangue), troncos retorcidos (cerrado), gramíneas (campos)."
  },
  {
   "id": "2024-1-q05",
@@ -1226,7 +1226,7 @@ window.SEED = [
   "w": 1108,
   "h": 405,
   "gab": 3,
-  "coment": "",
+  "coment": "A canção diz que a Amazônia é “sem igual, sem plano B nem clone” (única) e “objeto de omissão e ação errônea” (falta de proteção), atacada por quem tem “planos de riqueza horrorosos”. As outras contradizem a letra: o indígena está em comunhão com a floresta “há milênios”, e os ataques são constantes (“a toda hora”).",
   "base": "img/2024-1/base_05-07.webp",
   "bw": 955
  },
@@ -1240,7 +1240,7 @@ window.SEED = [
   "w": 1108,
   "h": 365,
   "gab": 1,
-  "coment": "",
+  "coment": "No verso 24, “seus empecilhos” são os empecilhos dos invasores (os “peões de poderosos”); no verso 25, “eles não pensam no amanhã” também fala desses invasores. Os dois pronomes retomam a mesma ideia. Sobre a alternativa A: “porém” e “todavia” indicam oposição, mas “pois” indica explicação.",
   "base": "img/2024-1/base_05-07.webp",
   "bw": 955
  },
@@ -1254,7 +1254,7 @@ window.SEED = [
   "w": 1109,
   "h": 414,
   "gab": 2,
-  "coment": "",
+  "coment": "Paronomásia é aproximar palavras de som parecido e sentido diferente: “insânia” (loucura) e “insônia” (falta de sono). Sobre as outras: “beleza” e “valor” não são opostos, então não há antítese; e “eles” são pessoas, não seres inanimados, então não há personificação.",
   "base": "img/2024-1/base_05-07.webp",
   "bw": 955
  },
@@ -1268,7 +1268,7 @@ window.SEED = [
   "w": 1108,
   "h": 490,
   "gab": 2,
-  "coment": ""
+  "coment": "A lista mistura peixes (pirarucu, poraquê, arraia, tucunaré) e mamíferos (peixe-boi e boto). Pulmões e temperatura constante só valem para os mamíferos; bexiga natatória e fecundação externa, só para peixes. O que vale para todos é a respiração celular: usar oxigênio para “queimar” a glicose e obter energia."
  },
  {
   "id": "2024-1-q09",
@@ -1280,7 +1280,7 @@ window.SEED = [
   "w": 1108,
   "h": 321,
   "gab": 3,
-  "coment": "",
+  "coment": "O segundo parágrafo explica: os créditos “podem ser adquiridos, como forma de compensação, por empresas ou outros países emissores desses gases em excesso”. Sobre as erradas: 670 milhões de hectares é a floresta inteira (o Brasil tem 60%); o Brasil venderia créditos, não compraria; e uma tonelada de metano vale 21 créditos, não 1.",
   "base": "img/2024-1/base_09-11.webp",
   "bw": 1080
  },
@@ -1294,7 +1294,7 @@ window.SEED = [
   "w": 1108,
   "h": 311,
   "gab": 3,
-  "coment": "",
+  "coment": "Os números em negrito no texto são 40 bilhões e 250%. Escreva os dois em potência de 10: 40 bilhões = 4 × 10¹⁰ e 250% = 250 ÷ 100 = 2,5. Produto: 4 × 2,5 = 10, então 10 × 10¹⁰ = 1,0 × 10¹¹. Não esqueça que porcentagem é uma divisão por 100.",
   "base": "img/2024-1/base_09-11.webp",
   "bw": 1080
  },
@@ -1308,7 +1308,7 @@ window.SEED = [
   "w": 1108,
   "h": 312,
   "gab": 4,
-  "coment": "",
+  "coment": "Dois passos. Parte brasileira: 60% de 670 milhões = 0,6 × 670 = 402 milhões de hectares. Créditos: cada hectare gera 30, então 402 milhões × 30 = 12 060 milhões. Quem para no primeiro passo marca 402 milhões; e atenção à unidade no final, milhões e não bilhões.",
   "base": "img/2024-1/base_09-11.webp",
   "bw": 1080
  },
@@ -1322,7 +1322,7 @@ window.SEED = [
   "w": 1108,
   "h": 1426,
   "gab": 2,
-  "coment": ""
+  "coment": "No mapa, a Amazônia está a oeste da Linha de Tordesilhas, ou seja, do lado que seria da Espanha. Mesmo assim aparecem ali muitas cruzes (missões portuguesas) e uma seta de expedição de apresamento subindo os rios. Foi essa presença que acabou integrando a região à colônia portuguesa, apesar do tratado; por isso a alternativa E está errada."
  },
  {
   "id": "2024-1-q13",
@@ -1334,7 +1334,7 @@ window.SEED = [
   "w": 1109,
   "h": 400,
   "gab": 1,
-  "coment": "",
+  "coment": "Some os deslocamentos em cada direção. Para leste: 6 + 10 = 16 km. Para o sul: 16 − 4 = 12 km (os 4 km para o norte descontam). O caminho em linha reta é a hipotenusa de um triângulo retângulo de catetos 16 e 12: d² = 16² + 12² = 256 + 144 = 400, d = 20 km. É o triângulo 3-4-5 multiplicado por 4.",
   "base": "img/2024-1/base_13-15.webp",
   "bw": 1080
  },
@@ -1348,7 +1348,7 @@ window.SEED = [
   "w": 1108,
   "h": 407,
   "gab": 3,
-  "coment": "",
+  "coment": "O texto diz que as lendas são “ensinamentos e histórias repassados de geração a geração” para transmitir valores. A função desse gênero é preservar e valorizar a identidade e a experiência de quem veio antes. As outras alternativas falam de tecnologia, migração e trabalho, temas que não aparecem no texto.",
   "base": "img/2024-1/base_13-15.webp",
   "bw": 1080
  },
@@ -1362,7 +1362,7 @@ window.SEED = [
   "w": 1108,
   "h": 309,
   "gab": 3,
-  "coment": "",
+  "coment": "A pista é “de boca em boca”: o que se transmite pela fala é fonte oral. Fonte escrita são documentos e livros; iconográfica são imagens; material e arqueológica são objetos e vestígios.",
   "base": "img/2024-1/base_13-15.webp",
   "bw": 1080
  },
@@ -1376,7 +1376,7 @@ window.SEED = [
   "w": 1107,
   "h": 286,
   "gab": 2,
-  "coment": "",
+  "coment": "A superfície calma do lago funciona como um espelho: a luz que vem da Lua bate na água e volta para os olhos de Naiá. Isso é reflexão. Refração é a luz mudar de direção ao passar de um meio para outro (do ar para a água), e absorção é a luz ser “engolida” pelo material.",
   "base": "img/2024-1/base_16-17.webp",
   "bw": 1079
  },
@@ -1390,7 +1390,7 @@ window.SEED = [
   "w": 1107,
   "h": 397,
   "gab": 3,
-  "coment": "",
+  "coment": "A folha flutua por ter compartimentos cheios de ar, que a deixam menos densa que a água. O colete salva-vidas inflável faz o mesmo: ar preso que aumenta o volume sem aumentar o peso. Pé de pato serve para nadar mais rápido e a roupa de neoprene serve para manter o corpo aquecido.",
   "base": "img/2024-1/base_16-17.webp",
   "bw": 1079
  },
@@ -1404,7 +1404,7 @@ window.SEED = [
   "w": 1108,
   "h": 429,
   "gab": 1,
-  "coment": ""
+  "coment": "O Acre fica no extremo oeste do Brasil, e nele está o ponto mais ocidental do país, a nascente do rio Moa. Vocabulário que cai sempre: ocidental = oeste; oriental = leste (Ponta do Seixas, na Paraíba); setentrional = norte (rio Ailã, em Roraima); meridional = sul (Arroio Chuí, no Rio Grande do Sul)."
  },
  {
   "id": "2024-1-q19",
@@ -1416,7 +1416,7 @@ window.SEED = [
   "w": 1108,
   "h": 376,
   "gab": 4,
-  "coment": "",
+  "coment": "O autor diz que os Yanomami não maltratam a floresta e precisam defendê-la para ter caça, roça, água e peixe; sem ela, seus filhos passam fome. A vida e a cultura do povo dependem do equilíbrio com a natureza. Ele não quer seguir o modo de vida dos brancos, e fez suas palavras serem escritas, então não se limita à oralidade.",
   "base": "img/2024-1/base_19-21.webp",
   "bw": 1079
  },
@@ -1430,7 +1430,7 @@ window.SEED = [
   "w": 1108,
   "h": 406,
   "gab": 2,
-  "coment": "",
+  "coment": "Na reescrita, os tempos verbais precisam combinar. Hipótese com “caso fôssemos” (imperfeito do subjuntivo) pede futuro do pretérito: seríamos, acabariam, deixariam, e depois “pudéssemos”. As outras misturam tempos que não combinam, como “caso vivamos... seríamos” ou “ainda que fôssemos... não seremos”.",
   "base": "img/2024-1/base_19-21.webp",
   "bw": 1079
  },
@@ -1444,7 +1444,7 @@ window.SEED = [
   "w": 1108,
   "h": 287,
   "gab": 3,
-  "coment": "",
+  "coment": "“Peles de papel” é o modo como o autor chama as folhas dos livros; “fixar os olhos em peles de papel” é ler. Ele diz que não aprendeu assim, e sim vendo a floresta de verdade. “Desenhar na língua dos brancos” é a metáfora para escrever, não para ler.",
   "base": "img/2024-1/base_19-21.webp",
   "bw": 1079
  },
@@ -1458,7 +1458,7 @@ window.SEED = [
   "w": 1109,
   "h": 1139,
   "gab": 3,
-  "coment": ""
+  "coment": "O terceiro parágrafo diz que a convivência com a floresta e o conhecimento adquirido “deram origem a uma teoria que seria, mais tarde, comprovada”: manter a floresta em pé vale mais do que derrubá-la. Ele também atuou no sindicato e ganhou respeito internacional, o que desmente as alternativas B e E."
  },
  {
   "id": "2024-1-q23",
@@ -1470,7 +1470,7 @@ window.SEED = [
   "w": 1109,
   "h": 756,
   "gab": 1,
-  "coment": ""
+  "coment": "A malária é causada por um protozoário (o plasmódio) e transmitida pela picada do mosquito Anopheles. Com o desmatamento, chegam muitas pessoas às áreas abertas e o mosquito se adapta ao novo ambiente: mais gente perto do transmissor, mais casos. Os erros das outras: não é causada por bactéria, não envolve caramujo (esse é da esquistossomose), e o barbeiro transmite a doença de Chagas."
  },
  {
   "id": "2024-1-q24",
@@ -1482,7 +1482,7 @@ window.SEED = [
   "w": 1109,
   "h": 856,
   "gab": 0,
-  "coment": ""
+  "coment": "Veja o padrão da tabela: quando o dia aumenta 1, as denúncias aumentam 2; logo, a fórmula tem 2D. Para D = 2, 2 × 2 = 4, e faltam 3 para chegar a 7: N = 2D + 3. Confira com outro par: D = 5 dá 2 × 5 + 3 = 13. Sempre teste a fórmula em mais de uma linha, porque algumas alternativas acertam só a primeira."
  },
  {
   "id": "2024-1-q25",
@@ -1494,7 +1494,7 @@ window.SEED = [
   "w": 1109,
   "h": 465,
   "gab": 3,
-  "coment": "",
+  "coment": "Compare os números: Balbina alaga 3 000 km² e fornece 80 MW; Belo Monte alaga 500 km² e fornece 4 500 MW. Balbina inunda seis vezes mais área e gera muito menos energia. A crítica, portanto, é coerente, e o motivo certo é esse (área maior, energia menor).",
   "base": "img/2024-1/base_25-27.webp",
   "bw": 1121
  },
@@ -1508,7 +1508,7 @@ window.SEED = [
   "w": 1108,
   "h": 257,
   "gab": 4,
-  "coment": "",
+  "coment": "O texto explica que o reservatório inundou a floresta e que restou um “cemitério de milhões de árvores mortas”, os paliteiros. Eles são consequência do alagamento causado pela usina, não de madeireiros, garimpo ou aquecimento global.",
   "base": "img/2024-1/base_25-27.webp",
   "bw": 1121
  },
@@ -1522,7 +1522,7 @@ window.SEED = [
   "w": 1108,
   "h": 362,
   "gab": 1,
-  "coment": "",
+  "coment": "O fator de capacidade é o que a usina realmente fornece dividido pela capacidade instalada: 80 ÷ 250 = 0,32. Quem inverte a divisão (250 ÷ 80) encontra 3,13. Uma dica: o resultado tem que ser menor que 1, pois a usina não pode fornecer mais do que a capacidade instalada.",
   "base": "img/2024-1/base_25-27.webp",
   "bw": 1121
  },
@@ -1536,7 +1536,7 @@ window.SEED = [
   "w": 1097,
   "h": 309,
   "gab": 4,
-  "coment": "",
+  "coment": "O gráfico tem 15 anos, e três quintos de 15 são 9 anos. Agora conte quantos valores cabem em cada alternativa. Abaixo de 3 000 km² há exatamente 9: 2 594, 2 461, 2 106, 2 046, 1 905, 1 602, 1 257, 1 145 e 1 008. Abaixo de 2 000 são só 5, e acima de 5 000 são 4.",
   "base": "img/2024-1/base_28-29.webp",
   "bw": 1085
  },
@@ -1550,7 +1550,7 @@ window.SEED = [
   "w": 1097,
   "h": 372,
   "gab": 1,
-  "coment": "",
+  "coment": "A própria questão dá a definição: amplitude = maior valor − menor valor. O maior é 9 069 e o menor é 1 008: 9 069 − 1 008 = 8 061.",
   "base": "img/2024-1/base_28-29.webp",
   "bw": 1085
  },
@@ -1564,7 +1564,7 @@ window.SEED = [
   "w": 1108,
   "h": 417,
   "gab": 4,
-  "coment": ""
+  "coment": "Gás carbônico (CO₂) e metano (CH₄) são gases do efeito estufa: seguram o calor na atmosfera, e em excesso aumentam o aquecimento global. Quem protege a Terra dos raios ultravioleta é a camada de ozônio, e os gases que a destroem são outros (os CFCs)."
  },
  {
   "id": "2024-1-q31",
@@ -1576,7 +1576,7 @@ window.SEED = [
   "w": 1108,
   "h": 438,
   "gab": 4,
-  "coment": ""
+  "coment": "Para passar de líquido a vapor, a água precisa receber calor, e ela tira esse calor do ambiente, que fica mais fresco. É o mesmo motivo de sentirmos frio ao sair molhados do banho. Evaporação é mudança de estado físico: a água continua sendo H₂O e não se separa em hidrogênio e oxigênio."
  },
  {
   "id": "2024-1-q32",
@@ -1588,7 +1588,7 @@ window.SEED = [
   "w": 1108,
   "h": 624,
   "gab": 2,
-  "coment": ""
+  "coment": "O texto diz que os rios voadores levam chuvas a Mato Grosso, Mato Grosso do Sul, Minas Gerais, São Paulo, Paraná e Santa Catarina e a partes de Bolívia, Paraguai, Uruguai e Argentina. São massas de vapor d’água no ar, não rios de verdade. E o litoral do Brasil é oriental (leste), não ocidental."
  },
  {
   "id": "2024-1-q33",
@@ -1600,7 +1600,7 @@ window.SEED = [
   "w": 1109,
   "h": 485,
   "gab": 4,
-  "coment": ""
+  "coment": "A única atitude que ajuda a natureza é plantar árvores nativas com autorização. As outras parecem positivas à primeira vista, mas leia até o fim: comprar madeira que NÃO seja de reflorestamento, aumentar os descartáveis e aumentar o consumo de carne pioram o desmatamento."
  },
  {
   "id": "2024-1-q34",
@@ -1612,7 +1612,7 @@ window.SEED = [
   "w": 1109,
   "h": 607,
   "gab": 1,
-  "coment": ""
+  "coment": "O objetivo do PADS é manter a floresta em pé dando renda a quem vive nela. O projeto parecido é o que remunera produtores que preservam floresta e cerrado. Os outros projetos são importantes, mas tratam de alimentação, animais abandonados, mães solo e moradia, não de conservação."
  },
  {
   "id": "2024-1-q35",
@@ -1624,7 +1624,7 @@ window.SEED = [
   "w": 1108,
   "h": 695,
   "gab": 2,
-  "coment": ""
+  "coment": "Sistema agroflorestal é plantar alimentos junto com árvores, na mesma área. O texto lista os benefícios: aumento de renda para o produtor, reflorestamento, redução do desmatamento e das queimadas. Ou seja, renda com menos dano ambiental. As outras alternativas falam em reduzir a floresta ou favorecer atividades ilegais."
  },
  {
   "id": "2024-1-q36",
@@ -1636,7 +1636,7 @@ window.SEED = [
   "w": 1108,
   "h": 498,
   "gab": 4,
-  "coment": ""
+  "coment": "Com as drogas do sertão, Portugal resolvia dois problemas: ocupava a Amazônia, afastando franceses, holandeses e ingleses, e conseguia especiarias para vender na Europa quando o comércio com o Oriente (as Índias) já rendia menos. No período colonial não havia estradas e ferrovias ligando a região nem Exército brasileiro."
  },
  {
   "id": "2024-1-q37",
@@ -1648,7 +1648,7 @@ window.SEED = [
   "w": 1108,
   "h": 610,
   "gab": 3,
-  "coment": ""
+  "coment": "O texto fala de duas áreas da Química: uma que procura “desvendar o mistério das estruturas” (isolar e determinar a estrutura) e outra, a Química Orgânica e de Síntese, que busca “produzi-las sinteticamente”. Quem estuda as atividades biológicas são os biólogos (“os últimos”), não os químicos (“os primeiros”)."
  },
  {
   "id": "2024-1-q38",
@@ -1660,7 +1660,7 @@ window.SEED = [
   "w": 1109,
   "h": 791,
   "gab": 0,
-  "coment": ""
+  "coment": "O Ciclo da Borracha aconteceu aproximadamente entre 1870 e 1912. A extração do látex precisava de muita gente, e a grande seca do Nordeste (1877-1879) levou milhares de sertanejos a migrar para os seringais da Amazônia. Vargas (1930) e Juscelino (1956) governaram bem depois do auge do ciclo, e a borracha era exportada como matéria-prima."
  },
  {
   "id": "2024-1-q39",
@@ -1672,7 +1672,7 @@ window.SEED = [
   "w": 1108,
   "h": 274,
   "gab": 2,
-  "coment": "",
+  "coment": "A cutia ganha alimento (a amêndoa) e a castanheira ganha a dispersão das suas sementes, que a cutia enterra e esquece. Quando as duas espécies se beneficiam, a relação é mutualismo. No comensalismo só uma ganha e a outra não é afetada; no parasitismo e no predatismo uma sai prejudicada.",
   "base": "img/2024-1/base_39-42.webp",
   "bw": 1079
  },
@@ -1686,7 +1686,7 @@ window.SEED = [
   "w": 1108,
   "h": 365,
   "gab": 1,
-  "coment": "",
+  "coment": "O texto dá a altura (50 m) e o diâmetro da base (4 m). A fórmula pede o raio, que é a metade do diâmetro: r = 2 m. V = (50 × π × 2²) ÷ 3 = (50 × 4 × π) ÷ 3 = 200π ÷ 3. Quem usa o diâmetro no lugar do raio chega a 800π ÷ 3, que é a pegadinha.",
   "base": "img/2024-1/base_39-42.webp",
   "bw": 1079
  },
@@ -1700,7 +1700,7 @@ window.SEED = [
   "w": 1108,
   "h": 386,
   "gab": 2,
-  "coment": "",
+  "coment": "O texto diz que as amêndoas são ricas em proteínas, carboidratos, vitaminas e minerais e que ajudam no fortalecimento do sistema imunológico. Cuidado com os nomes: ouriço é o fruto, castanha é a semente e amêndoa é a parte de dentro que se come. Os frutos caem inteiros (não se abrem na árvore) e a castanha ajuda a diminuir depressão, fadiga e estresse.",
   "base": "img/2024-1/base_39-42.webp",
   "bw": 1079
  },
@@ -1714,7 +1714,7 @@ window.SEED = [
   "w": 1108,
   "h": 442,
   "gab": 0,
-  "coment": "",
+  "coment": "É só substituir na fórmula dada: v = √(2 × g × H) = √(2 × 10 × 45) = √900 = 30 m/s. Lembre que 30 × 30 = 900.",
   "base": "img/2024-1/base_39-42.webp",
   "bw": 1079
  },
@@ -1728,7 +1728,7 @@ window.SEED = [
   "w": 1108,
   "h": 530,
   "gab": 3,
-  "coment": ""
+  "coment": "O enunciado diz que o sal é formado por carbono, oxigênio e cálcio; a fórmula tem que ter os três símbolos: Ca, C e O. Só CaCO₃ tem os três. CaO não tem carbono, e as fórmulas com Na são de sódio, que nem foi citado."
  },
  {
   "id": "2024-1-q44",
@@ -1740,7 +1740,7 @@ window.SEED = [
   "w": 1109,
   "h": 374,
   "gab": 1,
-  "coment": ""
+  "coment": "O petróleo se formou de restos de seres vivos soterrados há milhões de anos; por isso é combustível fóssil. Como leva milhões de anos para se formar, não dá para repor no ritmo em que é usado: fonte não renovável. Renováveis são as fontes que se repõem depressa, como o etanol da cana e a energia do sol e do vento."
  },
  {
   "id": "2024-1-q45",
@@ -1752,7 +1752,7 @@ window.SEED = [
   "w": 1110,
   "h": 766,
   "gab": 3,
-  "coment": ""
+  "coment": "Na tirinha, o personagem se joga atrás do barco “Vida” só com a vontade de tentar e acaba no fundo, junto de muitos outros que fizeram o mesmo. Esforço sem planejamento não basta. Para não repetir o erro, é preciso planejar as ações e prever os obstáculos. Ignorar experiências, evitar o novo ou só sonhar não ajuda."
  },
  {
   "id": "2024-1-q46",
@@ -1764,7 +1764,7 @@ window.SEED = [
   "w": 1108,
   "h": 1051,
   "gab": 1,
-  "coment": ""
+  "coment": "A diferença está no texto: animal venenoso tem veneno, mas não tem como injetá-lo (envenena por compressão, contato ou ingestão, como o baiacu); animal peçonhento tem dente ou ferrão para injetar (cobras, escorpiões, aranhas, abelhas). As rãs são venenosas, e cascavel e jararaca são peçonhentas."
  },
  {
   "id": "2024-1-q47",
@@ -1776,7 +1776,7 @@ window.SEED = [
   "w": 1109,
   "h": 468,
   "gab": 1,
-  "coment": ""
+  "coment": "A Cabanagem (1835-1840) aconteceu no Grão-Pará, no Período Regencial. Juntou a população pobre (os cabanos, indígenas, negros e mestiços que viviam em cabanas), que queria melhores condições de vida, e grupos da elite local, que queriam mais poder político. As outras alternativas descrevem outros momentos: mineração no período colonial, Diretas Já e greves operárias."
  },
  {
   "id": "2024-1-q48",
@@ -1788,7 +1788,7 @@ window.SEED = [
   "w": 1109,
   "h": 913,
   "gab": 2,
-  "coment": ""
+  "coment": "As mesmas estrelas são o Escorpião para os egípcios (tempo de seca) e a Jararaca para os Tukano (tempo de chuvas e de reprodução dos peixes). Cada povo interpreta o céu conforme sua cultura e seu modo de vida. O exemplo mostra aplicação prática (marcar o tempo) e observação da realidade, o que derruba as outras alternativas."
  },
  {
   "id": "2024-1-q49",
@@ -1800,7 +1800,7 @@ window.SEED = [
   "w": 1108,
   "h": 575,
   "gab": 2,
-  "coment": ""
+  "coment": "As pistas são o presidente Médici (ditadura militar, início dos anos 1970), a cidade de Altamira (no Pará) e a ideia de “avançar sobre a floresta”. É a Rodovia Transamazônica, planejada para integrar o Norte ao restante do país."
  },
  {
   "id": "2024-1-q50",
@@ -1812,7 +1812,7 @@ window.SEED = [
   "w": 1109,
   "h": 886,
   "gab": 0,
-  "coment": ""
+  "coment": "Na charge, o indígena usa o arco para lançar não uma flecha, mas a Constituição. A “arma” dele é a lei: a Constituição de 1988 (a Carta Magna) reconhece os direitos dos povos indígenas, e conhecê-la é o caminho para defendê-los. Não há submissão, e a luta mostrada não é pela violência."
  },
  {
   "id": "2024-2-q01",
@@ -1824,7 +1824,7 @@ window.SEED = [
   "w": 1108,
   "h": 535,
   "gab": 1,
-  "coment": ""
+  "coment": "A única alternativa com um hábito saudável e uma justificativa verdadeira é a da atividade física regular, que ajuda a controlar a pressão, reduz o risco de diabetes e fortalece os ossos. Nas outras, ou o conselho é ruim (pouca água, telas antes de dormir, evitar refeições balanceadas) ou há exagero: exames ajudam a descobrir doenças cedo, mas não “impedem” que apareçam."
  },
  {
   "id": "2024-2-q02",
@@ -1836,7 +1836,7 @@ window.SEED = [
   "w": 1107,
   "h": 901,
   "gab": 2,
-  "coment": ""
+  "coment": "O desenho de Leonardo da Vinci mostra músculos do ombro e do pescoço em detalhe: é um estudo de anatomia, feito a partir da observação e da dissecação de cadáveres. O Renascimento valorizava o ser humano e a investigação pela experiência. A inspiração dos renascentistas era a Antiguidade greco-romana, não a Idade Média."
  },
  {
   "id": "2024-2-q03",
@@ -1848,7 +1848,7 @@ window.SEED = [
   "w": 1108,
   "h": 298,
   "gab": 2,
-  "coment": "",
+  "coment": "Na foto, as três peças já encaixadas na tabela são H, Li e Be (hidrogênio, lítio e berílio). Dos cinco elementos citados no texto (oxigênio, carbono, hidrogênio, nitrogênio e cálcio), só o hidrogênio (H) está entre elas. Vale decorar os símbolos mais comuns: O, C, H, N, Ca, Na.",
   "base": "img/2024-2/base_03-04.webp",
   "bw": 1085
  },
@@ -1862,7 +1862,7 @@ window.SEED = [
   "w": 1108,
   "h": 339,
   "gab": 4,
-  "coment": "",
+  "coment": "O elemento que ajuda a equilibrar os fluidos do corpo, segundo o texto, é o sódio (Na). O sal de cozinha é o cloreto de sódio, NaCl. O leite é lembrado pelo cálcio, e o açúcar é formado por carbono, hidrogênio e oxigênio.",
   "base": "img/2024-2/base_03-04.webp",
   "bw": 1085
  },
@@ -1876,7 +1876,7 @@ window.SEED = [
   "w": 1108,
   "h": 408,
   "gab": 4,
-  "coment": ""
+  "coment": "A bile funciona como um detergente: quebra a gordura em gotinhas muito pequenas. Isso é a emulsificação. Com gotas menores, a área de contato aumenta e as enzimas que digerem gordura (lipases) trabalham melhor. Ela acontece no duodeno, não na boca, e a digestão dos lipídios produz ácidos graxos e glicerol (aminoácidos vêm das proteínas)."
  },
  {
   "id": "2024-2-q06",
@@ -1888,7 +1888,7 @@ window.SEED = [
   "w": 1108,
   "h": 303,
   "gab": 3,
-  "coment": "",
+  "coment": "Logo depois de “alguma coisa mudou”, o texto explica o que foi: a adoção de uma dieta com proteína animal (tipo de alimento) e o hábito de cozinhar (modo de preparo). Foram essas duas mudanças que permitiram sustentar o cérebro sem passar o dia comendo.",
   "base": "img/2024-2/base_06-09.webp",
   "bw": 1060
  },
@@ -1902,7 +1902,7 @@ window.SEED = [
   "w": 1108,
   "h": 380,
   "gab": 2,
-  "coment": "",
+  "coment": "O primeiro parágrafo diz que o cérebro “consome um quinto de toda a energia ingerida”. Um quinto é 1 ÷ 5 = 0,20 = 20%. As outras contrariam o texto: alimento cru exige mais tempo comendo, e cozinhar facilita a digestão e aumenta a energia absorvida.",
   "base": "img/2024-2/base_06-09.webp",
   "bw": 1060
  },
@@ -1916,7 +1916,7 @@ window.SEED = [
   "w": 1108,
   "h": 381,
   "gab": 3,
-  "coment": "",
+  "coment": "O texto afirma que a dieta com proteína animal “resultou na criação de diversas habilidades para conseguir esse tipo de alimento” e “favoreceu o crescimento do cérebro”. Ou seja, comer carne contribuiu para a evolução do corpo e para novas habilidades. O texto apresenta isso como algo defendido por muitos cientistas, não como polêmica.",
   "base": "img/2024-2/base_06-09.webp",
   "bw": 1060
  },
@@ -1930,7 +1930,7 @@ window.SEED = [
   "w": 1108,
   "h": 356,
   "gab": 0,
-  "coment": "",
+  "coment": "No começo da frase, “como” equivale a “já que” ou “porque”: já que se alimentam de folhas (causa), precisam comer 18 kg por dia (consequência). O “se” faz parte do verbo alimentar-se; “basicamente” quer dizer principalmente; e “precisam” indica necessidade.",
   "base": "img/2024-2/base_06-09.webp",
   "bw": 1060
  },
@@ -1944,7 +1944,7 @@ window.SEED = [
   "w": 1108,
   "h": 246,
   "gab": 3,
-  "coment": "",
+  "coment": "Some os totais de células das três partes: 77 + 85 + 8,4 = 170,4 bilhões, mais de 100 bilhões. Conferindo as outras: o cérebro é que tem a maior massa (1 250 g); 61 gliócitos para 16 neurônios não chega nem a 4 vezes; o cerebelo tem mais neurônios (69 bilhões); e no total há mais neurônios (85,7 bilhões) que gliócitos (84,7 bilhões).",
   "base": "img/2024-2/base_10-11.webp",
   "bw": 1089
  },
@@ -1958,7 +1958,7 @@ window.SEED = [
   "w": 1108,
   "h": 619,
   "gab": 1,
-  "coment": "",
+  "coment": "Cada equação é “massa dos neurônios + massa dos gliócitos = massa da região”. Cerebelo: 69 bilhões de neurônios e 16 de gliócitos, massa 150 g, então 69N + 16G = 150. Cérebro: 16 bilhões de neurônios e 61 de gliócitos, massa 1 250 g, então 16N + 61G = 1250. O erro comum é trocar os números de lugar, pondo os gliócitos junto de N.",
   "base": "img/2024-2/base_10-11.webp",
   "bw": 1089
  },
@@ -1972,7 +1972,7 @@ window.SEED = [
   "w": 1108,
   "h": 342,
   "gab": 2,
-  "coment": ""
+  "coment": "Característica recessiva só aparece em quem tem dois genes recessivos (aa), um vindo de cada pai. Se os dois pais são heterozigotos (Aa), nenhum é albino, mas cada um pode passar o gene “a”: há 25% de chance de o filho ser aa. Se um deles for homozigoto dominante (AA), sempre passa “A”, e nenhum filho nasce albino."
  },
  {
   "id": "2024-2-q13",
@@ -1984,7 +1984,7 @@ window.SEED = [
   "w": 1108,
   "h": 762,
   "gab": 0,
-  "coment": ""
+  "coment": "Os X-Men foram criados para falar de preconceito: julgar as pessoas pela aparência ou pelo grupo a que pertencem. O ditado que combate isso é “não julgue um livro pela capa”. Os outros falam de inveja, de improviso, de dúvida e de saber ouvir."
  },
  {
   "id": "2024-2-q14",
@@ -1996,7 +1996,7 @@ window.SEED = [
   "w": 1107,
   "h": 994,
   "gab": 2,
-  "coment": ""
+  "coment": "Em P = F ÷ A, a área está no denominador: com a mesma força, quanto menor a área, maior a pressão. São grandezas inversamente proporcionais. A faca afiada tem a lâmina mais fina, ou seja, área de contato menor, e por isso a pressão é maior e ela corta com facilidade."
  },
  {
   "id": "2024-2-q15",
@@ -2008,7 +2008,7 @@ window.SEED = [
   "w": 1107,
   "h": 622,
   "gab": 1,
-  "coment": ""
+  "coment": "O texto diz que as pinturas expressam os valores, costumes e tradições de cada etnia. Elas têm significado cultural profundo e mudam de um povo para outro. Não são moda, consumo nem busca de padrão de beleza, e também não são permanentes (são pinturas, não modificações do corpo)."
  },
  {
   "id": "2024-2-q16",
@@ -2020,7 +2020,7 @@ window.SEED = [
   "w": 1108,
   "h": 712,
   "gab": 4,
-  "coment": ""
+  "coment": "O terceiro parágrafo começa com “Apesar da demarcação, a invasão de garimpeiros às terras Yanomami continua”, e o texto fala de doenças, mercúrio nos rios e ataques violentos. Quem polui com mercúrio são os garimpeiros, e quem morreu (vinte por cento da população) foram os Yanomami."
  },
  {
   "id": "2024-2-q17",
@@ -2032,7 +2032,7 @@ window.SEED = [
   "w": 1108,
   "h": 664,
   "gab": 2,
-  "coment": ""
+  "coment": "O texto pede atitudes simples do dia a dia que ajudem o meio ambiente. Fechar a torneira ao escovar os dentes economiza água. As outras aumentam o problema: madeira de área de preservação, mais plástico, mais carne e luzes acesas o tempo todo."
  },
  {
   "id": "2024-2-q18",
@@ -2044,7 +2044,7 @@ window.SEED = [
   "w": 1107,
   "h": 308,
   "gab": 1,
-  "coment": "",
+  "coment": "A mulher teria os mesmos 70 kg, e o máximo de água para mulheres é 55%. Calcule 55% de 70: 0,55 × 70 = 38,5 kg. Como 1 kg de água corresponde a 1 L (o texto mostra: 42 kg = 42 L), são 38,5 L. Usar 52% daria o mínimo, 36,4 L.",
   "base": "img/2024-2/base_18-19.webp",
   "bw": 1089
  },
@@ -2058,7 +2058,7 @@ window.SEED = [
   "w": 1107,
   "h": 382,
   "gab": 1,
-  "coment": "",
+  "coment": "A fórmula da água é H₂O: dois átomos de hidrogênio e um de oxigênio. O número pequeno vale para o elemento que vem logo antes dele; quando não há número, é 1.",
   "base": "img/2024-2/base_18-19.webp",
   "bw": 1089
  },
@@ -2072,7 +2072,7 @@ window.SEED = [
   "w": 1107,
   "h": 752,
   "gab": 3,
-  "coment": ""
+  "coment": "O suor resfria porque evapora: a água passa de líquido para vapor, e para isso absorve calor da pele. Com o calor saindo do corpo, a temperatura diminui. Condensação é o caminho inverso (vapor virando líquido)."
  },
  {
   "id": "2024-2-q21",
@@ -2084,7 +2084,7 @@ window.SEED = [
   "w": 1108,
   "h": 751,
   "gab": 0,
-  "coment": ""
+  "coment": "Número atômico (Z = 26) é a quantidade de prótons. No átomo neutro, elétrons = prótons = 26. Número de massa (A = 56) é prótons + nêutrons; então nêutrons = 56 − 26 = 30."
  },
  {
   "id": "2024-2-q22",
@@ -2096,7 +2096,7 @@ window.SEED = [
   "w": 1108,
   "h": 902,
   "gab": 4,
-  "coment": ""
+  "coment": "Compare cada valor com a referência. Paciente 1: plaquetas 87 mil, abaixo do mínimo de 150 mil; plaquetas fazem a coagulação, então há dificuldade de coagular. Paciente 2: hemácias baixas (2,38), o que prejudica o transporte de oxigênio. Paciente 3: leucócitos baixos (2 400), o que prejudica a defesa. As alternativas trocam as pacientes ou os efeitos."
  },
  {
   "id": "2024-2-q23",
@@ -2108,7 +2108,7 @@ window.SEED = [
   "w": 1108,
   "h": 269,
   "gab": 3,
-  "coment": "",
+  "coment": "O poema repete “meu corpo é meu lugar de fala” e diz que o eu lírico fala com os cabelos, os olhos, o nariz e a raça. O corpo expressa quem ele é (identidade) e é por meio dele que se coloca diante do mundo. Não há rejeição da própria aparência nem tentativa de se moldar ao que a sociedade exige.",
   "base": "img/2024-2/base_23-24.webp",
   "bw": 1063
  },
@@ -2122,7 +2122,7 @@ window.SEED = [
   "w": 1108,
   "h": 247,
   "gab": 2,
-  "coment": "",
+  "coment": "O texto é um poema: linhas curtas que são versos, agrupados em estrofes (os blocos separados por espaço), e são quatro blocos. Oração é cada trecho organizado em torno de um verbo: “é”, “falo”, “é”, “falo”, quatro orações. Parágrafo é divisão de texto em prosa.",
   "base": "img/2024-2/base_23-24.webp",
   "bw": 1063
  },
@@ -2136,7 +2136,7 @@ window.SEED = [
   "w": 1108,
   "h": 424,
   "gab": 1,
-  "coment": ""
+  "coment": "O texto já diz: a quebra de ligações absorve energia. Processo que absorve energia chama-se endotérmico (endo = para dentro); o que libera energia é exotérmico (exo = para fora). Basta juntar o nome certo com a explicação certa."
  },
  {
   "id": "2024-2-q26",
@@ -2148,7 +2148,7 @@ window.SEED = [
   "w": 1108,
   "h": 251,
   "gab": 4,
-  "coment": "",
+  "coment": "O cartaz fala direto com quem lê: “Sua decisão”, “Não deixe cair”, “Doe órgãos!”. O pronome “sua” e os verbos no imperativo servem para convencer o leitor a agir. A linguagem é simples e figurada (não rebuscada), e imagens são muito comuns em cartazes.",
   "base": "img/2024-2/base_26-28.webp",
   "bw": 1062
  },
@@ -2162,7 +2162,7 @@ window.SEED = [
   "w": 1108,
   "h": 272,
   "gab": 4,
-  "coment": "",
+  "coment": "A frase é figurada. “Cair por terra” é se perder, ser desperdiçado; “alçar novos voos” é ganhar uma nova chance de vida. No contexto da campanha (“Doe órgãos!”), quer dizer: não desperdice órgãos que podem salvar alguém.",
   "base": "img/2024-2/base_26-28.webp",
   "bw": 1062
  },
@@ -2176,7 +2176,7 @@ window.SEED = [
   "w": 1108,
   "h": 262,
   "gab": 0,
-  "coment": "",
+  "coment": "“Sua decisão muda destinos”: a decisão de doar é de cada pessoa (particular), mas quem se beneficia é outra pessoa, que recebe o órgão. É uma escolha individual com efeito sobre a vida de outros.",
   "base": "img/2024-2/base_26-28.webp",
   "bw": 1062
  },
@@ -2190,7 +2190,7 @@ window.SEED = [
   "w": 1108,
   "h": 412,
   "gab": 1,
-  "coment": ""
+  "coment": "Para os gregos antigos, corpo e mente andavam juntos: o corpo bonito e forte era sinal de um espírito equilibrado e inteligente, e o modelo desse ideal era o homem, cidadão e atleta. As mulheres ficavam restritas ao espaço doméstico, e os escravizados não participavam dos Jogos."
  },
  {
   "id": "2024-2-q30",
@@ -2202,7 +2202,7 @@ window.SEED = [
   "w": 1108,
   "h": 417,
   "gab": 0,
-  "coment": ""
+  "coment": "Barra rígida que gira em torno de um ponto fixo é a definição de alavanca. No braço, o osso do antebraço é a barra, o cotovelo é o ponto de apoio e o bíceps faz a força para erguer o peso. Polia é a roldana, com corda."
  },
  {
   "id": "2024-2-q31",
@@ -2214,7 +2214,7 @@ window.SEED = [
   "w": 1108,
   "h": 595,
   "gab": 2,
-  "coment": ""
+  "coment": "Para Milton Santos, o espaço geográfico é formado pelos objetos (naturais e construídos) e pela “sociedade em movimento” que dá vida a eles, um conjunto que não se separa. É o resultado da relação entre as pessoas e o meio em que vivem. Não tem nada a ver com espaço sideral nem com o núcleo da Terra."
  },
  {
   "id": "2024-2-q32",
@@ -2226,7 +2226,7 @@ window.SEED = [
   "w": 1108,
   "h": 481,
   "gab": 2,
-  "coment": ""
+  "coment": "No século XIX, os europeus justificavam a dominação da África e da Ásia com teorias que diziam existir “raças superiores”: o racismo científico e o darwinismo social. O enunciado dá a pista ao falar em “fenótipos diferentes”. As outras alternativas são de outras épocas (Guerra Fria, crise de 2008, fim da Idade Média)."
  },
  {
   "id": "2024-2-q33",
@@ -2238,7 +2238,7 @@ window.SEED = [
   "w": 1108,
   "h": 918,
   "gab": 1,
-  "coment": ""
+  "coment": "No triângulo do desenho, a tangente é cateto oposto ÷ cateto adjacente: tg 30° = altura da tela ÷ distância horizontal dos olhos até a tela. Como 17 ÷ x = 17 ÷ 30, x = 30 m. Essa distância começa nos olhos, que estão a 0,6 m da parede; o trecho d só começa a 1,20 m da parede. Então 30 = (1,20 − 0,6) + d, e d = 30 − 0,6 = 29,4 m."
  },
  {
   "id": "2024-2-q34",
@@ -2250,7 +2250,7 @@ window.SEED = [
   "w": 1108,
   "h": 283,
   "gab": 0,
-  "coment": "",
+  "coment": "Imagem formada na frente da retina e dificuldade para enxergar de longe: miopia. Na hipermetropia é o contrário, a imagem se formaria atrás da retina e a dificuldade é de perto. Catarata e glaucoma são doenças do olho, não defeitos de foco.",
   "base": "img/2024-2/base_34-36.webp",
   "bw": 1062
  },
@@ -2264,7 +2264,7 @@ window.SEED = [
   "w": 1108,
   "h": 288,
   "gab": 1,
-  "coment": "",
+  "coment": "O cristalino é uma lente, e a lente funciona desviando a luz que passa por ela. Esse desvio da luz ao mudar de meio é a refração. Reflexão é a luz bater e voltar, como no espelho.",
   "base": "img/2024-2/base_34-36.webp",
   "bw": 1062
  },
@@ -2278,7 +2278,7 @@ window.SEED = [
   "w": 1108,
   "h": 275,
   "gab": 4,
-  "coment": "",
+  "coment": "O texto diz que a correção usa lentes côncavas. Lentes de bordas grossas (bicôncava, plano-côncava e convexo-côncava) são divergentes: espalham os raios de luz, e a imagem se forma mais atrás, sobre a retina. As lentes convergentes (biconvexa e parecidas, de bordas finas) corrigem a hipermetropia.",
   "base": "img/2024-2/base_34-36.webp",
   "bw": 1062
  },
@@ -2292,7 +2292,7 @@ window.SEED = [
   "w": 1108,
   "h": 787,
   "gab": 0,
-  "coment": ""
+  "coment": "O texto fala de terremotos naturais, que vêm das forças do interior da Terra (forças endógenas, como o movimento das placas tectônicas), e de terremotos causados pela atividade humana. Ele diz ainda que os provocados pelo homem podem ter magnitude elevada e acontecer longe das bordas das placas."
  },
  {
   "id": "2024-2-q38",
@@ -2304,7 +2304,7 @@ window.SEED = [
   "w": 1108,
   "h": 473,
   "gab": 3,
-  "coment": ""
+  "coment": "Durante o exercício o coração bate mais rápido e manda mais sangue (fluxo maior) para os músculos, levando mais oxigênio. Com mais oxigênio, as células produzem mais energia. As outras dizem o contrário do texto: frequência cardíaca menor ou menos oxigênio nos músculos."
  },
  {
   "id": "2024-2-q39",
@@ -2316,7 +2316,7 @@ window.SEED = [
   "w": 1108,
   "h": 417,
   "gab": 0,
-  "coment": "",
+  "coment": "Conte 71 dias a partir de 13 de outubro, incluindo o dia 13: outubro tem 19 dias (do 13 ao 31), novembro tem 30, e 19 + 30 = 49; faltam 22 para chegar a 71, o que leva a 22 de dezembro. O escorbuto, que afrouxa os dentes e faz a gengiva sangrar, é causado pela falta de vitamina C (presente em frutas como laranja e limão).",
   "base": "img/2024-2/base_39-40.webp",
   "bw": 1065
  },
@@ -2330,7 +2330,7 @@ window.SEED = [
   "w": 1107,
   "h": 233,
   "gab": 4,
-  "coment": "",
+  "coment": "Velocidade = distância ÷ tempo. As alternativas estão em km/h, então transforme os dias em horas: 10 dias × 24 = 240 horas. 60 km ÷ 240 h = 0,25 km/h. Dividir 60 por 10 dá 6, mas isso é km por dia.",
   "base": "img/2024-2/base_39-40.webp",
   "bw": 1065
  },
@@ -2344,7 +2344,7 @@ window.SEED = [
   "w": 1108,
   "h": 619,
   "gab": 2,
-  "coment": ""
+  "coment": "O texto diz que é preciso “políticas sociais e econômicas consistentes” com foco em “erradicar a pobreza” e reduzir a desigualdade, junto com a preservação do meio ambiente. Segundo o texto, destruir a Amazônia levaria ao isolamento e ao retrocesso."
  },
  {
   "id": "2024-2-q42",
@@ -2356,7 +2356,7 @@ window.SEED = [
   "w": 1108,
   "h": 826,
   "gab": 3,
-  "coment": ""
+  "coment": "Leia o gráfico em cada horário. Nove da manhã fica no meio entre “seis da manhã” e “meio-dia”: ali a curva já voltou para perto de 10 pg/mL, menos que 20. As outras falham: às três da tarde o valor é 10; o valor 40 aparece duas vezes (na subida e na descida); e entre meia-noite e seis da manhã a curva sobe e depois desce."
  },
  {
   "id": "2024-2-q43",
@@ -2368,7 +2368,7 @@ window.SEED = [
   "w": 1108,
   "h": 564,
   "gab": 2,
-  "coment": ""
+  "coment": "A tireoide precisa de iodo para fabricar seus hormônios. Sem iodo, produz hormônios de menos: hipotireoidismo (hipo = pouco), com metabolismo lento e, às vezes, bócio (papo). Insulina é do pâncreas, não da tireoide, e hipertireoidismo é hormônio demais."
  },
  {
   "id": "2024-2-q44",
@@ -2380,7 +2380,7 @@ window.SEED = [
   "w": 1108,
   "h": 587,
   "gab": 0,
-  "coment": ""
+  "coment": "Na equação, a partícula alfa aparece com 4 em cima e 2 embaixo. O número de baixo é a quantidade de prótons: 2. O de cima é a massa (prótons + nêutrons): 4. Então nêutrons = 4 − 2 = 2. A partícula alfa tem 2 prótons e 2 nêutrons, e não tem elétrons (por isso é positiva)."
  },
  {
   "id": "2024-2-q45",
@@ -2392,7 +2392,7 @@ window.SEED = [
   "w": 1108,
   "h": 508,
   "gab": 3,
-  "coment": ""
+  "coment": "Radiação atômica, 1945, Japão: são as bombas atômicas lançadas pelos Estados Unidos sobre Hiroshima e Nagasaki, em agosto de 1945, no fim da Segunda Guerra Mundial (1939-1945)."
  },
  {
   "id": "2024-2-q46",
@@ -2404,7 +2404,7 @@ window.SEED = [
   "w": 1108,
   "h": 636,
   "gab": 1,
-  "coment": ""
+  "coment": "Gentrificação acontece nas cidades: um bairro popular antigo se valoriza, os aluguéis e preços sobem, os moradores mais pobres acabam saindo e chegam moradores de renda maior. A alternativa A descreve o movimento ao contrário."
  },
  {
   "id": "2024-2-q47",
@@ -2416,7 +2416,7 @@ window.SEED = [
   "w": 1108,
   "h": 536,
   "gab": 3,
-  "coment": ""
+  "coment": "A imagem do “homem-caranguejo” fala de pessoas empurradas pela pobreza para viver na lama dos mangues do Recife, comendo caranguejo e vivendo como ele. É uma denúncia das causas sociais e econômicas da fome. Mangue existe no litoral; não há mangue na caatinga nem no Centro-Oeste."
  },
  {
   "id": "2024-2-q48",
@@ -2428,7 +2428,7 @@ window.SEED = [
   "w": 1107,
   "h": 554,
   "gab": 3,
-  "coment": ""
+  "coment": "O texto define: um adulto “não é alguém capaz de eliminar os riscos das escolhas; é alguém capaz de realizar escolhas e investir nelas, aceitando os riscos”. A alternativa C diz justamente o que o texto nega (anular os riscos), e o mundo “não vai parar” à espera das escolhas de ninguém."
  },
  {
   "id": "2024-2-q49",
@@ -2440,7 +2440,7 @@ window.SEED = [
   "w": 1107,
   "h": 823,
   "gab": 2,
-  "coment": ""
+  "coment": "O texto mostra o que deu errado (esconder informação e demorar a procurar o hospital) e o que resolveu (vacina). Daí as três atitudes certas: vacinação em dia, boa informação e ajuda médica rápida, já que a meningite evolui depressa."
  },
  {
   "id": "2024-2-q50",
@@ -2452,7 +2452,7 @@ window.SEED = [
   "w": 1108,
   "h": 1278,
   "gab": 3,
-  "coment": ""
+  "coment": "Na tirinha, o coração (emoção) empurra o “problemão” sozinho e não consegue. O cérebro (razão) diz que ele não está usando toda a sua força porque não pediu ajuda. A ideia é que os dois precisam trabalhar juntos. As alternativas que deixam a emoção ou a razão de fora estão erradas."
  },
  {
   "id": "2025-1-q01",
@@ -2464,7 +2464,7 @@ window.SEED = [
   "w": 1226,
   "h": 542,
   "gab": 2,
-  "coment": ""
+  "coment": "Raiz também respira: precisa do ar que fica entre os grãos do solo. Se a terra fica encharcada, a água ocupa esse espaço e a raiz apodrece. Por isso cada planta deve receber a quantidade certa de água. As outras erram: adubo repõe nutrientes; lesma e caramujo comem as plantas (quem poliniza são abelhas e outros insetos); e vento aumenta a evaporação."
  },
  {
   "id": "2025-1-q02",
@@ -2476,7 +2476,7 @@ window.SEED = [
   "w": 1108,
   "h": 755,
   "gab": 3,
-  "coment": ""
+  "coment": "O texto diz que “a monocultura desses grãos pode provocar a degradação do solo, acarretando o esgotamento de seus nutrientes”. Monocultura é plantar uma só espécie na mesma área. Atenção às palavras “totalidade”, “todas” e “todos” nas alternativas A, B e C: o texto fala em parte das espécies e diz que os três grãos não fornecem todas as vitaminas."
  },
  {
   "id": "2025-1-q03",
@@ -2488,7 +2488,7 @@ window.SEED = [
   "w": 1108,
   "h": 598,
   "gab": 3,
-  "coment": ""
+  "coment": "O texto cita as Grandes Planícies da América do Norte, cobertas de trigo por centenas de quilômetros; essa região fica nos Estados Unidos e no Canadá, grandes produtores mundiais. No Centro-Oeste do Brasil o principal produto é a soja, e o principal produto de exportação do Oriente Médio é o petróleo."
  },
  {
   "id": "2025-1-q04",
@@ -2500,7 +2500,7 @@ window.SEED = [
   "w": 1108,
   "h": 787,
   "gab": 1,
-  "coment": ""
+  "coment": "O texto diz que produzir essas plantas em larga escala “poderia ajudar a combater a fome”. Também afirma que elas atendem à demanda por nutrientes, são resistentes a pragas e se adaptam bem ao clima, o que derruba as alternativas A, C e D. E hoje são cultivadas só por pequenas comunidades, não exportadas."
  },
  {
   "id": "2025-1-q05",
@@ -2512,7 +2512,7 @@ window.SEED = [
   "w": 1108,
   "h": 719,
   "gab": 3,
-  "coment": ""
+  "coment": "Primeira lacuna: a saca perde 60 − 48 = 12 kg, e 12 ÷ 60 = 0,20 = 20% (o percentual é sobre a massa inicial; 12 é a perda em kg, não em %). Segunda: uma tonelada = 1 000 kg; cada saca rende 48 kg, então 1 000 ÷ 48 ≈ 20,8. Como não existe pedaço de saca e 20 não bastam, são necessárias 21."
  },
  {
   "id": "2025-1-q06",
@@ -2524,7 +2524,7 @@ window.SEED = [
   "w": 1108,
   "h": 492,
   "gab": 3,
-  "coment": ""
+  "coment": "Da Lei de Ohm, U = R · i, tiramos R = U ÷ i = (1 × 10⁻¹) ÷ (2 × 10⁻⁸). Divida os números: 1 ÷ 2 = 0,5. Subtraia os expoentes: −1 − (−8) = 7. Resultado: 0,5 × 10⁷ = 5 × 10⁶ ohms. O erro comum é somar os expoentes em vez de subtrair."
  },
  {
   "id": "2025-1-q07",
@@ -2536,7 +2536,7 @@ window.SEED = [
   "w": 1108,
   "h": 263,
   "gab": 4,
-  "coment": "",
+  "coment": "A graça está no final: a planta carnívora é tagarela “pra não morrer de fome”, porque “em boca fechada não entra mosca”. O ditado, que normalmente aconselha a falar pouco, aqui é tomado ao pé da letra: ela precisa ficar de boca aberta (fofocando) para pegar moscas e sobreviver.",
   "base": "img/2025-1/base_07-09.webp",
   "bw": 1055
  },
@@ -2550,7 +2550,7 @@ window.SEED = [
   "w": 1108,
   "h": 369,
   "gab": 2,
-  "coment": "",
+  "coment": "Vocativo é a palavra usada para chamar a pessoa com quem se fala. Em “Amiga, para de sofrer” e “uma ojeriza do Cravo, menina!”, os dois termos fazem isso. Sobre as outras: “ojeriza” continua significando antipatia; o primeiro “pra” indica a quem ela falou (pra Rosa) e o outro indica finalidade (pra não morrer); e a linguagem informal combina com tirinha.",
   "base": "img/2025-1/base_07-09.webp",
   "bw": 1055
  },
@@ -2564,7 +2564,7 @@ window.SEED = [
   "w": 1108,
   "h": 266,
   "gab": 0,
-  "coment": "",
+  "coment": "“Uai” é uma interjeição típica de Minas Gerais que mostra espanto. A personagem se surpreende por a amiga não saber algo que ela acha óbvio: “Uai, você não sabia?”.",
   "base": "img/2025-1/base_07-09.webp",
   "bw": 1055
  },
@@ -2578,7 +2578,7 @@ window.SEED = [
   "w": 1108,
   "h": 242,
   "gab": 4,
-  "coment": "",
+  "coment": "As pistas: ditadura de Salazar, 50 anos em 2024 (ou seja, 1974), flores nos canos das armas dos soldados e colônias na África. É a Revolução dos Cravos, de 25 de abril de 1974, que acabou com a ditadura em Portugal.",
   "base": "img/2025-1/base_10-11.webp",
   "bw": 1080
  },
@@ -2592,7 +2592,7 @@ window.SEED = [
   "w": 1108,
   "h": 243,
   "gab": 0,
-  "coment": "",
+  "coment": "As colônias portuguesas na África eram Angola, Moçambique, Guiné-Bissau, Cabo Verde e São Tomé e Príncipe, hoje países onde se fala português. Nigéria e África do Sul foram ligadas à Inglaterra; Senegal, Mali e Madagascar, à França.",
   "base": "img/2025-1/base_10-11.webp",
   "bw": 1080
  },
@@ -2606,7 +2606,7 @@ window.SEED = [
   "w": 1108,
   "h": 272,
   "gab": 1,
-  "coment": "",
+  "coment": "O texto diz que o cravo tem “ação repelente que impede a invasão de formigas, motivo pelo qual é usado popularmente em açucareiros”. “A preço de ouro” é só um jeito de dizer que era caríssimo. Os remédios usam suas propriedades antimicrobianas e analgésicas, e a vanilina era fabricada a partir do eugenol, não está no óleo.",
   "base": "img/2025-1/base_12-15.webp",
   "bw": 1100
  },
@@ -2620,7 +2620,7 @@ window.SEED = [
   "w": 1108,
   "h": 298,
   "gab": 4,
-  "coment": "",
+  "coment": "Conte os átomos em cada desenho. Eugenol: 10 carbonos, 12 hidrogênios e 2 oxigênios. Vanilina: 8 carbonos, 8 hidrogênios e 3 oxigênios. As diferenças são 2 carbonos, 4 hidrogênios e 1 oxigênio. As duas têm os mesmos elementos (C, H e O), mas em quantidades diferentes.",
   "base": "img/2025-1/base_12-15.webp",
   "bw": 1100
  },
@@ -2634,7 +2634,7 @@ window.SEED = [
   "w": 1108,
   "h": 476,
   "gab": 0,
-  "coment": "",
+  "coment": "O cravo-da-índia vem da Ásia (ilhas da atual Indonésia). Chegou ao Brasil com os portugueses, que buscavam especiarias no Oriente durante as Grandes Navegações e ligaram os continentes por mar. Não é planta africana nem italiana, e não existia na América antes dos europeus.",
   "base": "img/2025-1/base_12-15.webp",
   "bw": 1100
  },
@@ -2648,7 +2648,7 @@ window.SEED = [
   "w": 1108,
   "h": 672,
   "gab": 3,
-  "coment": "",
+  "coment": "No aparelho, a mistura de cravo com água é aquecida, o vapor passa por um tubo resfriado com água fria (o condensador), volta a ser líquido e é recolhido em outro frasco. Aquecer para vaporizar e depois condensar é destilação. Filtração usa filtro e decantação é só deixar a mistura em repouso.",
   "base": "img/2025-1/base_12-15.webp",
   "bw": 1100
  },
@@ -2662,7 +2662,7 @@ window.SEED = [
   "w": 1108,
   "h": 328,
   "gab": 2,
-  "coment": "",
+  "coment": "A fruta é o ABACAXI. As letras diferentes são A, B, C, X e I: cinco (o A aparece três vezes, mas só conta uma). Sigla com 3 letras diferentes e em ordem: 5 opções para a primeira, 4 para a segunda e 3 para a terceira. 5 × 4 × 3 = 60. Quem conta as 7 letras faz 7 × 6 × 5 = 210, que é a pegadinha.",
   "base": "img/2025-1/base_16-17.webp",
   "bw": 1080
  },
@@ -2676,7 +2676,7 @@ window.SEED = [
   "w": 1109,
   "h": 644,
   "gab": 1,
-  "coment": "",
+  "coment": "O setor de congelados é o da faixa de 18 a 24 anos, que corresponde a 38% dos usuários: 38% de 200 = 76 pessoas. Dessas, 75% são homens: 0,75 × 76 = 57. São duas porcentagens seguidas, uma aplicada sobre o resultado da outra.",
   "base": "img/2025-1/base_16-17.webp",
   "bw": 1080
  },
@@ -2690,7 +2690,7 @@ window.SEED = [
   "w": 1108,
   "h": 748,
   "gab": 2,
-  "coment": ""
+  "coment": "As duas plantas têm flores e frutos com sementes dentro. Só um grupo de plantas tem flor e fruto: as angiospermas. E elas têm tudo: vasos condutores, folhas, flores, frutos e sementes dentro dos frutos (todas as colunas “Sim”). Gimnospermas, como os pinheiros, têm semente, mas não têm fruto."
  },
  {
   "id": "2025-1-q19",
@@ -2702,7 +2702,7 @@ window.SEED = [
   "w": 1108,
   "h": 308,
   "gab": 3,
-  "coment": ""
+  "coment": "A fotossíntese precisa de luz e de clorofila; só acontece com claridade. A respiração acontece o tempo todo, de dia e de noite, em todas as células vivas (da planta também). A respiração faz o caminho inverso: usa glicose e oxigênio e libera gás carbônico e água."
  },
  {
   "id": "2025-1-q20",
@@ -2714,7 +2714,7 @@ window.SEED = [
   "w": 1108,
   "h": 631,
   "gab": 0,
-  "coment": ""
+  "coment": "Substância simples tem um só elemento químico; composta tem dois ou mais. Na equação, CO₂, H₂O e C₆H₁₂O₆ são compostas; só o O₂ é simples. Além disso, na fotossíntese a água e o gás carbônico são consumidos (são reagentes), e o processo absorve energia da luz."
  },
  {
   "id": "2025-1-q21",
@@ -2726,7 +2726,7 @@ window.SEED = [
   "w": 1108,
   "h": 476,
   "gab": 2,
-  "coment": ""
+  "coment": "A planta precisa de luz para a fotossíntese, e a luz branca contém todas as cores, inclusive o azul e o vermelho, que a clorofila absorve melhor. A luz verde é justamente a que a folha menos absorve: ela é refletida, e por isso vemos as folhas verdes. No escuro não há fotossíntese."
  },
  {
   "id": "2025-1-q22",
@@ -2738,7 +2738,7 @@ window.SEED = [
   "w": 1108,
   "h": 587,
   "gab": 2,
-  "coment": ""
+  "coment": "A Caatinga é o bioma do clima semiárido, no sertão nordestino. As plantas são adaptadas à seca: folhas pequenas ou transformadas em espinhos (para perder menos água), caules grossos que guardam água e raízes profundas. A alternativa B descreve a floresta tropical úmida e a E, a floresta de pinheiros de clima frio."
  },
  {
   "id": "2025-1-q23",
@@ -2750,7 +2750,7 @@ window.SEED = [
   "w": 1108,
   "h": 437,
   "gab": 0,
-  "coment": "",
+  "coment": "O calor do Sol chega à Terra por irradiação (ondas, sem precisar de matéria). Asfalto e concreto absorvem essa radiação durante o dia e depois irradiam o calor para o ar: é a ilha de calor. Condução é a passagem de calor por contato, e convecção é o calor levado pelo movimento de líquidos e gases.",
   "base": "img/2025-1/base_23-24.webp",
   "bw": 1079
  },
@@ -2764,7 +2764,7 @@ window.SEED = [
   "w": 1108,
   "h": 297,
   "gab": 1,
-  "coment": "",
+  "coment": "As copas das árvores fazem sombra: absorvem parte da radiação solar antes que ela chegue ao chão e às construções, que por isso aquecem menos. As árvores também refrescam o ar ao transpirar. Cuidado com exageros como “todo o gás carbônico” e “eliminando completamente”.",
   "base": "img/2025-1/base_23-24.webp",
   "bw": 1079
  },
@@ -2778,7 +2778,7 @@ window.SEED = [
   "w": 1108,
   "h": 343,
   "gab": 3,
-  "coment": "",
+  "coment": "Volume de um dormente (paralelepípedo) = comprimento × largura × altura = 2 × 0,24 × 0,16 = 0,0768 m³. Em 2 km são 2 × 1 600 = 3 200 dormentes. Total: 3 200 × 0,0768 = 245,76 m³. Quem esquece de dobrar para 2 km chega a 122,88.",
   "base": "img/2025-1/base_25-26.webp",
   "bw": 1080
  },
@@ -2792,7 +2792,7 @@ window.SEED = [
   "w": 1108,
   "h": 554,
   "gab": 4,
-  "coment": "",
+  "coment": "Primeiro descubra o restante: 100 − 25 − 30 − 35 = 10% de prismáticos. Agora teste: duas faces ÷ semi-roliço = 35 ÷ 30 = 7/6, simplificando por 5. Confere. As outras falham: roliço ÷ prismático = 25 ÷ 10 = 5/2; semi-roliços + prismáticos = 40%; e a diferença entre duas faces e prismáticos é 25%.",
   "base": "img/2025-1/base_25-26.webp",
   "bw": 1080
  },
@@ -2806,7 +2806,7 @@ window.SEED = [
   "w": 1108,
   "h": 759,
   "gab": 2,
-  "coment": ""
+  "coment": "No fim da Idade Média a Igreja usou a Inquisição, seu tribunal, para investigar e punir quem contrariasse a fé católica. As mulheres que conheciam ervas e curas passaram a ser acusadas de bruxaria e perseguidas. O Iluminismo e as máquinas a vapor são do século XVIII, bem depois."
  },
  {
   "id": "2025-1-q28",
@@ -2818,7 +2818,7 @@ window.SEED = [
   "w": 1108,
   "h": 434,
   "gab": 4,
-  "coment": "",
+  "coment": "Com o ar seco e poluído, o cuidado é hidratar o corpo, principalmente crianças e idosos, bebendo bastante água e sucos naturais. As outras têm erro na justificativa: umidificador deixa o ar mais úmido (não mais seco), é preciso beber mais água, e ácaros, fungos e mofo fazem mal à respiração.",
   "base": "img/2025-1/base_28-29.webp",
   "bw": 1076
  },
@@ -2832,7 +2832,7 @@ window.SEED = [
   "w": 1108,
   "h": 433,
   "gab": 3,
-  "coment": "",
+  "coment": "O problema são as queimadas e os incêndios. O governo ajuda com educação ambiental e incentivo a uma agricultura sustentável, que não usa fogo. Todas as outras alternativas aumentam o problema: liberar queimadas, reduzir a fiscalização, estimular o desmatamento.",
   "base": "img/2025-1/base_28-29.webp",
   "bw": 1076
  },
@@ -2846,7 +2846,7 @@ window.SEED = [
   "w": 1108,
   "h": 820,
   "gab": 0,
-  "coment": ""
+  "coment": "O enunciado pede escolhas “sustentáveis e não violentas” que considerem o meio ambiente e também as pessoas. Só a alternativa A fala em equilíbrio entre preservar a natureza e o bem-estar humano. As outras ignoram um dos lados: métodos agressivos, plantas sem avaliação de impacto, ou a ideia falsa de que produto vegetal nunca causa dano."
  },
  {
   "id": "2025-1-q31",
@@ -2858,7 +2858,7 @@ window.SEED = [
   "w": 1108,
   "h": 567,
   "gab": 1,
-  "coment": ""
+  "coment": "Substitua t por 6 na expressão, fazendo primeiro a potência: 6² = 36. E(6) = −2 × 36 + 15 × 6 + 9 = −72 + 90 + 9 = 27%. O cuidado é com o sinal de menos: −2 × 36 = −72."
  },
  {
   "id": "2025-1-q32",
@@ -2870,7 +2870,7 @@ window.SEED = [
   "w": 1108,
   "h": 808,
   "gab": 4,
-  "coment": ""
+  "coment": "O texto mostra aulas de História e Matemática, como em qualquer escola, junto com conteúdos práticos do campo (dimensionar piquetes) aplicados no sítio da família. Os alunos têm a formação comum e mais os conhecimentos do seu dia a dia. O projeto é da própria Secretaria de Educação, portanto reconhecido, e funciona no Brasil."
  },
  {
   "id": "2025-1-q33",
@@ -2882,7 +2882,7 @@ window.SEED = [
   "w": 1108,
   "h": 574,
   "gab": 2,
-  "coment": ""
+  "coment": "Seringueiro é quem trabalha com a seringueira: faz cortes na casca da árvore, sem derrubá-la, e recolhe o látex que escorre, matéria-prima da borracha natural. É um extrativismo que mantém a floresta em pé, o contrário de desmatar para soja ou gado."
  },
  {
   "id": "2025-1-q34",
@@ -2894,7 +2894,7 @@ window.SEED = [
   "w": 1108,
   "h": 413,
   "gab": 4,
-  "coment": ""
+  "coment": "“Drogas do sertão” eram produtos da floresta amazônica, como cacau, guaraná, castanha, cravo, canela, baunilha e urucum. Funcionavam como especiarias e eram vendidas na Europa. A palavra “droga”, na época, queria dizer produto natural usado como tempero ou remédio."
  },
  {
   "id": "2025-1-q35",
@@ -2906,7 +2906,7 @@ window.SEED = [
   "w": 1108,
   "h": 303,
   "gab": 0,
-  "coment": "",
+  "coment": "O diesel guarda energia química. No motor, ele queima e essa energia faz o trator se movimentar: energia de movimento é energia cinética. Calor e barulho também aparecem, mas são perdas, e não o que faz o trator trabalhar.",
   "base": "img/2025-1/base_35-36.webp",
   "bw": 1079
  },
@@ -2920,7 +2920,7 @@ window.SEED = [
   "w": 1108,
   "h": 328,
   "gab": 1,
-  "coment": "",
+  "coment": "Perímetro do quadrado = 4 × 500 = 2 000 m = 2 km. Tempo = distância ÷ velocidade = 2 ÷ 10 = 0,2 hora. Em minutos: 0,2 × 60 = 12 minutos. Atenção às unidades: passe metros para quilômetros antes de dividir, e horas para minutos no final.",
   "base": "img/2025-1/base_35-36.webp",
   "bw": 1079
  },
@@ -2934,7 +2934,7 @@ window.SEED = [
   "w": 1108,
   "h": 490,
   "gab": 4,
-  "coment": ""
+  "coment": "A malária é causada por um protozoário do gênero Plasmodium e transmitida pela picada da fêmea do mosquito Anopheles. Não confunda com a doença de Chagas: protozoário Trypanosoma, transmitido pelo barbeiro. Malária não passa de pessoa para pessoa por contato."
  },
  {
   "id": "2025-1-q38",
@@ -2946,7 +2946,7 @@ window.SEED = [
   "w": 1108,
   "h": 609,
   "gab": 1,
-  "coment": ""
+  "coment": "A mandioca é nativa da América do Sul e foi domesticada pelos povos indígenas há milhares de anos; faz parte de seus mitos (a lenda de Mani) e é considerada sagrada. É muito nutritiva e consumida no Brasil inteiro. A mandioca-brava tem uma substância tóxica, mas ela é eliminada no preparo."
  },
  {
   "id": "2025-1-q39",
@@ -2958,7 +2958,7 @@ window.SEED = [
   "w": 1108,
   "h": 398,
   "gab": 1,
-  "coment": "",
+  "coment": "O segundo parágrafo diz que a planta tem cálcio, potássio, fósforo, magnésio e ferro, e que alguns desses minerais “fortalecem ossos e dentes” e “colaboram na contração muscular”. As fibras ajudam o intestino (não atrapalham), e as sementes atraem as impurezas da água, mas o texto não diz que matam microrganismos.",
   "base": "img/2025-1/base_39-42.webp",
   "bw": 1080
  },
@@ -2972,7 +2972,7 @@ window.SEED = [
   "w": 1108,
   "h": 396,
   "gab": 0,
-  "coment": "",
+  "coment": "O ferro faz parte da hemoglobina, a proteína das hemácias que leva o oxigênio dos pulmões para o corpo todo; a falta de ferro causa anemia. Sobre as outras: escorbuto é falta de vitamina C; a vitamina A é importante para a visão; quem atua na tireoide é o iodo; e o corpo humano não produz vitamina C.",
   "base": "img/2025-1/base_39-42.webp",
   "bw": 1080
  },
@@ -2986,7 +2986,7 @@ window.SEED = [
   "w": 1108,
   "h": 398,
   "gab": 0,
-  "coment": "",
+  "coment": "Em cada símbolo, o número de cima é a massa (prótons + nêutrons) e o de baixo é o número atômico (prótons). Nêutrons = massa − atômico. Cálcio: 40 − 20 = 20 nêutrons. O ferro tem número atômico 26 (56 é a massa), o potássio tem 19, a menor massa é a do magnésio (24) e quem tem mais nêutrons é o ferro (30).",
   "base": "img/2025-1/base_39-42.webp",
   "bw": 1080
  },
@@ -3000,7 +3000,7 @@ window.SEED = [
   "w": 1108,
   "h": 1336,
   "gab": 2,
-  "coment": "",
+  "coment": "O texto dá a regra: para ser solúvel em água, a molécula precisa de vários grupos O–H espalhados. A vitamina C tem vários desses grupos; a vitamina A é uma cadeia longa de carbono e hidrogênio com um só O–H na ponta. Logo, a C é hidrossolúvel e a A é lipossolúvel: a C é mais solúvel em água que a A.",
   "base": "img/2025-1/base_39-42.webp",
   "bw": 1080
  },
@@ -3014,7 +3014,7 @@ window.SEED = [
   "w": 1108,
   "h": 529,
   "gab": 2,
-  "coment": ""
+  "coment": "O açúcar colonial se apoiava em três bases: latifúndio (fazendas enormes), monocultura (só cana, para exportar) e trabalho escravizado (primeiro indígenas, depois principalmente africanos). Esse modelo é chamado de plantation. Feudalismo e servidão são da Europa medieval."
  },
  {
   "id": "2025-1-q44",
@@ -3026,7 +3026,7 @@ window.SEED = [
   "w": 1108,
   "h": 316,
   "gab": 2,
-  "coment": ""
+  "coment": "Com o caule do papiro os egípcios faziam folhas finas e resistentes para escrever, uma espécie de papel (a palavra “papel” vem de “papiro”). Era o suporte dos textos dos escribas."
  },
  {
   "id": "2025-1-q45",
@@ -3038,7 +3038,7 @@ window.SEED = [
   "w": 1107,
   "h": 543,
   "gab": 4,
-  "coment": ""
+  "coment": "Ernest Götsch reflorestou a fazenda, fez os riachos voltarem e ainda ganha dinheiro com cacau de alto valor exportado para Portugal. O exemplo mostra que preservar e ter renda podem andar juntos. Foi a criação de porcos e o plantio convencional que tinham degradado a terra."
  },
  {
   "id": "2025-1-q46",
@@ -3050,7 +3050,7 @@ window.SEED = [
   "w": 1109,
   "h": 304,
   "gab": 4,
-  "coment": "",
+  "coment": "Volte a cada pronome e veja o que ele retoma. “Frutos que (VIII) foram manipulados”: o “que” retoma frutos. “Por eles (IX)”: os povos indígenas, citados na frase anterior. Os outros: I, II e V retomam o cupuaçu; III e IV, as florestas primárias; VI, a técnica de cruzar os melhores espécimes; VII, o Holoceno.",
   "base": "img/2025-1/base_46-49.webp",
   "bw": 1093
  },
@@ -3064,7 +3064,7 @@ window.SEED = [
   "w": 1108,
   "h": 382,
   "gab": 2,
-  "coment": "",
+  "coment": "O texto traz as duas fases: a domesticação original (“entre 5 e 8 mil anos atrás”) e “uma segunda fase... nos últimos dois séculos”, isto é, há cerca de 200 anos. Nas florestas primárias não se encontrou cupuaçu; Darwin viveu muito depois dos pré-colombianos; e o texto diz que as técnicas indígenas não causavam desmatamento.",
   "base": "img/2025-1/base_46-49.webp",
   "bw": 1093
  },
@@ -3078,7 +3078,7 @@ window.SEED = [
   "w": 1109,
   "h": 345,
   "gab": 3,
-  "coment": "",
+  "coment": "“Se” é a conjunção que indica condição ou hipótese: “Se o cupuaçu não nascia naturalmente..., era razoável supor...”. Os outros destaques indicam tempo (entre, antes), explicação (os dois-pontos) e finalidade (para).",
   "base": "img/2025-1/base_46-49.webp",
   "bw": 1093
  },
@@ -3092,7 +3092,7 @@ window.SEED = [
   "w": 1108,
   "h": 310,
   "gab": 1,
-  "coment": "",
+  "coment": "O trecho entre travessões diz o que são os mateiros: “os guias locais da região amazônica”. É uma explicação encaixada na frase (um aposto). Travessões, vírgulas e parênteses costumam ter essa função.",
   "base": "img/2025-1/base_46-49.webp",
   "bw": 1093
  },
@@ -3106,7 +3106,7 @@ window.SEED = [
   "w": 1108,
   "h": 756,
   "gab": 1,
-  "coment": ""
+  "coment": "O poema diz: “crescer é um pouco de se adaptar com se aceitar. É um pouco injusto, mas é necessário”. Crescer exige aceitar a si mesmo (a árvore torta) e resistir às dificuldades (perder folhas, queimar os galhos). O eu lírico esconde o choro e chama o processo de injusto, o que descarta as alternativas A e C."
  },
  {
   "id": "2026-1-q01",
@@ -3118,7 +3118,7 @@ window.SEED = [
   "w": 1111,
   "h": 736,
   "gab": 3,
-  "coment": ""
+  "coment": "O último parágrafo diz que a domesticação faz parte da conexão com os animais, que “conecta grandes saltos evolutivos, como o desenvolvimento de ferramentas e até da linguagem”. Ou seja, contribuiu para a evolução humana. O texto também mostra que o corpo se adaptou ao leite: a intolerância diminuiu, não aumentou."
  },
  {
   "id": "2026-1-q02",
@@ -3130,7 +3130,7 @@ window.SEED = [
   "w": 1111,
   "h": 321,
   "gab": 2,
-  "coment": "",
+  "coment": "Razão é uma divisão. Para saber quantas pessoas existem para cada cão-guia, divida 6 500 000 por 207: dá aproximadamente 31 400. Então há 1 cão-guia para cada 31 400 pessoas com deficiência visual. Como as alternativas são próximas, vale fazer a conta com cuidado.",
   "base": "img/2026-1/base_02-03.webp",
   "bw": 1053
  },
@@ -3144,7 +3144,7 @@ window.SEED = [
   "w": 1111,
   "h": 1439,
   "gab": 3,
-  "coment": "",
+  "coment": "Transforme cada quantidade em porcentagem do total (207). Labradores: 153 ÷ 207 ≈ 74%. Golden: 16 ÷ 207 ≈ 8%. Outras raças: 207 − 153 − 16 = 38, e 38 ÷ 207 ≈ 18%. O gráfico certo mostra 74%, 8% e 18%. Cuidado: 16 é o número de cães Golden, não a porcentagem, e essa confusão aparece em outras alternativas.",
   "base": "img/2026-1/base_02-03.webp",
   "bw": 1053
  },
@@ -3158,7 +3158,7 @@ window.SEED = [
   "w": 1111,
   "h": 555,
   "gab": 4,
-  "coment": ""
+  "coment": "Para a autora, o cão “só fica sendo” e “ser é a sua atividade”: ele simplesmente vive o momento, sem se angustiar. É isso que ensina a ela. As outras alternativas falam em submissão, inquietação ou em deixar alguém tenso, ideias que não estão no trecho."
  },
  {
   "id": "2026-1-q05",
@@ -3170,7 +3170,7 @@ window.SEED = [
   "w": 1111,
   "h": 825,
   "gab": 0,
-  "coment": ""
+  "coment": "O final do texto diz que os egípcios admiravam os felinos por combinarem “graça, fertilidade e cuidado suave com agressão, rapidez e perigo” e que os deuses ligados a essas qualidades eram representados com traços de felinos. As palavras “apenas” e “se restringia”, nas alternativas B e C, limitam o que o texto não limita."
  },
  {
   "id": "2026-1-q06",
@@ -3182,7 +3182,7 @@ window.SEED = [
   "w": 1111,
   "h": 804,
   "gab": 4,
-  "coment": ""
+  "coment": "A última frase do texto lista os efeitos nas crianças: “melhora na convivência social, na capacidade de concentração e nas habilidades de comunicação”, e o começo fala em desenvolvimento afetivo e psicológico. As outras exageram (“dispensável qualquer acompanhamento”) ou invertem (isolamento, dependência)."
  },
  {
   "id": "2026-1-q07",
@@ -3194,7 +3194,7 @@ window.SEED = [
   "w": 1111,
   "h": 613,
   "gab": 4,
-  "coment": ""
+  "coment": "A disputa entre Estados Unidos e União Soviética para ver quem chegava primeiro ao espaço (a corrida espacial) é uma das marcas da Guerra Fria, entre 1947 e 1991. As datas do texto (1948 a 1961) e os nomes Sputnik e Gagarin confirmam."
  },
  {
   "id": "2026-1-q08",
@@ -3206,7 +3206,7 @@ window.SEED = [
   "w": 1111,
   "h": 391,
   "gab": 3,
-  "coment": "",
+  "coment": "As meninas aprenderam que “sem natureza e animais, nada progride”, e o texto fala em cuidado mútuo e em cuidar de tudo o que tem vida na floresta. A relação com animais e plantas é a base da vida daquela comunidade. Xerimbabo é o nome dado aos animais (não às crianças), e a preguiça chegou sem provocar medo.",
   "base": "img/2026-1/base_08-12.webp",
   "bw": 846
  },
@@ -3220,7 +3220,7 @@ window.SEED = [
   "w": 1111,
   "h": 487,
   "gab": 3,
-  "coment": "",
+  "coment": "A onça é predadora de topo: caça herbívoros e predadores menores e não é caçada por outros animais. Assim ela controla as populações e mantém o equilíbrio. Sobre as erradas: aves têm penas (não pelos), e nem todas são carnívoras; os xerimbabos vivem soltos, não em cativeiro; cobras e tartarugas não mantêm a temperatura do corpo constante.",
   "base": "img/2026-1/base_08-12.webp",
   "bw": 846
  },
@@ -3234,7 +3234,7 @@ window.SEED = [
   "w": 1111,
   "h": 272,
   "gab": 4,
-  "coment": "",
+  "coment": "Pergunte a cada expressão em negrito: “Certa manhã” responde a quando? (tempo). “No Pará” responde a onde? (lugar). “Com as meninas” responde a com quem? (companhia). “Nas aldeias” responde a onde? (lugar).",
   "base": "img/2026-1/base_08-12.webp",
   "bw": 846
  },
@@ -3248,7 +3248,7 @@ window.SEED = [
   "w": 1111,
   "h": 272,
   "gab": 2,
-  "coment": "",
+  "coment": "“Acabou indo” fala de algo que já aconteceu e terminou (a capivara foi embora com o bando). O verbo “acabar” reforça o desfecho, como dizer “no fim das contas, foi”. Não é ação que se repete nem que ficou pela metade.",
   "base": "img/2026-1/base_08-12.webp",
   "bw": 846
  },
@@ -3262,7 +3262,7 @@ window.SEED = [
   "w": 1111,
   "h": 275,
   "gab": 3,
-  "coment": "",
+  "coment": "Volte ao quarto parágrafo: ele fala de “pets” e de “os animais [que] vivem soltos na floresta”, e depois diz “a relação com eles é de cuidado e de respeito”. O pronome retoma os bichos citados antes, os pets e os animais. “Territórios” e “adultos” não fazem sentido como aquilo com que se tem relação de cuidado.",
   "base": "img/2026-1/base_08-12.webp",
   "bw": 846
  },
@@ -3276,7 +3276,7 @@ window.SEED = [
   "w": 1111,
   "h": 412,
   "gab": 0,
-  "coment": ""
+  "coment": "Passo a passo. Cada cavalo trabalha 3 horas por dia, o que dá 6 sessões de 30 minutos. De terça a sexta são 4 dias: 6 × 4 = 24 sessões por cavalo na semana. Com 12 cavalos: 24 × 12 = 288 sessões. Cada pessoa usa 2 sessões por semana: 288 ÷ 2 = 144 pessoas. Quem esquece essa última divisão marca 288."
  },
  {
   "id": "2026-1-q14",
@@ -3288,7 +3288,7 @@ window.SEED = [
   "w": 1111,
   "h": 939,
   "gab": 3,
-  "coment": ""
+  "coment": "Na tirinha um dinossauro aparece no mundo dos humanos, mas os dinossauros foram extintos há cerca de 66 milhões de anos, e os primeiros hominídeos só surgiram milhões de anos depois. Nunca conviveram. Dinossauros nasciam de ovos, e isso a tirinha mostra corretamente."
  },
  {
   "id": "2026-1-q15",
@@ -3300,7 +3300,7 @@ window.SEED = [
   "w": 1111,
   "h": 279,
   "gab": 0,
-  "coment": "",
+  "coment": "Na respiração aeróbica, glicose + oxigênio viram gás carbônico + água, com liberação de energia. O gás produzido é o dióxido de carbono (CO₂), aquele que soltamos ao expirar. É o caminho inverso da fotossíntese.",
   "base": "img/2026-1/base_15-16.webp",
   "bw": 1056
  },
@@ -3314,7 +3314,7 @@ window.SEED = [
   "w": 1111,
   "h": 273,
   "gab": 1,
-  "coment": "",
+  "coment": "Substância simples tem um só elemento químico: O₂ só tem oxigênio. Substância composta tem dois ou mais elementos: C₆H₁₂O₆ tem carbono, hidrogênio e oxigênio. Mistura seria ter mais de uma substância junta, o que não é o caso de nenhuma das duas.",
   "base": "img/2026-1/base_15-16.webp",
   "bw": 1056
  },
@@ -3328,7 +3328,7 @@ window.SEED = [
   "w": 1111,
   "h": 546,
   "gab": 2,
-  "coment": ""
+  "coment": "A pergunta pede o argumento paleontológico, isto é, ligado a fósseis. Wegener mostrou que fósseis dos mesmos animais e plantas aparecem em continentes hoje separados por oceanos (América do Sul e África, por exemplo), sinal de que já estiveram unidos. As formações de relevo parecidas também são argumento dele, mas geológico. E o encaixe das costas é entre América do Sul e África, não Ásia."
  },
  {
   "id": "2026-1-q18",
@@ -3340,7 +3340,7 @@ window.SEED = [
   "w": 1111,
   "h": 651,
   "gab": 0,
-  "coment": ""
+  "coment": "O enunciado explica que o polo Sul magnético fica perto do polo Norte geográfico. O Canadá está perto do polo Norte geográfico, portanto perto do polo Sul magnético. Ao voar para o Brasil, a ave vai para o sul, no sentido do polo Sul geográfico."
  },
  {
   "id": "2026-1-q19",
@@ -3352,7 +3352,7 @@ window.SEED = [
   "w": 1111,
   "h": 553,
   "gab": 4,
-  "coment": ""
+  "coment": "O campo da Terra (50 µT) é um centésimo do campo do ímã; então o do ímã é 100 vezes maior: 50 × 100 = 5 000 µT. Convertendo: 5 000 × 10⁻⁶ T = 5 × 10³ × 10⁻⁶ = 5,0 × 10⁻³ T. Na notação científica, o número antes da potência deve ficar entre 1 e 10; por isso 0,5 × 10⁻³ não serve (e o valor também seria outro)."
  },
  {
   "id": "2026-1-q20",
@@ -3364,7 +3364,7 @@ window.SEED = [
   "w": 1111,
   "h": 1393,
   "gab": 2,
-  "coment": ""
+  "coment": "No mapa, Sergipe fica no litoral do Nordeste e Goiás fica no centro do país, à esquerda (oeste) e abaixo (sul) de Sergipe. Para oeste e para sul ao mesmo tempo: sudoeste."
  },
  {
   "id": "2026-1-q21",
@@ -3376,7 +3376,7 @@ window.SEED = [
   "w": 1111,
   "h": 274,
   "gab": 3,
-  "coment": "",
+  "coment": "A letra manda os pássaros fugirem e se esconderem porque “o homem vem aí”. O ser humano aparece como ameaça para as aves, isto é, como quem destrói a natureza. A relação mostrada é o oposto de harmoniosa.",
   "base": "img/2026-1/base_21-24.webp",
   "bw": 1055
  },
@@ -3390,7 +3390,7 @@ window.SEED = [
   "w": 1111,
   "h": 274,
   "gab": 4,
-  "coment": "",
+  "coment": "Passaredo quer dizer grande quantidade de pássaros. O título combina com a letra, que é uma lista de nomes de aves: quero-quero, tico-tico, pardal, cotovia, andorinha, bem-te-vi e outros, mostrando como são variadas.",
   "base": "img/2026-1/base_21-24.webp",
   "bw": 1055
  },
@@ -3404,7 +3404,7 @@ window.SEED = [
   "w": 1111,
   "h": 272,
   "gab": 0,
-  "coment": "",
+  "coment": "Em “Muito cuidado, que o homem vem aí”, o “que” explica o motivo do aviso: cuidado porque o homem vem aí. Os outros conectivos indicam concessão (ainda que), condição (desde que, contanto que) e proporção (à medida que).",
   "base": "img/2026-1/base_21-24.webp",
   "bw": 1055
  },
@@ -3418,7 +3418,7 @@ window.SEED = [
   "w": 1111,
   "h": 299,
   "gab": 2,
-  "coment": "",
+  "coment": "Imperativo é o verbo que dá ordem ou conselho (“some”, “anda”, “te esconde”), e vocativo é o chamado (“rolinha”, “andorinha”). Os dois juntos servem para convencer quem ouve a agir: o eu lírico avisa os pássaros para que se protejam do perigo que se aproxima.",
   "base": "img/2026-1/base_21-24.webp",
   "bw": 1055
  },
@@ -3432,7 +3432,7 @@ window.SEED = [
   "w": 1111,
   "h": 534,
   "gab": 4,
-  "coment": ""
+  "coment": "O texto diz que a águia tem cerca de 1 milhão de cones por mm², contra 200 mil do ser humano (cinco vezes mais), além de quatro tipos de cones e sensibilidade ao ultravioleta. Ela enxerga mais cores e com mais nitidez que nós. A alternativa D inverte a comparação."
  },
  {
   "id": "2026-1-q26",
@@ -3444,7 +3444,7 @@ window.SEED = [
   "w": 1111,
   "h": 428,
   "gab": 4,
-  "coment": ""
+  "coment": "A corrente fria que passa pelo litoral do Chile e do Peru, no Oceano Pacífico, é a Corrente do Peru (ou de Humboldt). Ela traz águas frias e ricas em nutrientes do fundo (ressurgência), o que atrai peixes e aves, e ainda deixa o litoral seco (deserto do Atacama). A de Benguela fica na África e a do Brasil é quente."
  },
  {
   "id": "2026-1-q27",
@@ -3456,7 +3456,7 @@ window.SEED = [
   "w": 1111,
   "h": 478,
   "gab": 0,
-  "coment": ""
+  "coment": "Volume do cilindro = π × raio² × altura. O enunciado dá o diâmetro (300 nm), e o raio é a metade: 150 nm. Então V = π × 150² × 500, e a parte que multiplica π é 150² × 500. Usar 300 no lugar do raio é a pegadinha."
  },
  {
   "id": "2026-1-q28",
@@ -3468,7 +3468,7 @@ window.SEED = [
   "w": 1111,
   "h": 319,
   "gab": 4,
-  "coment": ""
+  "coment": "H₂O: cada molécula de água tem 2 átomos de hidrogênio ligados a 1 átomo de oxigênio. A água é uma substância composta (dois elementos químicos), não uma mistura; em uma mistura, as substâncias estão apenas juntas, sem ligação química entre si."
  },
  {
   "id": "2026-1-q29",
@@ -3480,7 +3480,7 @@ window.SEED = [
   "w": 1111,
   "h": 642,
   "gab": 1,
-  "coment": ""
+  "coment": "O texto diz que o animal pode ser usado na produção de carne (fonte de proteína) e que tem patas palmeadas, sendo mais ágil na água. É um roedor (os grandes dentes da frente mostram isso), não primata, carnívoro nem ruminante. E, como espécie invasora, causa desequilíbrio."
  },
  {
   "id": "2026-1-q30",
@@ -3492,7 +3492,7 @@ window.SEED = [
   "w": 1111,
   "h": 734,
   "gab": 3,
-  "coment": ""
+  "coment": "Na escala de pH, abaixo de 7 é ácido, 7 é neutro e acima de 7 é básico. O suco gástrico tem pH 2, portanto é bem ácido. Pela figura, na faixa ácida o indicador fica vermelho. É preciso acertar as duas partes: a cor e o motivo."
  },
  {
   "id": "2026-1-q31",
@@ -3504,7 +3504,7 @@ window.SEED = [
   "w": 1111,
   "h": 262,
   "gab": 0,
-  "coment": "",
+  "coment": "Velocidade = distância ÷ tempo. Manada: 240 ÷ 4 = 60 km por dia. Humanos: 240 ÷ 6 = 40 km por dia. Diferença: 60 − 40 = 20 km/dia a favor da manada. Quem leva menos tempo no mesmo percurso é mais rápido.",
   "base": "img/2026-1/base_31-32.webp",
   "bw": 1056
  },
@@ -3518,7 +3518,7 @@ window.SEED = [
   "w": 1111,
   "h": 301,
   "gab": 4,
-  "coment": "",
+  "coment": "O ciclo da água é movido pelo Sol: o calor faz a água evaporar, o vapor sobe, esfria e condensa formando nuvens, e depois chove. Evaporação e condensação são as duas mudanças de estado do ciclo. É a chuva que cria as estações seca e chuvosa da savana.",
   "base": "img/2026-1/base_31-32.webp",
   "bw": 1056
  },
@@ -3532,7 +3532,7 @@ window.SEED = [
   "w": 1111,
   "h": 257,
   "gab": 1,
-  "coment": "",
+  "coment": "O texto diz que a tilápia contém vitaminas A, B e D e minerais como cálcio, ferro e zinco, e que sua pele é usada como curativo em queimaduras. A primeira tilápia do Ceará veio do Sudeste (não é nativa de lá), é criada em água doce, e o DNOCS fez o povoamento dos reservatórios, não o comércio.",
   "base": "img/2026-1/base_33-34.webp",
   "bw": 825
  },
@@ -3546,7 +3546,7 @@ window.SEED = [
   "w": 1111,
   "h": 395,
   "gab": 0,
-  "coment": "",
+  "coment": "O ferro é usado para fabricar a hemoglobina dos glóbulos vermelhos (hemácias); por isso alimento com ferro ajuda a evitar anemia. Erros das outras: a pele da tilápia ajuda na cicatrização; escorbuto é falta de vitamina C e sarampo é causado por vírus; e o peixe é rico em proteínas.",
   "base": "img/2026-1/base_33-34.webp",
   "bw": 825
  },
@@ -3560,7 +3560,7 @@ window.SEED = [
   "w": 1111,
   "h": 336,
   "gab": 0,
-  "coment": ""
+  "coment": "No símbolo, 56 (em cima) é o número de massa e 26 (embaixo) é o número atômico. Então o ferro tem 26 prótons, 26 elétrons e 56 − 26 = 30 nêutrons. As outras alternativas trocam esses números de lugar."
  },
  {
   "id": "2026-1-q36",
@@ -3572,7 +3572,7 @@ window.SEED = [
   "w": 1111,
   "h": 275,
   "gab": 3,
-  "coment": "",
+  "coment": "Conte os átomos da fórmula desenhada. Carbonos: 7 na linha de cima mais 1 no CH₃ de baixo = 8. Hidrogênios: 3 + 2 + 1 + 1 + 2 + 3 na linha, mais 1 do OH e 3 do CH₃ = 16. Oxigênios: 1 do OH e 1 ligado por dupla = 2. Fórmula: C₈H₁₆O₂. O texto também diz que os feromônios existem em humanos e podem ser feitos em laboratório.",
   "base": "img/2026-1/base_36-37.webp",
   "bw": 1055
  },
@@ -3586,7 +3586,7 @@ window.SEED = [
   "w": 1111,
   "h": 271,
   "gab": 2,
-  "coment": "",
+  "coment": "O feromônio atrai só a espécie da praga (o percevejo) para a armadilha. Não envenena o solo, a água, as abelhas nem as pessoas, como fazem os agrotóxicos comuns. Por agir só sobre o alvo, é uma alternativa sustentável.",
   "base": "img/2026-1/base_36-37.webp",
   "bw": 1055
  },
@@ -3600,7 +3600,7 @@ window.SEED = [
   "w": 1111,
   "h": 608,
   "gab": 4,
-  "coment": ""
+  "coment": "O texto cita o uso de agrotóxicos entre as causas do risco de extinção das abelhas. Com menos abelhas há menos polinização, e elas polinizam cerca de 75% das culturas alimentares. As outras alternativas trazem relações sem sentido, como desmatamento que aumenta as flores."
  },
  {
   "id": "2026-1-q39",
@@ -3612,7 +3612,7 @@ window.SEED = [
   "w": 1111,
   "h": 387,
   "gab": 2,
-  "coment": ""
+  "coment": "A pele com pelos prende uma camada de ar parado junto ao corpo. Sem o ar circulando, quase não há troca de calor por convecção (o calor levado pelo movimento do ar), e o corpo perde menos calor para o ambiente gelado. Roupa não produz calor: ela dificulta a saída do calor do corpo."
  },
  {
   "id": "2026-1-q40",
@@ -3624,7 +3624,7 @@ window.SEED = [
   "w": 1111,
   "h": 325,
   "gab": 4,
-  "coment": ""
+  "coment": "Pressão = força ÷ área. O peso do camelo é o mesmo, mas os cascos largos espalham esse peso por uma área maior; a pressão sobre a areia fica menor e ele não afunda. É a mesma ideia da raquete de neve e o contrário do salto fino."
  },
  {
   "id": "2026-1-q41",
@@ -3636,7 +3636,7 @@ window.SEED = [
   "w": 1111,
   "h": 695,
   "gab": 1,
-  "coment": ""
+  "coment": "O texto tem duas partes: na Idade Média, monstros nos mapas por medo e fascinação pelo desconhecido; depois, com a ciência, as navegações e a biologia marinha, as lendas foram substituídas por informação precisa. A alternativa B resume as duas. As alternativas A e D atribuem precisão científica aos mapas medievais, o oposto do que o texto diz."
  },
  {
   "id": "2026-1-q42",
@@ -3648,7 +3648,7 @@ window.SEED = [
   "w": 1111,
   "h": 745,
   "gab": 2,
-  "coment": ""
+  "coment": "Equinócio é o dia do ano (em março e em setembro) em que o dia e a noite duram o mesmo tempo, cerca de 12 horas cada. Ele acontece por causa da inclinação do eixo da Terra e do seu movimento em torno do Sol. É um fenômeno astronômico comum, que não provoca onda de calor nem perigo especial."
  },
  {
   "id": "2026-1-q43",
@@ -3660,7 +3660,7 @@ window.SEED = [
   "w": 1111,
   "h": 710,
   "gab": 1,
-  "coment": ""
+  "coment": "Massa total dos animais: 900 × 250 = 225 000 kg. Em unidades animais: 225 000 ÷ 450 = 500 UA. Da fórmula, taxa de lotação = total de UA ÷ área = 500 ÷ 100 = 5,0 UA/ha. Não confunda o número de animais (900) com o número de UA (500)."
  },
  {
   "id": "2026-1-q44",
@@ -3672,7 +3672,7 @@ window.SEED = [
   "w": 1111,
   "h": 724,
   "gab": 2,
-  "coment": ""
+  "coment": "O texto junta dois fatos: quase 40% do gado está nos estados da Amazônia, e grande parte da floresta desmatada vira pasto. Logo, a pecuária é uma das principais causas do desmatamento. Números trocados denunciam as erradas: o Brasil exporta “quase um quinto” (20%, não 50%), e os 40% são dos nove estados juntos, não só do Amazonas."
  },
  {
   "id": "2026-1-q45",
@@ -3684,7 +3684,7 @@ window.SEED = [
   "w": 1111,
   "h": 507,
   "gab": 1,
-  "coment": ""
+  "coment": "Carne de porco ou de boi mal cozida com cisticercos (as larvas) transmite a teníase, causada pela tênia, conhecida como solitária, um verme achatado que vive no intestino. Ascaridíase (lombriga) vem de água e alimentos contaminados com ovos, e o barbeiro é o transmissor do mal de Chagas."
  },
  {
   "id": "2026-1-q46",
@@ -3696,7 +3696,7 @@ window.SEED = [
   "w": 1111,
   "h": 881,
   "gab": 2,
-  "coment": ""
+  "coment": "O texto fala do Imperialismo dos séculos XVIII e XIX: países europeus dominando territórios em outros continentes (África e Ásia) para explorá-los. Esse processo também se chama neocolonialismo. Os animais trazidos das colônias eram uma demonstração desse poder."
  },
  {
   "id": "2026-1-q47",
@@ -3708,7 +3708,7 @@ window.SEED = [
   "w": 1111,
   "h": 722,
   "gab": 3,
-  "coment": ""
+  "coment": "O santuário resgata elefantes que sofreram em cativeiro e cuida da recuperação deles. Para as pessoas, a lição é de empatia e respeito pelos animais. As alternativas B e E vão contra o propósito do santuário (mais elefantes em zoológicos e eventos), e o texto diz que a área está se regenerando, não sendo desmatada."
  },
  {
   "id": "2026-1-q48",
@@ -3720,7 +3720,7 @@ window.SEED = [
   "w": 1111,
   "h": 965,
   "gab": 3,
-  "coment": ""
+  "coment": "O texto mostra que o TAMAR deu certo por envolver os pescadores (que conheciam as tartarugas), dialogar com “as práticas e o conhecimento tradicionais” e incluir questões de cidadania. Ele não expulsou ninguém nem acabou com o modo de vida local, e os resultados foram positivos."
  },
  {
   "id": "2026-1-q49",
@@ -3732,7 +3732,7 @@ window.SEED = [
   "w": 1111,
   "h": 490,
   "gab": 2,
-  "coment": ""
+  "coment": "Fotopoluição é o excesso de luz artificial. Os filhotes nascem à noite e vão em direção à claridade do horizonte sobre o mar; com postes e casas iluminadas, eles seguem para o lado errado e morrem. Tartarugas são répteis: respiram por pulmões (não por brânquias) e precisam subir à superfície; por isso se afogam quando ficam presas em redes."
  },
  {
   "id": "2026-1-q50",
@@ -3744,7 +3744,7 @@ window.SEED = [
   "w": 1111,
   "h": 512,
   "gab": 4,
-  "coment": ""
+  "coment": "Agir com responsabilidade é denunciar maus-tratos, cativeiro ilegal, desmatamento e queimadas às autoridades. Todas as outras alternativas propõem coisas que prejudicam os animais: espécies invasoras, comprar produtos de animais ameaçados, combater o reflorestamento, vender animais silvestres."
  },
  {
   "id": "2026-2-q01",
@@ -3756,7 +3756,7 @@ window.SEED = [
   "w": 1084,
   "h": 502,
   "gab": 2,
-  "coment": ""
+  "coment": "O próprio enunciado chama o Nilo de “estrada” do Egito. Em um rio, o transporte é feito por barcos: os egípcios usavam embarcações a vela e a remo para levar cereais, pedras e pessoas entre o sul e o norte. Estradas asfaltadas não existiam, e Soweto fica a milhares de quilômetros, na África do Sul."
  },
  {
   "id": "2026-2-q02",
@@ -3768,7 +3768,7 @@ window.SEED = [
   "w": 1084,
   "h": 504,
   "gab": 1,
-  "coment": ""
+  "coment": "Peregrinação é viagem por motivo religioso, a lugares sagrados como Santiago de Compostela, Roma e Jerusalém. Com tanta gente passando, surgiram pontes, hospedarias e comércio nas rotas, o que movimentou as cidades. O texto fala em ordens religiosas protegendo os viajantes, outra pista da motivação."
  },
  {
   "id": "2026-2-q03",
@@ -3780,7 +3780,7 @@ window.SEED = [
   "w": 1083,
   "h": 481,
   "gab": 4,
-  "coment": ""
+  "coment": "Portugal e Espanha saíram na frente porque já tinham reis fortes, com poder centralizado, capazes de reunir dinheiro (com apoio da burguesia) para financiar navios e expedições. O objetivo era ampliar o comércio e acumular riquezas. Os senhores feudais estavam perdendo poder nessa época, não ganhando."
  },
  {
   "id": "2026-2-q04",
@@ -3792,7 +3792,7 @@ window.SEED = [
   "w": 1083,
   "h": 405,
   "gab": 3,
-  "coment": ""
+  "coment": "Três continentes ligados por três trechos de viagem: Europa → África (mercadorias), África → América (pessoas escravizadas), América → Europa (açúcar, ouro, algodão). No mapa, o percurso forma um triângulo, daí o nome Comércio Triangular. A Rota da Seda e a das Especiarias ligavam a Europa ao Oriente."
  },
  {
   "id": "2026-2-q05",
@@ -3804,7 +3804,7 @@ window.SEED = [
   "w": 1083,
   "h": 490,
   "gab": 3,
-  "coment": ""
+  "coment": "Cada novo meio de transporte criou profissões e oportunidades (maquinista, piloto, motorista, entregador). A conclusão equilibrada é que a vida profissional está ligada às mudanças históricas e tecnológicas. As outras exageram com palavras como “impossível”, “restritas”, “cessaram” e “ignorar”."
  },
  {
   "id": "2026-2-q06",
@@ -3816,7 +3816,7 @@ window.SEED = [
   "w": 1084,
   "h": 849,
   "gab": 1,
-  "coment": ""
+  "coment": "A imagem mostra uma senhora branca dentro de uma cadeirinha (liteira) carregada nos ombros por dois homens negros descalços. No Brasil do século XIX isso era trabalho escravizado: a força das pessoas negras garantia o conforto e mostrava a posição social da elite. Não havia trabalho livre com privilégios nem máquinas na cena."
  },
  {
   "id": "2026-2-q07",
@@ -3828,7 +3828,7 @@ window.SEED = [
   "w": 1084,
   "h": 591,
   "gab": 3,
-  "coment": ""
+  "coment": "Juscelino Kubitschek (presidente de 1956 a 1961) transferiu a capital do Rio de Janeiro para o Planalto Central, onde construiu Brasília, inaugurada em 1960. A cidade foi planejada com avenidas largas, pensadas para o carro, na mesma época em que JK trouxe as fábricas de automóveis para o Brasil."
  },
  {
   "id": "2026-2-q08",
@@ -3840,7 +3840,7 @@ window.SEED = [
   "w": 1084,
   "h": 280,
   "gab": 0,
-  "coment": "",
+  "coment": "Compare as porcentagens da tabela. Dos três ingredientes que têm nome e fórmula, o CrO₃ tem a maior: 28,70%, contra 20,54% do As₂O₅ e 11,17% do CuO. Conferindo as outras: os três óxidos somam 60,41% (não 70%), o cobre tem só 11,17%, e a soma de tudo dá 100,41%, um pouco mais que 100%.",
   "base": "img/2026-2/base_08-09.webp",
   "bw": 1063
  },
@@ -3854,7 +3854,7 @@ window.SEED = [
   "w": 1084,
   "h": 256,
   "gab": 3,
-  "coment": "",
+  "coment": "Óxido é um composto de dois elementos em que um deles é o oxigênio: CrO₃, CuO e As₂O₅ têm essa forma. Cromo e cobre são metais; por isso a classificação pedida é óxidos metálicos. Ácidos têm H no começo da fórmula, bases têm OH, e sais não se resumem a um elemento ligado ao oxigênio.",
   "base": "img/2026-2/base_08-09.webp",
   "bw": 1063
  },
@@ -3868,7 +3868,7 @@ window.SEED = [
   "w": 1084,
   "h": 392,
   "gab": 1,
-  "coment": ""
+  "coment": "Na representação do átomo, o número de massa (A = 52) vai em cima e o número atômico (Z = 24) vai embaixo, ao lado do símbolo. O símbolo do cromo é Cr; Cu é o cobre. Portanto, 52 em cima, 24 embaixo e Cr."
  },
  {
   "id": "2026-2-q11",
@@ -3880,7 +3880,7 @@ window.SEED = [
   "w": 1083,
   "h": 340,
   "gab": 1,
-  "coment": ""
+  "coment": "Os dois gases são substâncias puras, porque cada um é formado por um só tipo de molécula. O₂ tem um único elemento (oxigênio): substância simples. CO₂ tem dois elementos (carbono e oxigênio): substância composta. Mistura seria o ar, que tem vários gases juntos."
  },
  {
   "id": "2026-2-q12",
@@ -3892,7 +3892,7 @@ window.SEED = [
   "w": 1083,
   "h": 663,
   "gab": 0,
-  "coment": ""
+  "coment": "Ácido e base reagem na proporção de 1 para 1. Havia só 5 mL de HCl e foram colocados 100 mL de NaOH. Os 5 mL de ácido reagem com 5 mL de base e acabam: o ácido foi totalmente neutralizado. Sobram 95 mL de NaOH, agora com um pouco do sal formado (NaCl). Quem está em menor quantidade é sempre o que acaba primeiro."
  },
  {
   "id": "2026-2-q13",
@@ -3904,7 +3904,7 @@ window.SEED = [
   "w": 1084,
   "h": 327,
   "gab": 0,
-  "coment": "",
+  "coment": "O enunciado dá a definição: isômeros têm a mesma fórmula molecular e fórmulas estruturais diferentes. Glicose e frutose são as duas C₆H₁₂O₆ (mesma fórmula molecular), mas os átomos estão arrumados de modos diferentes nos desenhos. Logo, são isômeros.",
   "base": "img/2026-2/base_13-14.webp",
   "bw": 1062
  },
@@ -3918,7 +3918,7 @@ window.SEED = [
   "w": 1084,
   "h": 277,
   "gab": 4,
-  "coment": "",
+  "coment": "O texto começa dizendo que o consumo excessivo de sacarose sobrecarrega o fígado e leva à esteatose hepática (gordura no fígado). Então a meta é ingerir pouco açúcar. A alternativa D também fala em pequena quantidade, mas o motivo está errado: segundo o texto, é a frutose que é metabolizada principalmente no fígado.",
   "base": "img/2026-2/base_13-14.webp",
   "bw": 1062
  },
@@ -3932,7 +3932,7 @@ window.SEED = [
   "w": 1083,
   "h": 426,
   "gab": 1,
-  "coment": ""
+  "coment": "O Estreito de Ormuz fica no Oriente Médio, entre o Irã e a península Arábica, e liga o Golfo Pérsico ao Golfo de Omã. É a saída do petróleo de países como Arábia Saudita, Irã, Iraque e Kuwait. A ligação entre o Mar Vermelho e o Mediterrâneo é o Canal de Suez."
  },
  {
   "id": "2026-2-q16",
@@ -3944,7 +3944,7 @@ window.SEED = [
   "w": 1083,
   "h": 648,
   "gab": 0,
-  "coment": ""
+  "coment": "O texto diz que a ferrovia liga Xining (província de Qinghai) a Lhasa (Tibete), as duas na China, com ar até 40% mais rarefeito e frio de −40 °C; o ponto mais alto fica no condado de Amdo. As outras inventam fatos: o Tibete não é país independente, a ferrovia não é do século XIX e não fica nos Andes nem na Europa."
  },
  {
   "id": "2026-2-q17",
@@ -3956,7 +3956,7 @@ window.SEED = [
   "w": 1083,
   "h": 308,
   "gab": 1,
-  "coment": ""
+  "coment": "A Terra é redonda; por isso o caminho mais curto entre a Ásia e a América do Norte passa perto do Polo Norte (teste com um barbante em um globo). Rota mais curta significa menos tempo e menos combustível. As outras são absurdas: não há tempestade tropical nos polos e a gravidade existe em toda a Terra."
  },
  {
   "id": "2026-2-q18",
@@ -3968,7 +3968,7 @@ window.SEED = [
   "w": 1084,
   "h": 478,
   "gab": 1,
-  "coment": ""
+  "coment": "A ferrovia ligaria o Atlântico ao Pacífico. Com ela, a soja, o minério e outras commodities (matérias-primas) do Brasil chegariam ao Pacífico por terra e de lá à China, sem a volta de navio pelo Canal do Panamá ou pelo sul do continente: menos custo e menos tempo. Não existe ferrovia ligando a Ásia à América do Sul."
  },
  {
   "id": "2026-2-q19",
@@ -3980,7 +3980,7 @@ window.SEED = [
   "w": 1084,
   "h": 584,
   "gab": 3,
-  "coment": ""
+  "coment": "O Rodoanel é uma estrada em anel ao redor da Grande São Paulo que liga as rodovias que chegam à capital. Assim, caminhões que só estão de passagem não precisam atravessar a cidade, o que alivia o trânsito das marginais. É rodovia (não ferrovia) e não substitui o transporte público."
  },
  {
   "id": "2026-2-q20",
@@ -3992,7 +3992,7 @@ window.SEED = [
   "w": 1084,
   "h": 302,
   "gab": 4,
-  "coment": ""
+  "coment": "A Via Dutra liga São Paulo ao Rio de Janeiro e atraiu fábricas para as cidades do Vale do Paraíba (São José dos Campos, Taubaté, Jacareí), que viraram polo industrial e tecnológico, com indústria aeronáutica e automobilística. A região já tinha sido a grande área do café, no século XIX, bem antes da rodovia."
  },
  {
   "id": "2026-2-q21",
@@ -4004,7 +4004,7 @@ window.SEED = [
   "w": 1083,
   "h": 325,
   "gab": 2,
-  "coment": ""
+  "coment": "Adaptabilidade é a capacidade de se ajustar ao que é novo. Quem muda de cidade ou de país precisa lidar com outro ritmo, outros costumes e outros caminhos. As outras alternativas usam verbos negativos (impedir, dificultar, limitar, inviabilizar) que não combinam com uma competência positiva."
  },
  {
   "id": "2026-2-q22",
@@ -4016,7 +4016,7 @@ window.SEED = [
   "w": 1083,
   "h": 323,
   "gab": 2,
-  "coment": "",
+  "coment": "No trecho 1, o monotrilho leva 48 − 34 = 14 minutos para percorrer 6,3 km. A linha toda tem 6,3 + 6,4 + 5 = 17,7 km. Com a mesma velocidade, regra de três: 6,3 km — 14 min; 17,7 km — t. Então t = 14 × 17,7 ÷ 6,3 ≈ 39 minutos, que fica entre 30 e 40. Atenção: 34 minutos é a economia, não o tempo da viagem.",
   "base": "img/2026-2/base_22-23.webp",
   "bw": 1063
  },
@@ -4030,7 +4030,7 @@ window.SEED = [
   "w": 1083,
   "h": 364,
   "gab": 4,
-  "coment": "",
+  "coment": "O tempo no trecho 1 é 48 − 34 = 14 minutos. As alternativas estão em m/s, então converta: 6,3 km = 6 300 m e 14 min = 14 × 60 = 840 s. Velocidade = 6 300 ÷ 840 = 7,5 m/s. Quem usa 34 minutos chega a 3,1 m/s, que é a pegadinha.",
   "base": "img/2026-2/base_22-23.webp",
   "bw": 1063
  },
@@ -4044,7 +4044,7 @@ window.SEED = [
   "w": 1084,
   "h": 483,
   "gab": 4,
-  "coment": ""
+  "coment": "A diferença entre automóvel (32%) e ônibus (21%) é 11%. Esses 11% do grupo correspondem a 22 pessoas. Se 11% são 22, então 1% são 2 pessoas, e 100% são 200 pessoas."
  },
  {
   "id": "2026-2-q25",
@@ -4056,7 +4056,7 @@ window.SEED = [
   "w": 1084,
   "h": 903,
   "gab": 1,
-  "coment": ""
+  "coment": "A passagem é um cilindro “deitado”: a extensão (82 m) faz o papel da altura. O diâmetro é 2 m, então o raio é 1 m. Área da base = π × r² = 3 × 1² = 3 m². Volume = 3 × 82 = 246 m³. Quem usa o diâmetro no lugar do raio encontra 984 m³."
  },
  {
   "id": "2026-2-q26",
@@ -4068,7 +4068,7 @@ window.SEED = [
   "w": 1084,
   "h": 1197,
   "gab": 2,
-  "coment": ""
+  "coment": "A cerca é um retângulo comprido: 500 m de comprimento (o mínimo para cada lado) por 1,70 m de altura total, como mostra o esquema. Área = 500 × 1,70 = 850 m². Os 0,5 m da malha pequena e a base de concreto já estão dentro do 1,70 m; não é para somar."
  },
  {
   "id": "2026-2-q27",
@@ -4080,7 +4080,7 @@ window.SEED = [
   "w": 1083,
   "h": 787,
   "gab": 3,
-  "coment": ""
+  "coment": "Média = soma dos valores ÷ quantidade de valores. Soma: 19 + 21 + 24 + 27 + 30 + 35 = 156. São 6 anos (de 2025 a 2030, contando os dois extremos). 156 ÷ 6 = 26 bilhões de dólares."
  },
  {
   "id": "2026-2-q28",
@@ -4092,7 +4092,7 @@ window.SEED = [
   "w": 1083,
   "h": 666,
   "gab": 0,
-  "coment": ""
+  "coment": "O enunciado pede duas coisas ao mesmo tempo: cuidado direto com outras pessoas e alcance além das fronteiras de um país. Henry Dunant ajudou a criar a Cruz Vermelha, que socorre feridos em guerras no mundo inteiro. Drauzio Varella cuida da saúde, mas a alternativa diz “em nosso país”; os outros se destacaram em arte, invenção e esporte."
  },
  {
   "id": "2026-2-q29",
@@ -4104,7 +4104,7 @@ window.SEED = [
   "w": 1084,
   "h": 276,
   "gab": 3,
-  "coment": "",
+  "coment": "O cartaz dá o dado: “Carros transportam apenas 30% das pessoas e emitem 71% dos gases de efeito estufa”. O carro particular leva pouca gente e polui muito; por isso o transporte coletivo (ônibus) é o mais sustentável. O cartaz não compara bicicleta com ônibus nem fala de carros de aplicativo.",
   "base": "img/2026-2/base_29-31.webp",
   "bw": 1062
  },
@@ -4118,7 +4118,7 @@ window.SEED = [
   "w": 1084,
   "h": 275,
   "gab": 1,
-  "coment": "",
+  "coment": "Em “transportam apenas 30% das pessoas”, “apenas” quer dizer somente. Em “e emitem 71% dos gases”, o “e” liga duas ideias que se opõem (levam pouca gente, mas poluem muito); por isso pode ser trocado por “porém”. O “e” nem sempre indica soma: vale olhar a relação entre as duas partes.",
   "base": "img/2026-2/base_29-31.webp",
   "bw": 1062
  },
@@ -4132,7 +4132,7 @@ window.SEED = [
   "w": 1083,
   "h": 317,
   "gab": 4,
-  "coment": "",
+  "coment": "O cartaz usa verbos no imperativo (“Deixe”, “Vá”, “Pense nisso”) para convencer o leitor a mudar de atitude: ir a pé, de bicicleta ou de ônibus. É uma campanha de conscientização, que quer mobilizar as pessoas. Ele não é imparcial nem lista regras e punições.",
   "base": "img/2026-2/base_29-31.webp",
   "bw": 1062
  },
@@ -4146,7 +4146,7 @@ window.SEED = [
   "w": 1083,
   "h": 350,
   "gab": 2,
-  "coment": "",
+  "coment": "Santos Dumont termina dizendo: “Tudo isto, senhores, será realizado pelo aeroplano”. Para ele, o avião vai encurtar distâncias, desenvolver o comércio e aproximar os países das Américas. Ou seja, um meio de transporte como causa da aproximação comercial e cultural.",
   "base": "img/2026-2/base_32-33.webp",
   "bw": 1063
  },
@@ -4160,7 +4160,7 @@ window.SEED = [
   "w": 1083,
   "h": 1001,
   "gab": 0,
-  "coment": "",
+  "coment": "“Apesar de” indica concessão: uma dificuldade que não impede o fato. O mesmo sentido aparece com “embora”: embora haja barreiras, os países se encontrarão. “Portanto” indica conclusão, “como” indica causa e “se” indica condição. A alternativa E muda quem pratica a ação (“nos encontraremos”).",
   "base": "img/2026-2/base_32-33.webp",
   "bw": 1063
  },
@@ -4174,7 +4174,9 @@ window.SEED = [
   "w": 1084,
   "h": 277,
   "gab": 2,
-  "coment": ""
+  "coment": "As palavras destacadas são terra, serra e mar: lugares diferentes por onde o trem passa. Elas mostram a variedade de cenários de uma viagem que a letra chama de “sem destino”. Por isso não pode ser um percurso planejado com destino certo.",
+  "base": "img/2026-2/base_34-35.webp",
+  "bw": 1083
  },
  {
   "id": "2026-2-q35",
@@ -4186,7 +4188,9 @@ window.SEED = [
   "w": 1084,
   "h": 278,
   "gab": 3,
-  "coment": ""
+  "coment": "“Rodar”, “ciranda” (roda de dança) e “girar” são palavras de movimento circular, como as rodas do trem, e a letra aplica esse movimento à vida (“lá vai a vida a rodar”). A linguagem é figurada (conotativa), o texto tem estrofes (não parágrafos) e tem rimas (rodar/girar, menino/destino).",
+  "base": "img/2026-2/base_34-35.webp",
+  "bw": 1083
  },
  {
   "id": "2026-2-q36",
@@ -4198,7 +4202,7 @@ window.SEED = [
   "w": 1083,
   "h": 895,
   "gab": 0,
-  "coment": ""
+  "coment": "O quadrinho compara: o motorista paga pela gasolina (R$ 2,80 o litro) e a ciclista enche o pneu com ar, que é grátis. A bicicleta aparece como alternativa mais barata e, de quebra, pedalar é exercício físico. Ela é transporte individual, não coletivo, e o quadrinho não trata de transporte de mercadorias."
  },
  {
   "id": "2026-2-q37",
@@ -4210,7 +4214,7 @@ window.SEED = [
   "w": 1084,
   "h": 417,
   "gab": 4,
-  "coment": ""
+  "coment": "Em relação à margem, as velocidades se somam ou se subtraem. A favor da correnteza (rio abaixo): velocidade do barco + velocidade da água, mais rápido. Contra a correnteza (rio acima): velocidade do barco − velocidade da água, mais devagar. É como andar em uma esteira rolante a favor ou contra."
  },
  {
   "id": "2026-2-q38",
@@ -4222,7 +4226,7 @@ window.SEED = [
   "w": 1084,
   "h": 326,
   "gab": 4,
-  "coment": "",
+  "coment": "Siga a ordem dos acontecimentos: a roda gira (energia mecânica, de movimento), o gerador transforma esse movimento em energia elétrica, e a lâmpada transforma a eletricidade em luz (energia luminosa).",
   "base": "img/2026-2/base_38-39.webp",
   "bw": 1063
  },
@@ -4236,7 +4240,7 @@ window.SEED = [
   "w": 1084,
   "h": 758,
   "gab": 2,
-  "coment": "",
+  "coment": "Em série, as lâmpadas ficam uma depois da outra, em um único caminho para a corrente. Se uma queima, o caminho é interrompido, a corrente para e todas apagam (como nos pisca-piscas antigos). Em paralelo, cada lâmpada tem seu próprio caminho e as outras continuariam acesas.",
   "base": "img/2026-2/base_38-39.webp",
   "bw": 1063
  },
@@ -4250,7 +4254,7 @@ window.SEED = [
   "w": 1083,
   "h": 692,
   "gab": 4,
-  "coment": ""
+  "coment": "O texto dá a pista: “diferentes sons se combinam e alteram o sinal percebido”. Quando ondas se encontram e se sobrepõem, alterando o resultado, o fenômeno é a interferência. Timbre é a qualidade que distingue as fontes sonoras, e difração é a onda contornar obstáculos."
  },
  {
   "id": "2026-2-q41",
@@ -4262,7 +4266,7 @@ window.SEED = [
   "w": 1083,
   "h": 303,
   "gab": 1,
-  "coment": ""
+  "coment": "O som é uma onda mecânica: precisa de matéria (ar, água, sólidos) para se propagar e não se propaga no vácuo. Quanto mais próximas as partículas, mais rápido ele vai: cerca de 340 m/s no ar e 1 500 m/s na água. Por isso o som é tão útil no mar. A intensidade diminui com a distância."
  },
  {
   "id": "2026-2-q42",
@@ -4274,7 +4278,7 @@ window.SEED = [
   "w": 1083,
   "h": 372,
   "gab": 2,
-  "coment": ""
+  "coment": "Iguale as unidades: 12 km = 12 000 m. Tempo = distância ÷ velocidade = 12 000 ÷ 5 = 2 400 segundos. Em minutos: 2 400 ÷ 60 = 40 minutos."
  },
  {
   "id": "2026-2-q43",
@@ -4286,7 +4290,7 @@ window.SEED = [
   "w": 1084,
   "h": 1382,
   "gab": 3,
-  "coment": ""
+  "coment": "O casal se orgulha de recusar o canudinho e se chama de “cidadãos conscientes”, mas no último quadrinho está em um carro enorme, abastecendo com combustível. A ironia é essa: valorizam um gesto pequeno e simbólico e não enxergam hábitos que poluem muito mais. A tirinha não diz que evitar canudos é inútil nem que basta."
  },
  {
   "id": "2026-2-q44",
@@ -4298,7 +4302,7 @@ window.SEED = [
   "w": 1083,
   "h": 458,
   "gab": 0,
-  "coment": ""
+  "coment": "Doenças respiratórias (gripe, covid, tuberculose) passam principalmente pelo ar, em gotículas minúsculas chamadas aerossóis, soltas ao falar, tossir e espirrar. Em veículo lotado e com pouca ventilação elas se acumulam e ficam suspensas por horas. Anticorpos são defesas do corpo, não ficam em corrimãos, e a luz do sol ajuda a destruir vírus."
  },
  {
   "id": "2026-2-q45",
@@ -4310,7 +4314,7 @@ window.SEED = [
   "w": 1083,
   "h": 735,
   "gab": 2,
-  "coment": ""
+  "coment": "Minhoca e rato têm circulação fechada (o sangue corre sempre dentro de vasos), e a abelha tem circulação aberta (o líquido sai dos vasos e banha os órgãos). A abelha não tem hemoglobina. O que os três têm em comum é uma bomba: estruturas que se contraem (corações) e empurram o fluido pelo corpo."
  },
  {
   "id": "2026-2-q46",
@@ -4322,7 +4326,7 @@ window.SEED = [
   "w": 1084,
   "h": 278,
   "gab": 4,
-  "coment": "",
+  "coment": "A troca de gases nos alvéolos (o oxigênio entra no sangue e o gás carbônico sai) chama-se hematose. Peristaltismo são os movimentos do tubo digestório, e fagocitose é a célula “engolir” partículas.",
   "base": "img/2026-2/base_46-47.webp",
   "bw": 1062
  },
@@ -4336,7 +4340,7 @@ window.SEED = [
   "w": 1084,
   "h": 376,
   "gab": 0,
-  "coment": "",
+  "coment": "Os gases passam por difusão: vão de onde há mais para onde há menos. As células dos tecidos estão sempre gastando oxigênio na respiração celular, então ali a concentração é baixa; no sangue que chega dos pulmões ela é alta. Por isso o oxigênio sai das hemácias e entra nos tecidos.",
   "base": "img/2026-2/base_46-47.webp",
   "bw": 1062
  },
@@ -4350,7 +4354,7 @@ window.SEED = [
   "w": 1083,
   "h": 565,
   "gab": 3,
-  "coment": ""
+  "coment": "É a osmose: a água atravessa a membrana do lado menos concentrado para o mais concentrado. O xarope é muito concentrado em açúcar, então puxa a água de dentro das células da fruta e também dos microrganismos, que desidratam e não conseguem se multiplicar. É o mesmo princípio de salgar a carne."
  },
  {
   "id": "2026-2-q49",
@@ -4362,7 +4366,7 @@ window.SEED = [
   "w": 1083,
   "h": 410,
   "gab": 4,
-  "coment": ""
+  "coment": "As proteínas são fabricadas nos ribossomos presos ao retículo endoplasmático rugoso (produção). Depois seguem para o complexo golgiense, que modifica, empacota em vesículas e envia para fora da célula (empacotamento). Cloroplasto só existe em célula vegetal, e lisossomo faz a digestão dentro da célula."
  },
  {
   "id": "2026-2-q50",
@@ -4374,6 +4378,6 @@ window.SEED = [
   "w": 1083,
   "h": 389,
   "gab": 1,
-  "coment": ""
+  "coment": "Com mais oxigênio chegando aos músculos e ao cérebro e com o coração mais eficiente, o corpo produz energia com mais facilidade: a pessoa tem mais disposição para as tarefas do dia. Exercício não muda os genes, reduz o estresse, e continua sendo preciso beber água e descansar."
  }
 ];
