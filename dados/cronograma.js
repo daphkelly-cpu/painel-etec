@@ -2,6 +2,8 @@
 // Início: terça-feira, 06/10/2026
 // Prova: domingo, 06/12/2026 (9 semanas de estudo)
 // Cada dia tem uma disciplina principal com vídeo(s)
+// "assuntos" liga o dia aos assuntos do banco de questões (lista em relatorios/classificacao_duvidas.md);
+// é o que a aba Estudar usa nos "Exercícios do dia". Dia sem "assuntos" usa só a disciplina.
 
 window.CRONOGRAMA = {
   meta: "Preparação de 9 semanas para o Vestibulinho ETEC",
@@ -22,6 +24,7 @@ window.CRONOGRAMA = {
           dia_semana: "Terça",
           disciplina: "Português",
           tema: "Leitura e Interpretação de Textos",
+          assuntos: ["Interpretação de texto"],
           videos: [
             { titulo: "Leitura e Interpretação", url: "https://www.youtube.com/watch?v=XsN0e_xPyNI" }
           ],
@@ -33,6 +36,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quarta",
           disciplina: "Matemática",
           tema: "Frações e Operações",
+          assuntos: ["Operações e problemas", "Razão e proporção"],
           videos: [
             { titulo: "Frações - Operações", url: "https://www.youtube.com/watch?v=YJyY6A_MOQc" }
           ],
@@ -44,6 +48,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quinta",
           disciplina: "Geografia",
           tema: "Mapas e Coordenadas Geográficas",
+          assuntos: ["Cartografia e orientação", "Território brasileiro e regiões"],
           videos: [
             { titulo: "Mapas e Coordenadas", url: "https://www.youtube.com/watch?v=_tRJjhkV-0I" }
           ],
@@ -55,6 +60,7 @@ window.CRONOGRAMA = {
           dia_semana: "Sexta",
           disciplina: "História",
           tema: "Brasil Colônia (1500-1822)",
+          assuntos: ["Brasil Colônia"],
           videos: [
             { titulo: "Brasil Colônia Completo", url: "https://www.youtube.com/watch?v=6uO5Ey5MVow" }
           ],
@@ -81,6 +87,7 @@ window.CRONOGRAMA = {
           dia_semana: "Segunda",
           disciplina: "Biologia",
           tema: "Célula e Organelas",
+          assuntos: ["Célula", "Seres vivos (animais e plantas)"],
           videos: [
             { titulo: "Célula e Organelas", url: "https://www.youtube.com/watch?v=8Z0MdYoZzeM" }
           ],
@@ -92,6 +99,7 @@ window.CRONOGRAMA = {
           dia_semana: "Terça",
           disciplina: "Física",
           tema: "Movimento e Força",
+          assuntos: ["Movimento e velocidade", "Forças e máquinas simples"],
           videos: [
             { titulo: "Movimento e Força", url: "https://www.youtube.com/watch?v=Z8oHvBf8oQg" }
           ],
@@ -103,6 +111,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quarta",
           disciplina: "Química",
           tema: "Estrutura Atômica",
+          assuntos: ["Átomo e tabela periódica"],
           videos: [
             { titulo: "Estrutura Atômica", url: "https://www.youtube.com/watch?v=X0jNKx0BkMg" }
           ],
@@ -114,6 +123,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quinta",
           disciplina: "Português",
           tema: "Tipos de Texto e Gêneros",
+          assuntos: ["Gêneros e tipos textuais", "Charge, tirinha e imagem"],
           videos: [
             { titulo: "Tipos de Texto", url: "https://www.youtube.com/watch?v=XwPIcvHHE5A" }
           ],
@@ -125,6 +135,7 @@ window.CRONOGRAMA = {
           dia_semana: "Sexta",
           disciplina: "Matemática",
           tema: "Porcentagem e Acréscimos",
+          assuntos: ["Porcentagem"],
           videos: [
             { titulo: "Porcentagem", url: "https://www.youtube.com/watch?v=nUgAGtEBleM" }
           ],
@@ -151,6 +162,7 @@ window.CRONOGRAMA = {
           dia_semana: "Segunda",
           disciplina: "Geografia",
           tema: "Biomas Brasileiros",
+          assuntos: ["Vegetação e biomas", "Meio ambiente e sustentabilidade"],
           videos: [
             { titulo: "Biomas Brasileiros", url: "https://www.youtube.com/watch?v=E0Yt3d3kIFk" }
           ],
@@ -162,6 +174,7 @@ window.CRONOGRAMA = {
           dia_semana: "Terça",
           disciplina: "História",
           tema: "Escravidão e Abolição",
+          assuntos: ["Povos indígenas e cultura afro-brasileira", "Brasil Império"],
           videos: [
             { titulo: "Escravidão no Brasil", url: "https://www.youtube.com/watch?v=qqSRyVsbjXE" }
           ],
@@ -173,6 +186,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quarta",
           disciplina: "Biologia",
           tema: "Fotossíntese",
+          assuntos: ["Fotossíntese e respiração", "Ecologia"],
           videos: [
             { titulo: "Fotossíntese", url: "https://www.youtube.com/watch?v=8Z0MdYoZzeM" }
           ],
@@ -184,6 +198,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quinta",
           disciplina: "Física",
           tema: "Energia e Potência",
+          assuntos: ["Energia e potência"],
           videos: [
             { titulo: "Energia e Potência", url: "https://www.youtube.com/watch?v=7DjOud20prk" }
           ],
@@ -195,6 +210,7 @@ window.CRONOGRAMA = {
           dia_semana: "Sexta",
           disciplina: "Química",
           tema: "Ligações Químicas",
+          assuntos: ["Fórmulas e ligações químicas", "Substâncias e misturas"],
           videos: [
             { titulo: "Ligações Químicas", url: "https://www.youtube.com/watch?v=b5_cSgplUWg" }
           ],
@@ -222,6 +238,7 @@ window.CRONOGRAMA = {
           dia_semana: "Segunda",
           disciplina: "Português",
           tema: "Figura de Linguagem",
+          assuntos: ["Figuras de linguagem", "Vocabulário e sentido das palavras"],
           videos: [
             { titulo: "Figuras de Linguagem", url: "https://www.youtube.com/watch?v=MQj-MFd-K5k" }
           ],
@@ -233,6 +250,7 @@ window.CRONOGRAMA = {
           dia_semana: "Terça",
           disciplina: "Matemática",
           tema: "Geometria Plana",
+          assuntos: ["Geometria plana", "Geometria espacial e volume"],
           videos: [
             { titulo: "Geometria Plana", url: "https://www.youtube.com/watch?v=8sddg0gXeEg" }
           ],
@@ -244,6 +262,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quarta",
           disciplina: "Geografia",
           tema: "Clima e Mudanças Climáticas",
+          assuntos: ["Clima", "Meio ambiente e sustentabilidade"],
           videos: [
             { titulo: "Clima e Mudanças Climáticas", url: "https://www.youtube.com/watch?v=OaLCe5L5Foc" }
           ],
@@ -255,6 +274,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quinta",
           disciplina: "História",
           tema: "República Velha (1889-1930)",
+          assuntos: ["Brasil República"],
           videos: [
             { titulo: "República Velha", url: "https://www.youtube.com/watch?v=f2kP0f-nq5s" }
           ],
@@ -266,6 +286,7 @@ window.CRONOGRAMA = {
           dia_semana: "Sexta",
           disciplina: "Biologia",
           tema: "Respiração Celular",
+          assuntos: ["Fotossíntese e respiração", "Corpo humano e saúde"],
           videos: [
             { titulo: "Respiração Celular", url: "https://www.youtube.com/watch?v=8Z0MdYoZzeM" }
           ],
@@ -293,6 +314,7 @@ window.CRONOGRAMA = {
           dia_semana: "Segunda",
           disciplina: "Física",
           tema: "Ondas e Som",
+          assuntos: ["Ondas e som"],
           videos: [
             { titulo: "Ondas e Som", url: "https://www.youtube.com/watch?v=1vvFnAH0j1c" }
           ],
@@ -304,6 +326,7 @@ window.CRONOGRAMA = {
           dia_semana: "Terça",
           disciplina: "Química",
           tema: "Reações Químicas",
+          assuntos: ["Transformações e reações químicas", "Ácidos, bases, sais e óxidos"],
           videos: [
             { titulo: "Reações Químicas", url: "https://www.youtube.com/watch?v=dOm65kWO-O8" }
           ],
@@ -315,6 +338,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quarta",
           disciplina: "Português",
           tema: "Análise Sintática",
+          assuntos: ["Gramática e conectivos", "Coesão e pronomes"],
           videos: [
             { titulo: "Análise Sintática", url: "https://www.youtube.com/watch?v=XwPIcvHHE5A" }
           ],
@@ -326,6 +350,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quinta",
           disciplina: "Matemática",
           tema: "Sistemas de Equações",
+          assuntos: ["Equações e sistemas", "Funções e expressões algébricas"],
           videos: [
             { titulo: "Sistemas de Equações", url: "https://www.youtube.com/watch?v=4tYzMFbvm70" }
           ],
@@ -337,6 +362,7 @@ window.CRONOGRAMA = {
           dia_semana: "Sexta",
           disciplina: "Geografia",
           tema: "Recursos Naturais e Economia",
+          assuntos: ["Energia e recursos naturais", "Economia, agropecuária e transportes"],
           videos: [
             { titulo: "Recursos Naturais", url: "https://www.youtube.com/watch?v=J-d_cVfYPDo" }
           ],
@@ -364,6 +390,7 @@ window.CRONOGRAMA = {
           dia_semana: "Segunda",
           disciplina: "História",
           tema: "Era Vargas e Populismo",
+          assuntos: ["Brasil República"],
           videos: [
             { titulo: "Era Vargas", url: "https://www.youtube.com/watch?v=DfgZGLZGi-g" }
           ],
@@ -375,6 +402,7 @@ window.CRONOGRAMA = {
           dia_semana: "Terça",
           disciplina: "Biologia",
           tema: "Evolução e Seleção Natural",
+          assuntos: ["Evolução e genética"],
           videos: [
             { titulo: "Evolução e Darwin", url: "https://www.youtube.com/watch?v=piRSx5SvYv8" }
           ],
@@ -386,6 +414,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quarta",
           disciplina: "Física",
           tema: "Eletricidade",
+          assuntos: ["Eletricidade e magnetismo"],
           videos: [
             { titulo: "Eletricidade", url: "https://www.youtube.com/watch?v=Ixk9gqU_S0A" }
           ],
@@ -397,6 +426,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quinta",
           disciplina: "Português",
           tema: "Tempos e Modos Verbais",
+          assuntos: ["Verbos e reescrita de frases", "Gramática e conectivos"],
           videos: [
             { titulo: "Tempos Verbais", url: "https://www.youtube.com/watch?v=T8MB4vzTAv4" }
           ],
@@ -408,6 +438,7 @@ window.CRONOGRAMA = {
           dia_semana: "Sexta",
           disciplina: "Química",
           tema: "Tabela Periódica",
+          assuntos: ["Átomo e tabela periódica"],
           videos: [
             { titulo: "Tabela Periódica", url: "https://www.youtube.com/watch?v=q48uaLyHyAc" }
           ],
@@ -435,6 +466,7 @@ window.CRONOGRAMA = {
           dia_semana: "Segunda",
           disciplina: "Matemática",
           tema: "Trigonometria Básica",
+          assuntos: ["Triângulo retângulo (Pitágoras e trigonometria)", "Geometria plana"],
           videos: [
             { titulo: "Trigonometria", url: "https://www.youtube.com/watch?v=49vYVzWN8HY" }
           ],
@@ -446,6 +478,7 @@ window.CRONOGRAMA = {
           dia_semana: "Terça",
           disciplina: "Geografia",
           tema: "Urbanização e Cidades",
+          assuntos: ["Urbanização e população"],
           videos: [
             { titulo: "Urbanização", url: "https://www.youtube.com/watch?v=KpNnlq_JQ48" }
           ],
@@ -457,6 +490,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quarta",
           disciplina: "História",
           tema: "Golpe de 1964 e Ditadura Militar",
+          assuntos: ["Brasil República", "Século XX"],
           videos: [
             { titulo: "Ditadura Militar", url: "https://www.youtube.com/watch?v=3pRV8AyknFQ" }
           ],
@@ -468,6 +502,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quinta",
           disciplina: "Biologia",
           tema: "Reprodução e Desenvolvimento",
+          assuntos: ["Seres vivos (animais e plantas)", "Evolução e genética"],
           videos: [
             { titulo: "Reprodução", url: "https://www.youtube.com/watch?v=8Z0MdYoZzeM" }
           ],
@@ -479,6 +514,7 @@ window.CRONOGRAMA = {
           dia_semana: "Sexta",
           disciplina: "Física",
           tema: "Magnetismo",
+          assuntos: ["Eletricidade e magnetismo"],
           videos: [
             { titulo: "Magnetismo", url: "https://www.youtube.com/watch?v=IZvxzNqVt84" }
           ],
@@ -506,6 +542,7 @@ window.CRONOGRAMA = {
           dia_semana: "Segunda",
           disciplina: "Português",
           tema: "Interpretação de Textos Complexos",
+          assuntos: ["Interpretação de texto", "Competências e projeto de vida"],
           videos: [
             { titulo: "Interpretação Avançada", url: "https://www.youtube.com/watch?v=XsN0e_xPyNI" }
           ],
@@ -517,6 +554,7 @@ window.CRONOGRAMA = {
           dia_semana: "Terça",
           disciplina: "Matemática",
           tema: "Estatística e Probabilidade",
+          assuntos: ["Média e estatística", "Contagem e probabilidade", "Gráficos e tabelas"],
           videos: [
             { titulo: "Estatística e Probabilidade", url: "https://www.youtube.com/watch?v=L9e9B9lIqJE" }
           ],
@@ -528,6 +566,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quarta",
           disciplina: "Química",
           tema: "Soluções e Concentração",
+          assuntos: ["Densidade e propriedades da matéria", "Separação de misturas", "Substâncias e misturas"],
           videos: [
             { titulo: "Soluções", url: "https://www.youtube.com/watch?v=ib5aCcpWUf4" }
           ],
@@ -539,6 +578,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quinta",
           disciplina: "Geografia",
           tema: "Geopolítica e Blocos Econômicos",
+          assuntos: ["Economia, agropecuária e transportes", "Território brasileiro e regiões"],
           videos: [
             { titulo: "Geopolítica", url: "https://www.youtube.com/watch?v=IZvxz7KYkFM" }
           ],
@@ -550,6 +590,7 @@ window.CRONOGRAMA = {
           dia_semana: "Sexta",
           disciplina: "História",
           tema: "Redemocratização e Constituinte",
+          assuntos: ["Brasil República", "Século XX"],
           videos: [
             { titulo: "Redemocratização", url: "https://www.youtube.com/watch?v=c-kvWtGN7UE" }
           ],

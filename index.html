@@ -49,6 +49,16 @@
         .qwrap summary { cursor: pointer; font-weight: 600; color: #5a4175; padding: 0.25rem; font-size: 0.9rem; }
         .letras { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0; }
         .letras .alt { flex: 1 1 3.5rem; text-align: center; font-weight: 700; font-size: 1.1rem; padding: 0.9rem 0.5rem; }
+        .filtros { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; margin-bottom: 0.5rem; }
+        .filtros label { display: flex; flex-direction: column; font-size: 0.75rem; color: var(--fg3); text-transform: uppercase; flex: 1 1 11rem; min-width: 0; }
+        .filtros select { margin-top: 0.25rem; padding: 0.6rem; border: 1px solid var(--tertiary); border-radius: 0.5rem; background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 0.95rem; max-width: 100%; }
+        .btn.sec { background: var(--brand); padding: 0.5rem 0.8rem; font-size: 0.85rem; margin: 0.25rem 0.5rem 0.25rem 0; }
+        .btn[disabled] { opacity: 0.4; cursor: default; }
+        .card h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+        .card .sub { font-size: 0.9rem; color: var(--fg2); }
+        .fraco { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; padding: 0.5rem 0; border-bottom: 1px solid var(--tertiary); font-size: 0.9rem; }
+        .fraco:last-of-type { border-bottom: none; }
+        .lista-info { font-size: 0.9rem; color: var(--fg2); margin-top: 0.5rem; }
         .semana { background: var(--surface); border-left: 4px solid var(--accent); padding: 1.5rem; margin-bottom: 1rem; border-radius: 0.5rem; }
         .semana h4 { margin-bottom: 0.75rem; color: var(--accent); }
         .video { background: var(--bg); padding: 0.75rem; margin: 0.5rem 0; border-radius: 0.5rem; font-size: 0.9rem; }
@@ -89,10 +99,22 @@
 
             <div id="estudar" class="content active">
                 <h2>Estudar</h2>
+                <div class="card" id="hoje-card"></div>
+                <div class="card" id="fracos-card"></div>
                 <div class="card">
-                    <label>Disciplina: <select id="disc-f" onchange="filtrar()"><option>Todas</option></select></label>
-                    <button class="btn" onclick="prox()">Próxima</button>
+                    <div class="filtros">
+                        <label>Disciplina <select id="disc-f" onchange="filtrar('disc')"><option value="">Todas</option></select></label>
+                        <label>Assunto <select id="assunto-f" onchange="filtrar()"><option value="">Todos</option></select></label>
+                        <label>Mostrar <select id="modo-f" onchange="filtrar()">
+                            <option value="todas">Todas</option>
+                            <option value="novas">Ainda não respondidas</option>
+                            <option value="erradas">Que eu errei</option>
+                        </select></label>
+                    </div>
+                    <button class="btn" onclick="prox(-1)">← Anterior</button>
+                    <button class="btn" onclick="prox(1)">Próxima →</button>
                     <button class="btn" onclick="shuffle()">🔀 Embaralhar</button>
+                    <p class="lista-info" id="lista-info"></p>
                 </div>
                 <div id="q-area"></div>
             </div>
@@ -133,7 +155,7 @@
 
     <script>
         const APP = { questoes: window.SEED || [], disciplinas: window.DISCIPLINAS || {}, cronograma: window.CRONOGRAMA || {},
-                     estado: { respostas: {}, ts: Date.now() }, atual: 0, filtro: '', sim: null, simTimer: null };
+                     estado: { respostas: {}, ts: Date.now() }, atual: 0, lista: null, sessao: {}, fimLista: false, fracos: [], sim: null, simTimer: null };
 
         function init() {
             const s = localStorage.getItem('etec_v2');
@@ -189,24 +211,27 @@
             // Sidebar
             const dl = document.getElementById('disc-list');
             dl.innerHTML = '';
-            for (let d in APP.disciplinas) {
-                const dId = APP.disciplinas[d].id;
-                const c = APP.questoes.filter(q => q.d === dId).length;
-                dl.innerHTML += `<div class="disc"><b>${APP.disciplinas[d].nome}</b> (${c})</div>`;
+            // Disciplina sem nenhuma questão não aparece (nem na lista lateral, nem no filtro)
+            const comQuestao = Object.values(APP.disciplinas).filter(d => APP.questoes.some(q => q.d === d.id));
+            for (const d of comQuestao) {
+                const c = APP.questoes.filter(q => q.d === d.id).length;
+                dl.innerHTML += `<div class="disc"><b>${d.nome}</b> (${c})</div>`;
             }
 
             // Select
             const sel = document.getElementById('disc-f');
             if (sel.options.length === 1) {
-                for (let d in APP.disciplinas) {
+                for (const d of comQuestao) {
                     const o = document.createElement('option');
-                    o.value = d;
-                    o.textContent = APP.disciplinas[d].nome;
+                    o.value = d.id;
+                    o.textContent = d.nome;
                     sel.appendChild(o);
                 }
             }
 
-            mostrar();
+            renderHoje();
+            renderFracos();
+            if (!APP.lista) filtrar(); else mostrar();
             banco();
             crono();
             renderizarSimulados();
@@ -393,16 +418,82 @@
         }
         // ===== fim da sincronização =====
 
-        function mostrar() {
-            if (APP.sim) return;
-            const qs = APP.questoes.filter(q => !APP.filtro || q.d === APP.filtro);
-            if (!qs.length) { document.getElementById('q-area').innerHTML = '<p>Sem questões.</p>'; return; }
+        // ===== Aba Estudar: listas, filtros, exercícios do dia e pontos fracos =====
+        const META_DIA = 10;     // questões nos exercícios de um dia
+        const MIN_FRACO = 3;     // respostas mínimas num assunto para ele entrar no ranking
+        const CORTE_FRACO = 70;  // abaixo deste % de acerto o assunto é ponto fraco
 
-            const q = qs[APP.atual % qs.length];
-            const r = APP.estado.respostas[q.id];
+        const respDe = id => APP.estado.respostas[id];
+        const nova = q => respDe(q.id) === undefined;
+        const errou = q => respDe(q.id) !== undefined && respDe(q.id) !== q.gab;
+        const discPorId = id => Object.values(APP.disciplinas).find(d => d.id === id);
+        const nomeDisc = id => (discPorId(id) || {}).nome || '';
+        const questaoPorId = id => APP.questoes.find(q => q.id === id);
+        const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+        // Uma lista é fixada quando é montada: responder não tira a questão dela no meio do estudo.
+        // refazer = a questão aparece em branco até ser respondida nesta lista (revisão do que errou).
+        function montarLista(ids, titulo, refazer) {
+            APP.lista = { ids, titulo: titulo || '', refazer: !!refazer };
+            APP.sessao = {}; APP.atual = 0; APP.fimLista = false;
+            mostrar();
+            if (titulo) document.getElementById('q-area').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function preencherAssuntos(d) {
+            const sel = document.getElementById('assunto-f');
+            sel.innerHTML = `<option value="">${d ? 'Todos' : 'Escolha a disciplina'}</option>`;
+            sel.disabled = !d;
+            if (!d) return;
+            const cont = {};
+            APP.questoes.filter(q => q.d === d).forEach(q => { cont[q.assunto] = (cont[q.assunto] || 0) + 1; });
+            Object.keys(cont).sort((x, y) => x.localeCompare(y, 'pt')).forEach(a => {
+                const o = document.createElement('option');
+                o.value = a; o.textContent = `${a} (${cont[a]})`;
+                sel.appendChild(o);
+            });
+        }
+
+        function filtrar(origem) {
+            const d = document.getElementById('disc-f').value;
+            if (origem === 'disc' || !APP.lista) preencherAssuntos(d);
+            const a = document.getElementById('assunto-f').value;
+            const modo = document.getElementById('modo-f').value;
+            let qs = APP.questoes.filter(q => (!d || q.d === d) && (!a || q.assunto === a));
+            if (modo === 'novas') qs = qs.filter(nova);
+            if (modo === 'erradas') qs = qs.filter(errou);
+            montarLista(qs.map(q => q.id), '', modo !== 'todas');
+        }
+
+        function infoLista() {
+            const L = APP.lista, el = document.getElementById('lista-info');
+            if (!L) { el.textContent = ''; return; }
+            const pos = L.ids.length && !APP.fimLista ? `Questão ${APP.atual + 1} de ${L.ids.length}` : `${L.ids.length} questões`;
+            el.innerHTML = L.titulo
+                ? `<b>${esc(L.titulo)}</b> • ${pos} <button class="btn sec" onclick="filtrar()">✕ Sair desta lista</button>`
+                : pos;
+        }
+
+        function mostrar() {
+            if (APP.sim || !APP.lista) return;
+            const L = APP.lista, area = document.getElementById('q-area');
+            infoLista();
+            if (!L.ids.length) {
+                const modo = document.getElementById('modo-f').value;
+                const msg = L.titulo ? 'Não há questões para esta lista.'
+                    : modo === 'erradas' ? 'Nenhuma questão errada neste filtro. 🎉'
+                    : modo === 'novas' ? 'Você já respondeu todas as questões deste filtro.'
+                    : 'Sem questões.';
+                area.innerHTML = `<div class="q-area"><p>${msg}</p></div>`;
+                return;
+            }
+            if (APP.fimLista) return fimDaLista();
+
+            const q = questaoPorId(L.ids[APP.atual]);
+            const r = (L.refazer && !APP.sessao[q.id]) ? undefined : respDe(q.id);
             const c = q.gab;
 
-            let h = `<div class="q-area"><b>${q.fonte}</b> • ${q.assunto}` + corpoQuestao(q);
+            let h = `<div class="q-area"><b>${q.fonte}</b> • ${nomeDisc(q.d)} • ${q.assunto}` + corpoQuestao(q);
             h += botoesAlt(q, i => {
                 let cl = 'alt';
                 if (r !== undefined) { if (i === c) cl += ' ok'; else if (i === r) cl += ' bad'; }
@@ -412,24 +503,172 @@
             if (r !== undefined) {
                 h += r === c ? '<div class="fb ok">✅ Correto!</div>' : `<div class="fb bad">❌ Errado! Gabarito: ${String.fromCharCode(65+c)}</div>`;
             }
-            h += `<button class="btn" onclick="prox()">Próxima →</button></div>`;
-            document.getElementById('q-area').innerHTML = h;
+            const ultima = APP.atual === L.ids.length - 1;
+            h += `<button class="btn" onclick="prox(1)">${ultima ? 'Concluir lista' : 'Próxima →'}</button></div>`;
+            area.innerHTML = h;
         }
+
+        function fimDaLista() {
+            const L = APP.lista;
+            const feitas = L.ids.filter(id => APP.sessao[id]);
+            const ac = feitas.filter(id => respDe(id) === questaoPorId(id).gab).length;
+            let h = `<div class="q-area"><h3>Fim da lista${L.titulo ? ' — ' + esc(L.titulo) : ''}</h3>`;
+            h += feitas.length
+                ? `<p>Você respondeu <b>${feitas.length}</b> de ${L.ids.length} e acertou <b>${ac}</b> (${Math.round(ac / feitas.length * 100)}%).</p>`
+                : `<p>Você passou pelas ${L.ids.length} questões sem responder nenhuma agora.</p>`;
+            h += `<button class="btn" onclick="recomecar()">Voltar ao início da lista</button>`;
+            if (L.titulo) h += `<button class="btn sec" onclick="filtrar()">Sair desta lista</button>`;
+            document.getElementById('q-area').innerHTML = h + '</div>';
+            infoLista();
+        }
+        function recomecar() { APP.atual = 0; APP.fimLista = false; mostrar(); }
 
         function resp(id, a) {
             APP.estado.respostas[id] = a;
             if (!APP.estado.rts) APP.estado.rts = {};
             APP.estado.rts[id] = Date.now(); // quando respondeu: desempata entre aparelhos
+            APP.sessao[id] = true;
             salvar(); atualizar();
         }
-        function prox() { APP.atual++; mostrar(); }
-        function filtrar() {
-            let sel = document.getElementById('disc-f').value;
-            APP.filtro = sel === 'Todas' ? '' : APP.disciplinas[sel]?.id || '';
-            APP.atual = 0;
+        function prox(dir) {
+            const L = APP.lista;
+            if (!L || !L.ids.length) return;
+            if (APP.fimLista) { if (dir < 0) { APP.fimLista = false; APP.atual = L.ids.length - 1; mostrar(); } return; }
+            if (dir < 0) { if (APP.atual > 0) APP.atual--; }
+            else if (APP.atual < L.ids.length - 1) APP.atual++;
+            else APP.fimLista = true;
             mostrar();
         }
-        function shuffle() { APP.questoes.sort(() => Math.random() - 0.5); APP.atual = 0; mostrar(); }
+        function shuffle() {
+            if (!APP.lista) return;
+            APP.lista.ids.sort(() => Math.random() - 0.5);
+            APP.atual = 0; APP.fimLista = false; mostrar();
+        }
+
+        // ----- Exercícios do dia (segue o cronograma) -----
+        function isoLocal(d) { const p = n => String(n).padStart(2, '0'); return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()); }
+        function dataCurta(iso) { const [a, m, d] = iso.split('-'); return d + '/' + m; }
+        function entradasCronograma() {
+            const out = [];
+            for (const s of (APP.cronograma.semanas || [])) {
+                for (const dia of (s.dias || [])) out.push({ data: dia.data, dia, semana: s });
+                if (s.sabado) out.push({ data: s.sabado.data, sabado: s.sabado, semana: s });
+            }
+            return out.sort((x, y) => x.data.localeCompare(y.data));
+        }
+        // Questões de um dia do cronograma: primeiro as dos assuntos do dia (novas, depois erradas),
+        // e completa com outras da mesma disciplina até o limite.
+        function idsDoDia(dia, limite) {
+            const disc = APP.disciplinas[dia.disciplina];
+            if (!disc) return [];
+            const ass = dia.assuntos || [];
+            const pool = APP.questoes.filter(q => q.d === disc.id);
+            const noTema = q => ass.includes(q.assunto);
+            const grupos = [pool.filter(q => noTema(q) && nova(q)), pool.filter(q => noTema(q) && errou(q)),
+                            pool.filter(q => !noTema(q) && nova(q)), pool.filter(q => !noTema(q) && errou(q))];
+            return [].concat(...grupos).slice(0, limite).map(q => q.id);
+        }
+        function feitasHoje(discId) {
+            const rts = APP.estado.rts || {}, hoje = isoLocal(new Date());
+            return APP.questoes.filter(q => (!discId || q.d === discId) && rts[q.id] && respDe(q.id) !== undefined && isoLocal(new Date(rts[q.id])) === hoje).length;
+        }
+        function estudarDia(data) {
+            const e = entradasCronograma().find(x => x.data === data);
+            if (!e) return;
+            if (e.dia) return montarLista(idsDoDia(e.dia, META_DIA), `Exercícios de ${dataCurta(data)}: ${e.dia.disciplina} – ${e.dia.tema}`, true);
+            const dias = e.semana.dias || [];
+            const porDia = Math.max(3, Math.ceil(20 / Math.max(1, dias.length)));
+            const ids = [].concat(...dias.map(d => idsDoDia(d, porDia)));
+            montarLista([...new Set(ids)], `Revisão da semana (${dataCurta(data)})`, true);
+        }
+        function renderHoje() {
+            const el = document.getElementById('hoje-card');
+            const todas = entradasCronograma();
+            if (!todas.length) { el.style.display = 'none'; return; }
+            const hoje = isoLocal(new Date());
+            let e = todas.find(x => x.data === hoje), rotulo = 'Hoje';
+            if (!e) {
+                e = todas.find(x => x.data > hoje);
+                if (!e) { el.innerHTML = '<h3>📌 Exercícios do dia</h3><p class="sub">O cronograma terminou. Use os filtros abaixo ou revise seus pontos fracos.</p>'; return; }
+                rotulo = hoje < todas[0].data ? 'O cronograma começa em' : 'Hoje não há estudo no cronograma. Próximo dia:';
+            }
+            const quando = `${rotulo}${rotulo === 'Hoje' ? ',' : ''} ${(e.dia ? e.dia.dia_semana : e.sabado.dia_semana).toLowerCase()}, ${dataCurta(e.data)}`;
+            let h = '<h3>📌 Exercícios do dia</h3>';
+            if (e.sabado && e.sabado.simulado) {
+                h += `<p class="sub">${quando}: <b>${esc(e.sabado.tipo)}</b> (${esc(e.sabado.simulado)}).</p><button class="btn" onclick="abrir('simulado')">Ir para o Simulado</button>`;
+            } else if (e.sabado) {
+                h += `<p class="sub">${quando}: <b>${esc(e.sabado.tipo)}</b>. ${esc(e.sabado.descricao || '')}</p><button class="btn" onclick="estudarDia('${e.data}')">Fazer a revisão da semana</button>`;
+            } else {
+                const disc = APP.disciplinas[e.dia.disciplina];
+                h += `<p class="sub">${quando}: <b>${esc(e.dia.disciplina)} – ${esc(e.dia.tema)}</b></p>`;
+                if (disc) {
+                    const n = idsDoDia(e.dia, META_DIA).length;
+                    const ass = (e.dia.assuntos || []).join(', ');
+                    if (ass) h += `<p class="sub">Assuntos no banco: ${esc(ass)}.</p>`;
+                    if (rotulo === 'Hoje') h += `<p class="sub">Você já respondeu <b>${feitasHoje(disc.id)}</b> de ${esc(disc.nome)} hoje (meta: ${META_DIA}).</p>`;
+                    h += n ? `<button class="btn" onclick="estudarDia('${e.data}')">Fazer ${n} ${n === 1 ? 'questão' : 'questões'} deste dia</button>`
+                           : `<p class="sub">Você já acertou todas as questões de ${esc(disc.nome)} do banco. 🎉</p>`;
+                } else if (/revis/i.test(e.dia.disciplina + ' ' + e.dia.tema)) {
+                    h += `<button class="btn" onclick="revisarFracos()">Revisar meus pontos fracos</button><button class="btn sec" onclick="revisarErradas()">Refazer as que errei</button>`;
+                } else {
+                    h += `<p class="sub">${esc(e.dia.resumo || '')}</p>`;
+                }
+            }
+            el.innerHTML = h;
+        }
+
+        // ----- Pontos fracos -----
+        function estatAssuntos() {
+            const m = {};
+            for (const q of APP.questoes) {
+                const k = q.d + '|' + q.assunto;
+                const e = m[k] || (m[k] = { d: q.d, assunto: q.assunto, total: 0, resp: 0, ac: 0 });
+                e.total++;
+                const r = respDe(q.id);
+                if (r !== undefined) { e.resp++; if (r === q.gab) e.ac++; }
+            }
+            return Object.values(m);
+        }
+        function pontosFracos() {
+            return estatAssuntos()
+                .filter(e => e.resp >= MIN_FRACO && (e.ac / e.resp) * 100 < CORTE_FRACO)
+                .sort((x, y) => (x.ac / x.resp) - (y.ac / y.resp) || (y.resp - y.ac) - (x.resp - x.ac));
+        }
+        function idsRevisao(e, limite) {
+            const pool = APP.questoes.filter(q => q.d === e.d && q.assunto === e.assunto);
+            return pool.filter(errou).concat(pool.filter(nova)).slice(0, limite).map(q => q.id);
+        }
+        function renderFracos() {
+            const el = document.getElementById('fracos-card');
+            APP.fracos = pontosFracos();
+            const erradas = APP.questoes.filter(errou).length;
+            let h = '<h3>🎯 Pontos fracos</h3>';
+            if (!APP.fracos.length) {
+                h += `<p class="sub">Nenhum por enquanto. Um assunto entra aqui quando tem pelo menos ${MIN_FRACO} questões respondidas e menos de ${CORTE_FRACO}% de acerto.</p>`;
+            } else {
+                APP.fracos.slice(0, 5).forEach((e, i) => {
+                    h += `<div class="fraco"><span><b>${esc(nomeDisc(e.d))}</b> • ${esc(e.assunto)} — acertou ${e.ac} de ${e.resp} (${Math.round(e.ac / e.resp * 100)}%)</span>
+                          <button class="btn sec" onclick="revisarFraco(${i})">Revisar</button></div>`;
+                });
+                if (APP.fracos.length > 5) h += `<p class="sub">E mais ${APP.fracos.length - 5} ${APP.fracos.length - 5 === 1 ? 'assunto' : 'assuntos'} abaixo de ${CORTE_FRACO}%.</p>`;
+                h += `<button class="btn" onclick="revisarFracos()">Revisar todos os pontos fracos</button>`;
+            }
+            if (erradas) h += `<button class="btn sec" onclick="revisarErradas()">Refazer as ${erradas} que errei</button>`;
+            el.innerHTML = h;
+        }
+        function revisarFraco(i) {
+            const e = APP.fracos[i];
+            if (e) montarLista(idsRevisao(e, 15), `Revisão: ${nomeDisc(e.d)} – ${e.assunto}`, true);
+        }
+        function revisarFracos() {
+            const ids = [].concat(...APP.fracos.slice(0, 5).map(e => idsRevisao(e, 4)));
+            if (ids.length) montarLista(ids, 'Revisão dos pontos fracos', true);
+            else revisarErradas();
+        }
+        function revisarErradas() {
+            montarLista(APP.questoes.filter(errou).map(q => q.id), 'Refazer as que errei', true);
+        }
+
 
         const SIM_DUR = 4 * 60 * 60 * 1000; // duração da prova real
 
