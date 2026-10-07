@@ -985,7 +985,7 @@
 
                         if (dia.videos && dia.videos.length > 0) {
                             dia.videos.forEach(v => {
-                                h += `<div class="video">• <a href="${v.url}" target="_blank">${v.titulo}</a> (${dia.tempo})</div>`;
+                                h += `<div class="video">• <a href="${v.url}" target="_blank">${v.titulo}</a>${v.min ? ` (${v.min} min)` : (dia.videos.length === 1 ? ` (${dia.tempo})` : '')}</div>`;
                             });
                         }
                         h += '</div>';

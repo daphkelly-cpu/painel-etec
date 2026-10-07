@@ -4,6 +4,7 @@
 // Cada dia tem uma disciplina principal com vídeo(s)
 // "assuntos" liga o dia aos assuntos do banco de questões (lista em relatorios/classificacao_duvidas.md);
 // é o que a aba Estudar usa nos "Exercícios do dia". Dia sem "assuntos" usa só a disciplina.
+// "min" em cada vídeo é a duração em minutos, mostrada na aba Cronograma (opcional).
 
 window.CRONOGRAMA = {
   meta: "Preparação de 9 semanas para o Vestibulinho ETEC",
@@ -62,7 +63,7 @@ window.CRONOGRAMA = {
           tema: "Brasil Colônia (1500-1822)",
           assuntos: ["Brasil Colônia"],
           videos: [
-            { titulo: "Brasil Colônia Completo", url: "https://www.youtube.com/watch?v=6uO5Ey5MVow" }
+            { titulo: "Brasil Colônia Completo", url: "https://www.youtube.com/watch?v=6uO5Ey5MVow", min: 29 }
           ],
           tempo: "40 min",
           resumo: "Descobrimento, capitanias hereditárias, economia colonial"
@@ -86,13 +87,15 @@ window.CRONOGRAMA = {
           data: "2026-10-12",
           dia_semana: "Segunda",
           disciplina: "Biologia",
-          tema: "Célula e Organelas",
-          assuntos: ["Célula", "Seres vivos (animais e plantas)"],
+          tema: "Célula, Microrganismos e Doenças",
+          assuntos: ["Célula", "Doenças e saneamento"],
           videos: [
-            { titulo: "Célula e Organelas", url: "https://www.youtube.com/watch?v=8Z0MdYoZzeM" }
+            { titulo: "Célula e Organelas", url: "https://www.youtube.com/watch?v=8Z0MdYoZzeM", min: 12 },
+            { titulo: "Vírus, Bactérias e Fungos (Descomplica)", url: "https://www.youtube.com/watch?v=XYyHBwXfxyk", min: 6 },
+            { titulo: "Soro e Vacina (Samuel Cunha)", url: "https://www.youtube.com/watch?v=Ltu7uYneynk", min: 12 }
           ],
           tempo: "40 min",
-          resumo: "Estrutura celular, núcleo, mitocôndria, plastos, membrana"
+          resumo: "Estrutura celular e organelas; vírus, bactérias, protozoários e vermes; doenças, prevenção, vacina e soro"
         },
         {
           data: "2026-10-13",
@@ -101,8 +104,8 @@ window.CRONOGRAMA = {
           tema: "Movimento e Força",
           assuntos: ["Movimento e velocidade", "Forças e máquinas simples"],
           videos: [
-            { titulo: "Velocidade Média (Professor Boaro)", url: "https://www.youtube.com/watch?v=wlTa_yTElGM" },
-            { titulo: "Leis de Newton (Hexag)", url: "https://www.youtube.com/watch?v=dU14qCv5AuI" }
+            { titulo: "Velocidade Média (Professor Boaro)", url: "https://www.youtube.com/watch?v=wlTa_yTElGM", min: 11 },
+            { titulo: "Leis de Newton (Hexag)", url: "https://www.youtube.com/watch?v=dU14qCv5AuI", min: 14 }
           ],
           tempo: "40 min",
           resumo: "Velocidade, aceleração, leis de Newton, trabalho"
@@ -111,13 +114,14 @@ window.CRONOGRAMA = {
           data: "2026-10-14",
           dia_semana: "Quarta",
           disciplina: "Química",
-          tema: "Estrutura Atômica",
+          tema: "Átomo e Tabela Periódica",
           assuntos: ["Átomo e tabela periódica"],
           videos: [
-            { titulo: "Átomos e moléculas - 9º ano (Canal Futura)", url: "https://www.youtube.com/watch?v=YMyyg1hzNfw" }
+            { titulo: "Átomos e moléculas - 9º ano (Canal Futura)", url: "https://www.youtube.com/watch?v=YMyyg1hzNfw", min: 13 },
+            { titulo: "Tabela Periódica em 10 minutos (Toda Matéria)", url: "https://www.youtube.com/watch?v=Vsnq2hJ2UZc", min: 9 }
           ],
           tempo: "40 min",
-          resumo: "Próton, nêutron, elétron, números atômicos, massas"
+          resumo: "Próton, nêutron, elétron, número atômico e de massa; grupos e períodos da tabela"
         },
         {
           data: "2026-10-15",
@@ -263,10 +267,10 @@ window.CRONOGRAMA = {
           dia_semana: "Quarta",
           disciplina: "Geografia",
           tema: "Clima e Mudanças Climáticas",
-          assuntos: ["Clima", "Meio ambiente e sustentabilidade"],
+          assuntos: ["Clima", "Hidrografia e oceanos", "Meio ambiente e sustentabilidade"],
           videos: [
-            { titulo: "Clima: Elementos e Fatores (Descomplica)", url: "https://www.youtube.com/watch?v=D3YQ6zl3-2M" },
-            { titulo: "O que é o Efeito Estufa? (Toda Matéria)", url: "https://www.youtube.com/watch?v=nTmWFWWbzkQ" }
+            { titulo: "Clima: Elementos e Fatores (Descomplica)", url: "https://www.youtube.com/watch?v=D3YQ6zl3-2M", min: 16 },
+            { titulo: "O que é o Efeito Estufa? (Toda Matéria)", url: "https://www.youtube.com/watch?v=nTmWFWWbzkQ", min: 7 }
           ],
           tempo: "40 min",
           resumo: "Tipos de clima, fatores climáticos, aquecimento global, efeito estufa"
@@ -275,13 +279,17 @@ window.CRONOGRAMA = {
           data: "2026-10-29",
           dia_semana: "Quinta",
           disciplina: "História",
-          tema: "República Velha (1889-1930)",
-          assuntos: ["Brasil República"],
+          tema: "Da Antiguidade às Grandes Navegações",
+          assuntos: ["Antiguidade", "Fontes e conceitos históricos", "Idade Média e Moderna"],
           videos: [
-            { titulo: "República Velha (Descomplica)", url: "https://www.youtube.com/watch?v=Vw4HGHDWMjs" }
+            { titulo: "Egito Antigo (Toda Matéria)", url: "https://www.youtube.com/watch?v=2T8ereEFd58", min: 6 },
+            { titulo: "Grécia Antiga (Toda Matéria)", url: "https://www.youtube.com/watch?v=H7tY0E7--GY", min: 9 },
+            { titulo: "Idade Média (Toda Matéria)", url: "https://www.youtube.com/watch?v=xYRsIQT-Qmc", min: 13 },
+            { titulo: "Expansão Marítima: Grandes Navegações (Toda Matéria)", url: "https://www.youtube.com/watch?v=Xay4R-cB7OA", min: 6 },
+            { titulo: "O Renascimento em 5 Minutos (Toda Matéria)", url: "https://www.youtube.com/watch?v=hYTQ7VnQ5lU", min: 6 }
           ],
           tempo: "40 min",
-          resumo: "Coronelismo, voto de cabresto, política do café-com-leite"
+          resumo: "Egito e Grécia antigos, Idade Média, Grandes Navegações e Renascimento"
         },
         {
           data: "2026-10-30",
@@ -315,26 +323,29 @@ window.CRONOGRAMA = {
           data: "2026-11-02",
           dia_semana: "Segunda",
           disciplina: "Física",
-          tema: "Ondas e Som",
-          assuntos: ["Ondas e som"],
+          tema: "Ondas, Som e Luz",
+          assuntos: ["Ondas e som", "Luz e óptica"],
           videos: [
-            { titulo: "Ondulatória: Características das Ondas (Curso Enem Gratuito)", url: "https://www.youtube.com/watch?v=Rmgqv8ETn6o" },
-            { titulo: "Ondas Sonoras (Brasil Escola)", url: "https://www.youtube.com/watch?v=kR5FSlOPrhI" }
+            { titulo: "Ondulatória: Características das Ondas (Curso Enem Gratuito)", url: "https://www.youtube.com/watch?v=Rmgqv8ETn6o", min: 8 },
+            { titulo: "Ondas Sonoras (Brasil Escola)", url: "https://www.youtube.com/watch?v=kR5FSlOPrhI", min: 8 },
+            { titulo: "Introdução à Óptica: Fenômenos Ópticos (Partiu Universidade)", url: "https://www.youtube.com/watch?v=ObDG87IPzFE", min: 11 },
+            { titulo: "Defeitos da Visão: Miopia e Hipermetropia (Maurício Física)", url: "https://www.youtube.com/watch?v=K8GCpMgUJsg", min: 5 }
           ],
           tempo: "40 min",
-          resumo: "Frequência, comprimento de onda, velocidade do som, eco"
+          resumo: "Frequência, comprimento de onda, velocidade do som, eco; reflexão e refração da luz, olho humano e lentes"
         },
         {
           data: "2026-11-03",
           dia_semana: "Terça",
           disciplina: "Química",
-          tema: "Reações Químicas",
-          assuntos: ["Transformações e reações químicas", "Ácidos, bases, sais e óxidos"],
+          tema: "Reações Químicas e Combustíveis",
+          assuntos: ["Transformações e reações químicas", "Ácidos, bases, sais e óxidos", "Química ambiental e combustíveis"],
           videos: [
-            { titulo: "Reações Químicas (Brasil Escola)", url: "https://www.youtube.com/watch?v=VrUvy1N66U0" }
+            { titulo: "Reações Químicas (Brasil Escola)", url: "https://www.youtube.com/watch?v=VrUvy1N66U0", min: 11 },
+            { titulo: "Combustíveis Fósseis (Brasil Escola)", url: "https://www.youtube.com/watch?v=o3zrvIYme_w", min: 8 }
           ],
           tempo: "40 min",
-          resumo: "Balanceamento, oxidação-redução, ácido-base, combustão"
+          resumo: "Transformações químicas, ácido-base, combustão; petróleo, combustíveis fósseis e gases do efeito estufa"
         },
         {
           data: "2026-11-04",
@@ -353,25 +364,28 @@ window.CRONOGRAMA = {
           data: "2026-11-05",
           dia_semana: "Quinta",
           disciplina: "Matemática",
-          tema: "Sistemas de Equações",
-          assuntos: ["Equações e sistemas", "Funções e expressões algébricas"],
+          tema: "Sistemas de Equações e Notação Científica",
+          assuntos: ["Equações e sistemas", "Funções e expressões algébricas", "Potências e notação científica"],
           videos: [
-            { titulo: "Sistemas de Equações do 1º Grau (Professor Ferretto)", url: "https://www.youtube.com/watch?v=oT4k6bhB4Dk" }
+            { titulo: "Sistemas de Equações do 1º Grau (Professor Ferretto)", url: "https://www.youtube.com/watch?v=oT4k6bhB4Dk", min: 21 },
+            { titulo: "Notação Científica (Sandro Curió)", url: "https://www.youtube.com/watch?v=2C4T0qfs_o8", min: 7 }
           ],
           tempo: "40 min",
-          resumo: "Método da substituição, adição, 1º e 2º grau"
+          resumo: "Método da substituição e da adição; potências de 10 e notação científica"
         },
         {
           data: "2026-11-06",
           dia_semana: "Sexta",
           disciplina: "Geografia",
-          tema: "Recursos Naturais e Economia",
-          assuntos: ["Energia e recursos naturais", "Economia, agropecuária e transportes"],
+          tema: "Recursos Naturais, Economia e Relevo",
+          assuntos: ["Energia e recursos naturais", "Economia, agropecuária e transportes", "Relevo e geologia"],
           videos: [
-            { titulo: "Fontes de Energia (Brasil Escola)", url: "https://www.youtube.com/watch?v=BRaJVqRwU38" }
+            { titulo: "Fontes de Energia (Brasil Escola)", url: "https://www.youtube.com/watch?v=BRaJVqRwU38", min: 13 },
+            { titulo: "Terremotos e Tsunamis (geo ilustrada)", url: "https://www.youtube.com/watch?v=pHShanCExgQ", min: 6 },
+            { titulo: "Deriva Continental e Placas Tectônicas (geo ilustrada)", url: "https://www.youtube.com/watch?v=DX19JF7R13g", min: 5 }
           ],
           tempo: "40 min",
-          resumo: "Petróleo, minérios, água, fontes de energia, sustentabilidade"
+          resumo: "Petróleo, minérios, água, fontes de energia; placas tectônicas, terremotos e tsunamis"
         }
       ],
       sabado: {
@@ -393,20 +407,21 @@ window.CRONOGRAMA = {
           data: "2026-11-09",
           dia_semana: "Segunda",
           disciplina: "História",
-          tema: "Era Vargas e Populismo",
+          tema: "República Velha e Era Vargas",
           assuntos: ["Brasil República"],
           videos: [
-            { titulo: "Resumo: Era Vargas (Débora Aladim)", url: "https://www.youtube.com/watch?v=ZcTDWBqUju8" }
+            { titulo: "República Velha (Descomplica)", url: "https://www.youtube.com/watch?v=Vw4HGHDWMjs", min: 13 },
+            { titulo: "Resumo: Era Vargas (Débora Aladim)", url: "https://www.youtube.com/watch?v=ZcTDWBqUju8", min: 26 }
           ],
           tempo: "40 min",
-          resumo: "Governo provisório, Constituição, Estado Novo, consolidação de leis"
+          resumo: "Coronelismo, café-com-leite, ciclo da borracha; governo provisório, Estado Novo, industrialização"
         },
         {
           data: "2026-11-10",
           dia_semana: "Terça",
           disciplina: "Biologia",
           tema: "Evolução e Seleção Natural",
-          assuntos: ["Evolução e genética"],
+          assuntos: ["Evolução e genética", "Ecologia"],
           videos: [
             { titulo: "Evolução e Darwin", url: "https://www.youtube.com/watch?v=piRSx5SvYv8" }
           ],
@@ -417,13 +432,14 @@ window.CRONOGRAMA = {
           data: "2026-11-11",
           dia_semana: "Quarta",
           disciplina: "Física",
-          tema: "Eletricidade",
-          assuntos: ["Eletricidade e magnetismo"],
+          tema: "Eletricidade e Magnetismo",
+          assuntos: ["Eletricidade e magnetismo", "Energia e potência"],
           videos: [
-            { titulo: "Circuitos Elétricos no Cotidiano (Canal Futura)", url: "https://www.youtube.com/watch?v=N0DnSlhijOU" }
+            { titulo: "Circuitos Elétricos no Cotidiano (Canal Futura)", url: "https://www.youtube.com/watch?v=N0DnSlhijOU", min: 13 },
+            { titulo: "Magnetismo: Ímãs e Campo Magnético (Pura Física)", url: "https://www.youtube.com/watch?v=h0dYRTYiKDY", min: 20 }
           ],
           tempo: "40 min",
-          resumo: "Carga elétrica, corrente, voltagem, resistência, Lei de Ohm"
+          resumo: "Corrente, tensão, resistência, circuitos; ímãs, polos e campo magnético da Terra"
         },
         {
           data: "2026-11-12",
@@ -440,14 +456,15 @@ window.CRONOGRAMA = {
         {
           data: "2026-11-13",
           dia_semana: "Sexta",
-          disciplina: "Química",
-          tema: "Tabela Periódica",
-          assuntos: ["Átomo e tabela periódica"],
+          disciplina: "Física",
+          tema: "Pressão e Flutuação",
+          assuntos: ["Pressão e flutuação"],
           videos: [
-            { titulo: "Tabela Periódica em 10 minutos (Toda Matéria)", url: "https://www.youtube.com/watch?v=Vsnq2hJ2UZc" }
+            { titulo: "Hidrostática: Densidade e Pressão (Curso Enem Gratuito)", url: "https://www.youtube.com/watch?v=raBp9dY__WE", min: 11 },
+            { titulo: "Empuxo e o Princípio de Arquimedes (Ciência Todo Dia)", url: "https://www.youtube.com/watch?v=57qs91GBscU", min: 10 }
           ],
           tempo: "40 min",
-          resumo: "Grupos, períodos, propriedades periódicas, eletronegatividade"
+          resumo: "Pressão (força por área), pressão atmosférica e na água, empuxo e flutuação"
         }
       ],
       sabado: {
@@ -493,13 +510,15 @@ window.CRONOGRAMA = {
           data: "2026-11-18",
           dia_semana: "Quarta",
           disciplina: "História",
-          tema: "Golpe de 1964 e Ditadura Militar",
-          assuntos: ["Brasil República", "Século XX"],
+          tema: "Ditadura Militar e Redemocratização",
+          assuntos: ["Brasil República"],
           videos: [
-            { titulo: "Ditadura Militar no Brasil (Toda Matéria)", url: "https://www.youtube.com/watch?v=phR8Lys4g8E" }
+            { titulo: "Ditadura Militar no Brasil (Toda Matéria)", url: "https://www.youtube.com/watch?v=phR8Lys4g8E", min: 12 },
+            { titulo: "Redemocratização do Brasil (Toda Matéria)", url: "https://www.youtube.com/watch?v=DAxqtxYnqU0", min: 5 },
+            { titulo: "Nova República (Parabólica)", url: "https://www.youtube.com/watch?v=Sy29kcGqqjI", min: 10 }
           ],
           tempo: "40 min",
-          resumo: "Contexto do golpe, regime militar, repressão, anistia"
+          resumo: "Golpe de 1964, regime militar, repressão, anistia, Diretas Já, Constituição de 1988"
         },
         {
           data: "2026-11-19",
@@ -517,13 +536,16 @@ window.CRONOGRAMA = {
           data: "2026-11-20",
           dia_semana: "Sexta",
           disciplina: "Física",
-          tema: "Magnetismo",
-          assuntos: ["Eletricidade e magnetismo"],
+          tema: "Calor, Temperatura e Astronomia",
+          assuntos: ["Calor e temperatura", "Astronomia e gravitação"],
           videos: [
-            { titulo: "Magnetismo: Ímãs e Campo Magnético (Pura Física)", url: "https://www.youtube.com/watch?v=h0dYRTYiKDY" }
+            { titulo: "Formas de Propagação de Calor - 7º ano (Canal Futura)", url: "https://www.youtube.com/watch?v=ecYI7GUVKPM", min: 11 },
+            { titulo: "Temperatura e Calor (Matemática no Papel)", url: "https://www.youtube.com/watch?v=dgDqJp4ppN4", min: 8 },
+            { titulo: "Estações do Ano (Brasil Escola)", url: "https://www.youtube.com/watch?v=GnJdnzOp7a4", min: 7 },
+            { titulo: "Efeito de Maré (O Incrível Pontinho Azul)", url: "https://www.youtube.com/watch?v=sH4DiW2wRds", min: 3 }
           ],
           tempo: "40 min",
-          resumo: "Campo magnético, polos, força magnética, indução"
+          resumo: "Calor x temperatura, condução, convecção, irradiação, evaporação; estações do ano, equinócio e marés"
         }
       ],
       sabado: {
@@ -583,7 +605,7 @@ window.CRONOGRAMA = {
           dia_semana: "Quinta",
           disciplina: "Geografia",
           tema: "Geopolítica e Blocos Econômicos",
-          assuntos: ["Economia, agropecuária e transportes", "Território brasileiro e regiões"],
+          assuntos: ["Economia, agropecuária e transportes"],
           videos: [
             { titulo: "Blocos Econômicos (Descomplica)", url: "https://www.youtube.com/watch?v=tFGlxXZSTqY" }
           ],
@@ -594,14 +616,16 @@ window.CRONOGRAMA = {
           data: "2026-11-27",
           dia_semana: "Sexta",
           disciplina: "História",
-          tema: "Redemocratização e Constituinte",
-          assuntos: ["Brasil República", "Século XX"],
+          tema: "Revolução Industrial, Imperialismo e Século XX",
+          assuntos: ["Revolução Industrial e Imperialismo", "Século XX"],
           videos: [
-            { titulo: "Redemocratização do Brasil (Toda Matéria)", url: "https://www.youtube.com/watch?v=DAxqtxYnqU0" },
-            { titulo: "Nova República (Parabólica)", url: "https://www.youtube.com/watch?v=Sy29kcGqqjI" }
+            { titulo: "Revolução Industrial (Toda Matéria)", url: "https://www.youtube.com/watch?v=aVQ_1srdzK4", min: 11 },
+            { titulo: "O que foi o Imperialismo? (Toda Matéria)", url: "https://www.youtube.com/watch?v=_fyQjzR6Sm0", min: 7 },
+            { titulo: "Segunda Guerra Mundial: Resumão (Toda Matéria)", url: "https://www.youtube.com/watch?v=ZffDTZTmLGI", min: 9 },
+            { titulo: "Guerra Fria em 6 Minutos (Toda Matéria)", url: "https://www.youtube.com/watch?v=6QOkLu4kOOI", min: 6 }
           ],
           tempo: "40 min",
-          resumo: "Anistia, eleições diretas, Constituição de 1988"
+          resumo: "Máquina a vapor e fábricas, neocolonialismo na África e na Ásia, guerras mundiais, Guerra Fria e descolonização"
         }
       ],
       sabado: {
@@ -637,8 +661,8 @@ window.CRONOGRAMA = {
           disciplina: "Revisão Geral",
           tema: "Tópicos Críticos de Ciências e Humanas",
           videos: [
-            { titulo: "Revisão Ciências", url: "https://www.youtube.com/watch?v=8Z0MdYoZzeM" },
-            { titulo: "Revisão Humanas", url: "https://www.youtube.com/watch?v=6uO5Ey5MVow" }
+            { titulo: "Revisão Ciências", url: "https://www.youtube.com/watch?v=8Z0MdYoZzeM", min: 12 },
+            { titulo: "Revisão Humanas", url: "https://www.youtube.com/watch?v=6uO5Ey5MVow", min: 29 }
           ],
           tempo: "60 min",
           resumo: "Revisão Bio, Fís, Quím, Geo, Hist, tópicos principais"
